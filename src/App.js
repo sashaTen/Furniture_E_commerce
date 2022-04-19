@@ -20,10 +20,21 @@ export default function App() {
           latest news : <span> get new year discount 20%</span>
         </p>
 
-        <BsFillCaretDownFill />
-        <BsFillCartFill />
-        <p>Settings</p>
-        <p>Account</p>
+        <div className="header_menu">
+          <ul>
+            <li>Settings</li>
+            <li>
+              <BsFillCaretDownFill />
+            </li>
+          </ul>
+          <ul>
+            <li>Account</li>
+            <li>
+              <BsFillCaretDownFill />
+            </li>
+          </ul>
+          <BsFillCartFill className="cart_icon" />
+        </div>
       </header>
     </div>
   );
