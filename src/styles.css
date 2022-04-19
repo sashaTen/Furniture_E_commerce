@@ -2,3 +2,13 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.header {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  margin-left: 5%;
+  border-bottom: black 1px solid;
+}
+.latestNews {
+}
