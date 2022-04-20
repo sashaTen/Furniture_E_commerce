@@ -10,6 +10,7 @@ export default function App() {
       .get("https://course-api.com/react-store-products/")
       .then((products) => {
         setItems(products.data);
+        console.log(products.data);
       });
   }, []);
 
