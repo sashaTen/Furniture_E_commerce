@@ -58,15 +58,19 @@ li {
   display: none;
   font-size: 1.5rem;
 }
-.btn:hover {
-  color: #d9b650;
-}
 
 .searchIcon {
   font-size: 1.5rem;
   position: absolute;
   right: 10%;
   top: 25%;
+}
+/* HOVERING  AND OTHER   EFFECTS*/
+.btn:hover {
+  color: #d9b650;
+}
+.menuIcon:hover {
+  color: #d9b650;
 }
 
 /* media  queries */
@@ -100,7 +104,7 @@ li {
     display: none;
   }
   .searchIcon {
-    top: 30%;
+    top: 25%;
     right: 2%;
   }
 }
