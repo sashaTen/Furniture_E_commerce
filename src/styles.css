@@ -23,9 +23,9 @@
 .cart_icon {
   border: 2px solid black;
   padding: 5px;
-  position: relative;
+  position: absolute;
   top: 15px;
-  left: 50px;
+  right: -30%;
 }
 li {
   list-style: none;
@@ -50,17 +50,57 @@ li {
 .menuContainer {
   display: flex;
   width: 55%;
-  position: absolute;
+  position: relative;
   left: 21%;
   justify-content: space-between;
 }
-
+.menuIcon {
+  display: none;
+  font-size: 1.5rem;
+}
 .btn:hover {
   color: #d9b650;
 }
 
 .searchIcon {
   font-size: 1.5rem;
-  position: relative;
-  left: 140px;
+  position: absolute;
+  right: 10%;
+  top: 25%;
+}
+
+/* media  queries */
+
+@media only screen and (max-width: 500px) {
+  .settingsBtn {
+    display: none;
+  }
+  .accountBtn {
+    display: none;
+  }
+  .latestNews {
+    display: none;
+  }
+  ul {
+    display: flex;
+  }
+  .header_menu {
+    left: -10%;
+  }
+  .cart_icon {
+    right: 0%;
+  }
+  .crossLine {
+    left: 30%;
+  }
+  .menuIcon {
+    display: block;
+  }
+  .menuContainer {
+    display: none;
+  }
+  .searchIcon {
+    top: 30%;
+    right: 2%;
+  }
 }

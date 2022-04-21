@@ -1,5 +1,11 @@
 import "./styles.css";
-import { BsFillCaretDownFill, BsFillCartFill, BsSearch } from "react-icons/bs";
+import {
+  BsFillCaretDownFill,
+  BsFillCartFill,
+  BsFillPersonFill,
+  BsSearch
+} from "react-icons/bs";
+import { AiOutlineMenu, AiFillSetting } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import axios from "axios";
 export default function App() {
@@ -16,6 +22,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <div className="sidebar"></div>
       <header className="header">
         <p className="latestNews">
           latest news :{" "}
@@ -24,13 +31,18 @@ export default function App() {
 
         <div className="header_menu">
           <ul>
-            <li>Settings</li>
+            <li>
+              <span className="settingsBtn"> Settings</span> <AiFillSetting />{" "}
+            </li>
             <li>
               <BsFillCaretDownFill />
             </li>
           </ul>
           <ul>
-            <li>Account</li>
+            <li>
+              {" "}
+              <span className="accountBtn">Account</span> <BsFillPersonFill />
+            </li>
             <li>
               <BsFillCaretDownFill />
             </li>
@@ -42,7 +54,7 @@ export default function App() {
         <span className="letterC">C</span>onosin
       </h1>
       <div className="crossLine"></div>
-
+      <AiOutlineMenu className="menuIcon" />
       <section className="menuContainer">
         <p className="btn">
           Home <BsFillCaretDownFill />{" "}
@@ -63,8 +75,8 @@ export default function App() {
         <p className="btn">
           Contact <BsFillCaretDownFill />{" "}
         </p>
-        <BsSearch className="searchIcon" />
       </section>
+      <BsSearch className="searchIcon" />
     </div>
   );
 }
