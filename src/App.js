@@ -1,5 +1,5 @@
 import "./styles.css";
-import { BsFillCaretDownFill, BsFillCartFill } from "react-icons/bs";
+import { BsFillCaretDownFill, BsFillCartFill, BsSearch } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import axios from "axios";
 export default function App() {
@@ -18,7 +18,8 @@ export default function App() {
     <div className="App">
       <header className="header">
         <p className="latestNews">
-          latest news : <span> get new year discount 20%</span>
+          latest news :{" "}
+          <span className="newsDiscount"> get new year discount 20%</span>
         </p>
 
         <div className="header_menu">
@@ -37,6 +38,33 @@ export default function App() {
           <BsFillCartFill className="cart_icon" />
         </div>
       </header>
+      <h1 className="title">
+        <span className="letterC">C</span>onosin
+      </h1>
+      <div className="crossLine"></div>
+
+      <section className="menuContainer">
+        <p className="btn">
+          Home <BsFillCaretDownFill />{" "}
+        </p>
+        <p className="btn">
+          Collection <BsFillCaretDownFill />{" "}
+        </p>
+        <p className="btn">
+          Category
+          <BsFillCaretDownFill />{" "}
+        </p>
+        <p className="btn">
+          About Us <BsFillCaretDownFill />{" "}
+        </p>
+        <p className="btn">
+          Blog <BsFillCaretDownFill />{" "}
+        </p>
+        <p className="btn">
+          Contact <BsFillCaretDownFill />{" "}
+        </p>
+        <BsSearch className="searchIcon" />
+      </section>
     </div>
   );
 }
