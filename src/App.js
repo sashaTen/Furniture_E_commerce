@@ -11,6 +11,8 @@ import axios from "axios";
 export default function App() {
   const [items, setItems] = useState([]);
   const [moveApp, setMoveApp] = useState("App");
+  const imgUrl = `https://dl.airtable.com/.attachmentThumbnails/a6119fabf7256049cc0e8dbcdf536c9c/b0153f66?ts=1650682284&userId=usrQMwWEPx18KgLcP&cs=75ac8fc942ea4550`;
+
   useEffect(() => {
     axios
       .get("https://course-api.com/react-store-products/")
@@ -91,6 +93,16 @@ export default function App() {
         </p>
       </section>
       <BsSearch className="searchIcon" />
+      <section className="galleryContainer">
+        {items.map((item) => {
+          return (
+            <div key={item.id} className="galleryItemContainer">
+              <h1 className="itemName">{item.name}</h1>
+              <img className="galleryImage" src={item.image} />
+            </div>
+          );
+        })}
+      </section>
     </div>
   );
 }
