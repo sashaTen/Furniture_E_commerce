@@ -2,3 +2,13 @@ https://preview.themeforest.net/item/gostro-furniture-woocommerce-theme/full_scr
 e-commerce example  to  get  inspiration from 
 
 
+
+
+useEffect(() => {
+    axios
+      .get("https://course-api.com/react-store-products/")
+      .then((products) => {
+        setItems(products.data);
+        console.log(products.data);
+      });
+  }, []);

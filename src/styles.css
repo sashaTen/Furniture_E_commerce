@@ -1,6 +1,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .none {
@@ -83,8 +84,17 @@ li {
 }
 
 /*billboard*/
+.imgContainer {
+  display: flex;
+  position: relative;
+  left: 40%;
+  transition: 1s;
+}
 
 .billBoard {
+  padding-right: 35%;
+
+  object-fit: cover;
   position: relative;
   height: 70vh;
 }
@@ -164,6 +174,8 @@ p:hover {
     width: 200px;
     height: 350px;
     margin-top: 50px;
+    z-index: 1;
+    background-color: white;
   }
   .btnXmobileMenu {
     display: block;
@@ -175,11 +187,31 @@ p:hover {
 
   /*billboard*/
   .billBoard {
-    margin-top: 50px;
+    padding-left: 10%;
     object-fit: cover;
     width: 300px;
     height: 300px;
   }
+
+  .imgContainer {
+    display: none;
+  }
+  /*
+.imgContainer {
+  display: flex;
+  position: relative;
+  left: 40%;
+  transition: 1s;
+}
+
+.billBoard {
+  padding-right: 35%;
+
+  object-fit: cover;
+  position: relative;
+  height: 70vh;
+}
+*/
 
   /*  
  CALLERY   CONTAINER
