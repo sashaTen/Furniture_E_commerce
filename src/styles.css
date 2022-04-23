@@ -69,6 +69,7 @@ li {
   position: absolute;
   right: 0%;
   top: -10%;
+  display: none;
 }
 
 .menuIcon {
@@ -126,6 +127,9 @@ li {
     width: 200px;
     height: 350px;
     margin-top: 50px;
+  }
+  .btnXmobileMenu {
+    display: block;
   }
   .searchIcon {
     top: 25%;
