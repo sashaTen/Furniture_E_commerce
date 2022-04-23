@@ -2,7 +2,18 @@
   font-family: sans-serif;
   text-align: center;
 }
-
+p:hover {
+  color: #d9b650;
+}
+.none {
+  display: none;
+}
+.moveApp {
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  left: 200px;
+}
 .header {
   display: flex;
   width: 90%;
@@ -54,6 +65,12 @@ li {
   left: 21%;
   justify-content: space-between;
 }
+.btnXmobileMenu {
+  position: absolute;
+  right: 0%;
+  top: -10%;
+}
+
 .menuIcon {
   display: none;
   font-size: 1.5rem;
@@ -101,7 +118,14 @@ li {
     display: block;
   }
   .menuContainer {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    left: -200px;
+    width: 200px;
+    height: 350px;
+    margin-top: 50px;
   }
   .searchIcon {
     top: 25%;

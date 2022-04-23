@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 export default function App() {
   const [items, setItems] = useState([]);
-
+  const [moveApp, setMoveApp] = useState("App");
   useEffect(() => {
     axios
       .get("https://course-api.com/react-store-products/")
@@ -21,7 +21,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={moveApp}>
       <div className="sidebar"></div>
       <header className="header">
         <p className="latestNews">
@@ -54,8 +54,22 @@ export default function App() {
         <span className="letterC">C</span>onosin
       </h1>
       <div className="crossLine"></div>
-      <AiOutlineMenu className="menuIcon" />
+      <AiOutlineMenu
+        className="menuIcon"
+        onClick={() => {
+          setMoveApp("moveApp");
+        }}
+      />
       <section className="menuContainer">
+        <p
+          className="btnXmobileMenu"
+          onClick={() => {
+            setMoveApp("App");
+          }}
+        >
+          {" "}
+          X{" "}
+        </p>
         <p className="btn">
           Home <BsFillCaretDownFill />{" "}
         </p>
