@@ -117,7 +117,7 @@ export default function App() {
         <img className="billBoard" src={imgUrl2} />
         <img className="billBoard" src={imgUrl3} />
       </section>
-      <img className="billBoard" src={imgUrl1} />
+      <img className="billBoard mobile" src={imgUrl1} />
       <div className=""></div>
 
       <section className="galleryContainer">

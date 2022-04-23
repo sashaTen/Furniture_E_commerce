@@ -90,6 +90,9 @@ li {
   left: 40%;
   transition: 1s;
 }
+.mobile {
+  display: none;
+}
 
 .billBoard {
   padding-right: 35%;
@@ -191,6 +194,9 @@ p:hover {
     object-fit: cover;
     width: 300px;
     height: 300px;
+  }
+  .mobile {
+    display: block;
   }
 
   .imgContainer {
