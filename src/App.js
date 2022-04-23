@@ -11,7 +11,9 @@ import axios from "axios";
 export default function App() {
   const [items, setItems] = useState([]);
   const [moveApp, setMoveApp] = useState("App");
-  const imgUrl = `https://dl.airtable.com/.attachmentThumbnails/a6119fabf7256049cc0e8dbcdf536c9c/b0153f66?ts=1650682284&userId=usrQMwWEPx18KgLcP&cs=75ac8fc942ea4550`;
+  const imgUrl1 = `https://cgaxisimages.fra1.cdn.digitaloceanspaces.com/2018/07/cgaxis_models_106_14a.jpg`;
+  const imgUrl2 = `https://shop.mohd.it/media/catalog/product/cache/11b1b7f5d04077d123613fe5bd9b4f06/l/o/lovy-sofa-bonaldo.jpg`;
+  const imgUrl3 = `https://mir-s3-cdn-cf.behance.net/project_modules/fs/cbeffe68752533.5b686b9a7f5f2.jpg`;
 
   useEffect(() => {
     axios
@@ -93,6 +95,10 @@ export default function App() {
         </p>
       </section>
       <BsSearch className="searchIcon" />
+
+      <img className="billBoard" src={imgUrl3} />
+      <div className=""></div>
+
       <section className="galleryContainer">
         {items.map((item) => {
           return (

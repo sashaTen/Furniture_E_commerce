@@ -82,6 +82,13 @@ li {
   top: 25%;
 }
 
+/*billboard*/
+
+.billBoard {
+  position: relative;
+  height: 70vh;
+}
+
 /*
 GALLERY   CONTAINER
 */
@@ -105,6 +112,9 @@ GALLERY   CONTAINER
   color: black;
 }
 .galleryImage {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
 }
 
 /* HOVERING  AND OTHER   EFFECTS*/
@@ -162,6 +172,15 @@ p:hover {
     top: 25%;
     right: 2%;
   }
+
+  /*billboard*/
+  .billBoard {
+    margin-top: 50px;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+  }
+
   /*  
  CALLERY   CONTAINER
  */
