@@ -12,3 +12,15 @@ useEffect(() => {
         console.log(products.data);
       });
   }, []);
+
+
+    <section className="galleryContainer">
+        {items.map((item) => {
+          return (
+            <div key={item.id} className="galleryItemContainer">
+              <h1 className="itemName">{item.name}</h1>
+              <img className="galleryImage" src={item.image} />
+            </div>
+          );
+        })}
+      </section>

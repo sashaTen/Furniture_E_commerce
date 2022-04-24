@@ -2,8 +2,7 @@ import SlideGallery from "./slideGallery";
 import Menu from "./menu";
 import "./styles.css";
 import Header from "./header";
-import { BsFillCaretDownFill, BsSearch } from "react-icons/bs";
-import { AiOutlineMenu } from "react-icons/ai";
+import { BsSearch } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import axios from "axios";
 export default function App() {
@@ -23,17 +22,6 @@ export default function App() {
 
       <BsSearch className="searchIcon" />
       <SlideGallery />
-
-      <section className="galleryContainer">
-        {items.map((item) => {
-          return (
-            <div key={item.id} className="galleryItemContainer">
-              <h1 className="itemName">{item.name}</h1>
-              <img className="galleryImage" src={item.image} />
-            </div>
-          );
-        })}
-      </section>
     </div>
   );
 }
