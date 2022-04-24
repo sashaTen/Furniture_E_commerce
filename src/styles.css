@@ -5,6 +5,7 @@
 }
 
 .none {
+  /*  It  is   just for  testting purpose  */
   display: none;
 }
 .moveApp {
@@ -46,9 +47,11 @@ li {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 .letterC {
+  /*  first  letter  in  word Conosin*/
   font-size: 40px;
 }
 .crossLine {
+  /*   line  in  the middle of  word conosin*/
   width: 150px;
   height: 2px;
   background: #d9b650;
@@ -65,6 +68,7 @@ li {
   justify-content: space-between;
 }
 .btnXmobileMenu {
+  /*  btn for  hiding the menu  in the mobile view*/
   position: absolute;
   right: 0%;
   top: -10%;
@@ -202,22 +206,6 @@ p:hover {
   .imgContainer {
     display: none;
   }
-  /*
-.imgContainer {
-  display: flex;
-  position: relative;
-  left: 40%;
-  transition: 1s;
-}
-
-.billBoard {
-  padding-right: 35%;
-
-  object-fit: cover;
-  position: relative;
-  height: 70vh;
-}
-*/
 
   /*  
  CALLERY   CONTAINER
