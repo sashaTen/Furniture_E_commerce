@@ -1,4 +1,5 @@
 import SlideGallery from "./slideGallery";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from "./menu";
 import "./styles.css";
 import Header from "./header";
