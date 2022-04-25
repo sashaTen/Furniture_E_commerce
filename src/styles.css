@@ -42,7 +42,7 @@ li {
   list-style: none;
 }
 .title {
-  margin-top: 50px;
+  margin-top: 40px;
   color: #d9b650;
   font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -91,6 +91,28 @@ li {
   position: absolute;
   right: 10%;
   top: 25%;
+}
+/*  
+GREETINGS  COMPONENT STYLING
+*/
+
+.greetContainer {
+  position: fixed;
+  top: 35%;
+  left: 5%;
+  z-index: 1;
+}
+.newSeason {
+  width: 200px;
+}
+.GreetBtn {
+  font-size: 1rem;
+  background-color: white;
+  position: relative;
+  top: 30px;
+  right: 100px;
+
+  border: 1px solid black;
 }
 
 /*billboard*/
@@ -197,10 +219,21 @@ p:hover {
     top: 25%;
     right: 2%;
   }
-
+  /*
+  GREETINGS
+  */
+  .newSeason {
+    width: 100px;
+  }
+  .trustStyle {
+    font-size: 1rem;
+  }
+  .conosin {
+    font-size: 1rem;
+  }
   /*billboard*/
   .billBoard {
-    padding-left: 10%;
+    padding-left: -5%;
     object-fit: cover;
     width: 300px;
     height: 300px;
