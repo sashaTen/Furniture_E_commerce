@@ -1,4 +1,4 @@
-import SlideGallery from "./slideGallery";
+import SlideGallery from "./slideAndGreeting/slideGallery";
 import Title from "./title";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from "./menu/menu";
