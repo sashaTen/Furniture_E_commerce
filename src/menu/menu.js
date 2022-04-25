@@ -26,7 +26,9 @@ const Menu = (props) => {
         <p className="btn">
           Home <BsFillCaretDownFill />{" "}
         </p>
-
+        {items.map((item) => {
+          return <>{item.company}</>;
+        })}
         <p className="btn">
           Company
           <BsFillCaretDownFill />{" "}
