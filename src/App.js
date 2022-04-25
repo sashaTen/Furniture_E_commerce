@@ -1,4 +1,5 @@
 import SlideGallery from "./slideAndGreeting/slideGallery";
+import Greet from "./greeting";
 import Title from "./title";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from "./menu/menu";
@@ -22,6 +23,7 @@ export default function App() {
     <div className={moveApp}>
       <Header />
       <Title />
+      <Greet />
       <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
       <BsSearch className="searchIcon" />
       <SlideGallery />
