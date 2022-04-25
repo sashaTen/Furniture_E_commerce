@@ -40,7 +40,7 @@ const Menu = (props) => {
               setShowCategory(!showCategory);
             }}
           />{" "}
-          {showCategory && <Category />}
+          {showCategory && <Category items={items} />}
         </p>
         <p className="btn">
           About Us <BsFillCaretDownFill className="BsFillDown" />{" "}
