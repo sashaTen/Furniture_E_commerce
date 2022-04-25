@@ -25,7 +25,7 @@ const Menu = (props) => {
           X{" "}
         </div>
         <div className="btn">
-          Home <BsFillCaretDownFill className="BsFillDown" />{" "}
+          Home <BsFillCaretDownFill onClick={() => {}} className="BsFillDown" />{" "}
         </div>
 
         <div className="btn">
