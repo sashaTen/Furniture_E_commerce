@@ -15,7 +15,7 @@ const Menu = (props) => {
         }}
       />
       <section className="menuContainer">
-        <p
+        <div
           className="btnXmobileMenu"
           onClick={() => {
             props.changeClass("App");
@@ -23,16 +23,16 @@ const Menu = (props) => {
         >
           {" "}
           X{" "}
-        </p>
-        <p className="btn">
+        </div>
+        <div className="btn">
           Home <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </p>
+        </div>
 
-        <p className="btn">
+        <div className="btn">
           Company
           <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </p>
-        <p className="btn">
+        </div>
+        <div className="btn">
           Category
           <BsFillCaretDownFill
             className="BsFillDown"
@@ -41,16 +41,16 @@ const Menu = (props) => {
             }}
           />{" "}
           {showCategory && <Category items={items} />}
-        </p>
-        <p className="btn">
+        </div>
+        <div className="btn">
           About Us <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </p>
-        <p className="btn">
+        </div>
+        <div className="btn">
           Blog <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </p>
-        <p className="btn">
+        </div>
+        <div className="btn">
           Contact <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </p>
+        </div>
       </section>
     </>
   );
