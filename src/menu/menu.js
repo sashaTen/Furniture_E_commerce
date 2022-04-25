@@ -24,7 +24,8 @@ const Menu = (props) => {
           Home <BsFillCaretDownFill />{" "}
         </p>
         <p className="btn">
-          Collection <BsFillCaretDownFill />{" "}
+          Company
+          <BsFillCaretDownFill />{" "}
         </p>
         <p className="btn">
           Category

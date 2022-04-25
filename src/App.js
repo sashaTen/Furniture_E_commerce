@@ -1,7 +1,7 @@
 import SlideGallery from "./slideGallery";
 import Title from "./title";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Menu from "./menu";
+import Menu from "./menu/menu";
 import "./styles.css";
 import Header from "./header";
 import { BsSearch } from "react-icons/bs";
