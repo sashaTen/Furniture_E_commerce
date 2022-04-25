@@ -12,7 +12,6 @@ const SlideGallery = () => {
         billBoardIndex = 0;
       }
       setMoveImage(moveLeft[billBoardIndex] + "%");
-      console.log(billBoardIndex);
 
       // setMoveImage()
     }, 2000);
