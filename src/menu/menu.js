@@ -2,6 +2,9 @@ import { BsFillCaretDownFill, BsSearch } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const Menu = (props) => {
+  const items = props.items;
+  console.log(items);
+
   return (
     <>
       <AiOutlineMenu
