@@ -26,6 +26,7 @@ const Menu = (props) => {
         <p className="btn">
           Home <BsFillCaretDownFill />{" "}
         </p>
+
         <p className="btn">
           Company
           <BsFillCaretDownFill />{" "}

@@ -19,7 +19,7 @@ useEffect(() => {
           return (
             <div key={item.id} className="galleryItemContainer">
               <h1 className="itemName">{item.name}</h1>
-              <img className="galleryImage" src={item.image} />
+          //    <img className="galleryImage" src={item.image} />
             </div>
           );
         })}
