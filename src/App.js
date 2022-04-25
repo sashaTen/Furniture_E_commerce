@@ -13,7 +13,6 @@ export default function App() {
 
   return (
     <div className={moveApp}>
-      furniture
       <Header />
       <Title />
       <Menu changeClass={(moveApp) => setMoveApp(moveApp)} />
