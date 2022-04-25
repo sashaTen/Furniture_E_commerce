@@ -25,16 +25,17 @@ const Menu = (props) => {
           X{" "}
         </p>
         <p className="btn">
-          Home <BsFillCaretDownFill />{" "}
+          Home <BsFillCaretDownFill className="BsFillDown" />{" "}
         </p>
 
         <p className="btn">
           Company
-          <BsFillCaretDownFill />{" "}
+          <BsFillCaretDownFill className="BsFillDown" />{" "}
         </p>
         <p className="btn">
           Category
           <BsFillCaretDownFill
+            className="BsFillDown"
             onClick={() => {
               setShowCategory(!showCategory);
             }}
@@ -42,13 +43,13 @@ const Menu = (props) => {
           {showCategory && <Category />}
         </p>
         <p className="btn">
-          About Us <BsFillCaretDownFill />{" "}
+          About Us <BsFillCaretDownFill className="BsFillDown" />{" "}
         </p>
         <p className="btn">
-          Blog <BsFillCaretDownFill />{" "}
+          Blog <BsFillCaretDownFill className="BsFillDown" />{" "}
         </p>
         <p className="btn">
-          Contact <BsFillCaretDownFill />{" "}
+          Contact <BsFillCaretDownFill className="BsFillDown" />{" "}
         </p>
       </section>
     </>

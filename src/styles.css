@@ -74,6 +74,9 @@ li {
   top: -10%;
   display: none;
 }
+.BsFillDown {
+  margin-left: 50px;
+}
 
 .menuIcon {
   display: none;
