@@ -1,11 +1,13 @@
 import { BsFillCaretDownFill, BsSearch } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import Category from "./category";
+import Company from "./company";
 import { useState } from "react";
+
 const Menu = (props) => {
   const items = props.items;
   const [showCategory, setShowCategory] = useState(false);
-
+  const [showCompany, setShowCompany] = useState(false);
   return (
     <>
       <AiOutlineMenu
@@ -25,12 +27,18 @@ const Menu = (props) => {
           X{" "}
         </div>
         <div className="btn">
-          Home <BsFillCaretDownFill onClick={() => {}} className="BsFillDown" />{" "}
+          Home <BsFillCaretDownFill className="BsFillDown" />{" "}
         </div>
 
         <div className="btn">
           Company
-          <BsFillCaretDownFill className="BsFillDown" />{" "}
+          <BsFillCaretDownFill
+            className="BsFillDown"
+            onClick={() => {
+              setShowCompany(!showCompany);
+            }}
+          />{" "}
+          {showCompany && <Company items={items} />}
         </div>
         <div className="btn">
           Category
