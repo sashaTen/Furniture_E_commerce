@@ -35,6 +35,7 @@
   border: 2px solid black;
   padding: 5px;
   position: absolute;
+  top: 10px;
   right: -30%;
 }
 li {
@@ -69,8 +70,8 @@ li {
 .btnXmobileMenu {
   /*  btn for  hiding the menu  in the mobile view*/
   position: absolute;
-  right: 0%;
-  top: -10%;
+  right: 10%;
+  top: 0%;
   display: none;
 }
 .BsFillDown {
@@ -229,6 +230,7 @@ GALLERY   CONTAINER
   }
   .btnXmobileMenu {
     display: block;
+    position: absolute;
   }
   .searchIcon {
     top: 23%;
