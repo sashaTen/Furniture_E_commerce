@@ -97,7 +97,7 @@ GREETINGS  COMPONENT STYLING
 */
 
 .greetContainer {
-  position: fixed;
+  position: absolute;
   top: 35%;
   left: 5%;
   z-index: 1;
@@ -113,6 +113,9 @@ GREETINGS  COMPONENT STYLING
   right: 100px;
 
   border: 1px solid black;
+}
+.pTagUnderGreet {
+  width: 400px;
 }
 
 /*billboard*/
@@ -164,10 +167,6 @@ GALLERY   CONTAINER
 
 /* HOVERING  AND OTHER   EFFECTS*/
 
-p:hover {
-  color: #d9b650;
-}
-
 /* media  queries */
 
 @media only screen and (max-width: 500px) {
@@ -217,14 +216,25 @@ p:hover {
   /*
   GREETINGS
   */
+  .greetContainer {
+    top: 80%;
+  }
   .newSeason {
     width: 100px;
   }
   .trustStyle {
     font-size: 1rem;
+    width: 200px;
   }
-  .conosin {
-    font-size: 1rem;
+  .pTagUnderGreet {
+    width: 200px;
+    font-size: 0.7rem;
+  }
+
+  .GreetBtn {
+    font-size: 0.8rem;
+    position: relative;
+    left: 5%;
   }
   /*billboard*/
   .billBoard {
