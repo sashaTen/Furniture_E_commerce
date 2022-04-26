@@ -128,15 +128,19 @@ GREETINGS  COMPONENT STYLING
 .mobile {
   display: none;
 }
-
+.imgContainerMobile {
+  display: none;
+  position: relative;
+}
 .billBoard {
   padding-right: 45%;
-
   object-fit: cover;
   position: relative;
   height: 70vh;
 }
-
+.billBoardMobile {
+  width: 300px;
+}
 /*
 GALLERY   CONTAINER
 */
@@ -237,18 +241,23 @@ GALLERY   CONTAINER
     left: 5%;
   }
   /*billboard*/
-  .billBoard {
-    padding-left: -5%;
-    object-fit: cover;
-    width: 300px;
-    height: 300px;
-  }
-  .mobile {
-    display: block;
-  }
-
   .imgContainer {
     display: none;
+  }
+  .billBoardMobile {
+    object-fit: cover;
+    width: 280px;
+    padding-right: 100px;
+    height: 300px;
+  }
+
+  .imgContainerMobile {
+    display: flex;
+    position: relative;
+    left: -380px;
+    animation-name: imgContainerMobile;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
 
   /*  
@@ -261,5 +270,17 @@ GALLERY   CONTAINER
   .itemName {
   }
   .galleryImage {
+  }
+}
+
+@keyframes imgContainerMobile {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -400px;
+  }
+  100% {
+    left: -780px;
   }
 }

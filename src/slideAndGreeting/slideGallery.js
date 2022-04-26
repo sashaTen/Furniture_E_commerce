@@ -29,7 +29,11 @@ const SlideGallery = () => {
         <img className="billBoard" src={imgUrl2} />
         <img className="billBoard" src={imgUrl3} />
       </section>
-      <img className="billBoard mobile" src={imgUrl1} />
+      <section className="imgContainerMobile">
+        <img className="billBoardMobile" src={imgUrl1} />
+        <img className="billBoardMobile" src={imgUrl2} />
+        <img className="billBoardMobile" src={imgUrl3} />
+      </section>
     </>
   );
 };
