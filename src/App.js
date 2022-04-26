@@ -24,10 +24,11 @@ export default function App() {
     <div className={moveApp}>
       <Header />
       <Title />
-      <Greet />
+
       <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
       <BsSearch className="searchIcon" />
       <SlideGallery />
+      <Greet />
       <Brands />
     </div>
   );

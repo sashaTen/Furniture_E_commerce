@@ -9,11 +9,11 @@ const Brands = () => {
   ];
 
   return (
-    <div>
+    <div className="brandContainer">
       {imgUrls.map((item) => {
         return (
           <div>
-            <img src={item} />
+            <img className="brandImg" src={item} />
           </div>
         );
       })}

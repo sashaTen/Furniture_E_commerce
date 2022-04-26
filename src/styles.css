@@ -97,7 +97,7 @@ GREETINGS  COMPONENT STYLING
 */
 
 .greetContainer {
-  position: absolute;
+  position: relative;
   top: 35%;
   left: 5%;
   z-index: 1;
@@ -140,6 +140,22 @@ GREETINGS  COMPONENT STYLING
 }
 .billBoardMobile {
   width: 300px;
+}
+
+/*
+BRANDS 
+
+*/
+
+.brandContainer {
+  display: flex;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  justify-content: space-around;
+}
+.brandImg {
+  width: 150px;
 }
 /*
 GALLERY   CONTAINER
@@ -222,6 +238,7 @@ GALLERY   CONTAINER
   */
   .greetContainer {
     top: 80%;
+    left: 11%;
   }
   .newSeason {
     width: 100px;
