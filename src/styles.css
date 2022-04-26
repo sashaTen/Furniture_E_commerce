@@ -275,12 +275,12 @@ GALLERY   CONTAINER
 
 @keyframes imgContainerMobile {
   0% {
-    left: 0px;
+    left: 50px;
   }
   50% {
-    left: -400px;
+    left: -380px;
   }
   100% {
-    left: -780px;
+    left: -750px;
   }
 }
