@@ -127,7 +127,7 @@ GREETINGS  COMPONENT STYLING
 }
 
 .billBoard {
-  padding-right: 35%;
+  padding-right: 45%;
 
   object-fit: cover;
   position: relative;
@@ -163,12 +163,7 @@ GALLERY   CONTAINER
 }
 
 /* HOVERING  AND OTHER   EFFECTS*/
-.btn:hover {
-  color: #d9b650;
-}
-.menuIcon:hover {
-  color: #d9b650;
-}
+
 p:hover {
   color: #d9b650;
 }
