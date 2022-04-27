@@ -1,4 +1,5 @@
 import SlideGallery from "./slideAndGreeting/slideGallery";
+import HomePagebody from "./components/homePageBody";
 import Brands from "./brands";
 import Greet from "./slideAndGreeting/greeting";
 import Title from "./title";
@@ -9,6 +10,7 @@ import Header from "./header";
 import { BsSearch } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import HomePageBody from "./components/homePageBody";
 export default function App() {
   const [items, setItems] = useState([]);
   const [moveApp, setMoveApp] = useState("App");
@@ -30,6 +32,7 @@ export default function App() {
       <SlideGallery />
       <Greet />
       <Brands />
+      <HomePageBody />
     </div>
   );
 }
