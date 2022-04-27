@@ -1,6 +1,6 @@
 //BsArrowRight
 import { BsArrowRight } from "react-icons/bs";
-
+import MacrosCollection from "./marcosCollection";
 const HomePageBody = () => {
   const imgUrl1 =
     "https://dl.airtable.com/.attachmentThumbnails/1e4a818f5184993e430420a152315b40/873c7094?ts=1651055573&userId=usrQMwWEPx18KgLcP&cs=b17d245a2110110e";
@@ -49,6 +49,7 @@ const HomePageBody = () => {
           shop collection <BsArrowRight />{" "}
         </p>
       </section>
+      <MacrosCollection />
     </div>
   );
 };
