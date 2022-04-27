@@ -19,7 +19,11 @@ const MarcosCollection = (props) => {
       </section>
       <div className="marcosProductsContainer">
         {macrosList.map((item) => {
-          return <div key={item.id}>{item.name}</div>;
+          return (
+            <div className="singleMacrosItem" key={item.id}>
+              {item.name}
+            </div>
+          );
         })}
       </div>
     </div>

@@ -238,6 +238,11 @@ MARCOS  COLLECTION
   display: flex;
   justify-content: space-around;
 }
+.marcosProductsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 80px;
+}
 
 /* HOVERING  AND OTHER   EFFECTS*/
 
@@ -381,6 +386,9 @@ MARCOS  COLLECTION
   /* MACROS  COLLECTION*/
   .marcosGreeting {
     display: grid;
+  }
+  .marcosProductsContainer {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
