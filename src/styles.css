@@ -4,6 +4,7 @@
   overflow-x: hidden;
   font-family: serif;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .none {
@@ -225,6 +226,19 @@ HOME  PAGE  COMPONENTS
   color: orange;
 }
 
+/*
+MARCOS  COLLECTION
+*/
+.marcosContainer {
+  margin-top: 80px;
+  border-top: 1px solid grey;
+  padding-top: 50px;
+}
+.marcosGreeting {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* HOVERING  AND OTHER   EFFECTS*/
 
 /* media  queries */
@@ -362,6 +376,11 @@ HOME  PAGE  COMPONENTS
   .dateAgenda {
     width: 200px;
     margin-left: 30px;
+  }
+
+  /* MACROS  COLLECTION*/
+  .marcosGreeting {
+    display: grid;
   }
 }
 

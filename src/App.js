@@ -32,7 +32,7 @@ export default function App() {
       <SlideGallery />
       <Greet />
       <Brands />
-      <HomePageBody />
+      <HomePageBody items={items} />
     </div>
   );
 }
