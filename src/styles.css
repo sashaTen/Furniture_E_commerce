@@ -188,6 +188,43 @@ GALLERY   CONTAINER
   height: 300px;
 }
 
+/*
+
+HOME  PAGE  COMPONENTS
+*/
+
+.homePagebodyContainer {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.homePageImg {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding-top: 20px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.orangeColor {
+  color: orange;
+}
+.collectionAnnouncement {
+  display: flex;
+  flex-direction: column;
+}
+.dateAgenda {
+  border-top: 1px solid black;
+  padding-top: 50px;
+  width: 300px;
+  margin-left: 220px;
+}
+.greyColor {
+  color: grey;
+}
+.shopBtn:hover {
+  color: orange;
+}
+
 /* HOVERING  AND OTHER   EFFECTS*/
 
 /* media  queries */
@@ -298,6 +335,33 @@ GALLERY   CONTAINER
   .itemName {
   }
   .galleryImage {
+  }
+  /*    home   page  components*/
+  .homePagebodyContainer {
+    grid-template-columns: 1fr;
+  }
+  .homePageImg {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .homePageImg {
+    width: 250px;
+    height: 250px;
+    border-top: 1px grey solid;
+  }
+  .orangeColor {
+    color: orange;
+  }
+  .collectionAnnouncement {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .dateAgenda {
+    width: 200px;
+    margin-left: 30px;
   }
 }
 

@@ -12,18 +12,23 @@ const HomePageBody = () => {
   return (
     <div className="homePagebodyContainer">
       <section className="collectionAnnouncement">
-        <p>Massey Collection 2021</p>
+        <p className="orangeColor">Massey Collection 2021</p>
         <h2>New Decoration For Your</h2>
         <h2>Living Spaces</h2>
-        <p>Praesent faucibus, lorem ut sollicitudin dapibus,</p>
-        <p> quam ligula pretium magna, eu congue ex quam ut neque.</p>
-        <p>It'll be worth the wait very soon !</p>
+        <p className="greyColor">
+          Praesent faucibus, lorem ut sollicitudin dapibus,
+        </p>
+        <p className="greyColor">
+          {" "}
+          quam ligula pretium magna, eu congue ex quam ut neque.
+        </p>
+        <p className="dateAgenda">It'll be worth the wait very soon !</p>
         <h2>2022 - 07- 21 </h2>
       </section>
       <section className="img1Container">
         <img className="homePageImg" src={imgUrl1} />
         <h3>Deluxe Venezie Collection</h3>
-        <p>
+        <p className="shopBtn">
           {" "}
           shop collection <BsArrowRight />{" "}
         </p>
@@ -31,7 +36,7 @@ const HomePageBody = () => {
       <section className="img2Container">
         <img src={imgUrl2} className="homePageImg" />
         <h3>Great Design For Home and Decoration.</h3>
-        <p>
+        <p className="shopBtn">
           {" "}
           shop collection <BsArrowRight />{" "}
         </p>
@@ -39,7 +44,7 @@ const HomePageBody = () => {
       <section className="img3Container">
         <img src={imgUrl3} className="homePageImg" />
         <h3>Le’Bologna Collection</h3>
-        <p>
+        <p className="shopBtn">
           {" "}
           shop collection <BsArrowRight />{" "}
         </p>
