@@ -10,9 +10,9 @@ const Brands = () => {
 
   return (
     <div className="brandContainer">
-      {imgUrls.map((item) => {
+      {imgUrls.map((item, index) => {
         return (
-          <div>
+          <div key={index}>
             <img className="brandImg" src={item} />
           </div>
         );
