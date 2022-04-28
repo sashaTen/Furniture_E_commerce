@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -256,6 +257,14 @@ MARCOS  COLLECTION
 
 .singleMacrosItem {
   width: 350px;
+}
+.marcosFont {
+  font-family: "Water Brush", cursive;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: red;
+  text-decoration: underline;
 }
 /* HOVERING  AND OTHER   EFFECTS*/
 

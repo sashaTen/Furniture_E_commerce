@@ -10,7 +10,12 @@ const MarcosCollection = (props) => {
   return (
     <div className="marcosContainer">
       <section className="marcosGreeting">
-        <h3> new design from marcos collection </h3>
+        <h3>
+          {" "}
+          new design from <span className="marcosFont">
+            marcos
+          </span> collection{" "}
+        </h3>
         <p className="greyColor">
           Visit our shop to see amazing creations from our designers.
         </p>
