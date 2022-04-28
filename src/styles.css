@@ -245,8 +245,18 @@ MARCOS  COLLECTION
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 80px;
+  position: relative;
+  right: 1050px;
+}
+.collectionImg {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
 }
 
+.singleMacrosItem {
+  width: 350px;
+}
 /* HOVERING  AND OTHER   EFFECTS*/
 
 /* media  queries */
@@ -393,9 +403,35 @@ MARCOS  COLLECTION
   .marcosGreeting {
     display: grid;
   }
-  .marcosProductsContainer {
-    grid-template-columns: 1fr 1fr;
+  .marcosContainer {
   }
+  /*
+  
+.marcosContainer {
+  margin-top: 80px;
+  border-top: 1px solid grey;
+  padding-top: 50px;
+}
+.marcosGreeting {
+  display: flex;
+  justify-content: space-around;
+}
+.marcosProductsContainer {
+  display: grid;
+  width:100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 80px;
+  position: relative;
+  right: 10%;
+}
+.collectionImg{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  
+}
+  
+  */
 }
 
 @keyframes imgContainerMobile {
