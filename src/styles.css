@@ -380,16 +380,15 @@ MARCOS  COLLECTION
     width: 250px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 30px;
+    font-size: 0.9rem;
   }
   .dateAgenda {
     width: 200px;
     margin-left: 30px;
   }
-  .collectionAnnouncement {
-    position: relative;
-    left: 50px;
-    font-size: 0.7rem;
-  }
+
   /* MACROS  COLLECTION*/
   .marcosGreeting {
     display: grid;
