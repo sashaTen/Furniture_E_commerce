@@ -212,6 +212,9 @@ HOME  PAGE  COMPONENTS
 .collectionAnnouncement {
   display: flex;
   flex-direction: column;
+  position: relative;
+  left: 50px;
+  font-size: 1rem;
 }
 .dateAgenda {
   border-top: 1px solid black;
@@ -382,7 +385,11 @@ MARCOS  COLLECTION
     width: 200px;
     margin-left: 30px;
   }
-
+  .collectionAnnouncement {
+    position: relative;
+    left: 50px;
+    font-size: 0.7rem;
+  }
   /* MACROS  COLLECTION*/
   .marcosGreeting {
     display: grid;
