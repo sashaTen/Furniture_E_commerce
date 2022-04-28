@@ -10,8 +10,8 @@ const Category = (props) => {
 
   return (
     <div className="categoryContainer">
-      {uniqueCategories.map((item) => {
-        return <p>{item}</p>;
+      {uniqueCategories.map((item, index) => {
+        return <p key={item}>{item}</p>;
       })}
     </div>
   );

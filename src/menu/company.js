@@ -10,8 +10,8 @@ const Company = (props) => {
 
   return (
     <div>
-      {uniqueCompanies.map((item) => {
-        return <div>{item}</div>;
+      {uniqueCompanies.map((item, index) => {
+        return <div key={index}>{item}</div>;
       })}
     </div>
   );

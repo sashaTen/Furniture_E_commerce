@@ -7,8 +7,6 @@ const MarcosCollection = (props) => {
     }
   }
 
-  console.log(macrosList);
-
   return (
     <div className="marcosContainer">
       <section className="marcosGreeting">
