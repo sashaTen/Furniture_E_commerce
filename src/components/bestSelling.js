@@ -1,12 +1,12 @@
 import { BsCircle } from "react-icons/bs";
-import { useState, useEffect } from "react";
-const BestSelling = (props) => {
+import { useState } from "react";
+import data from "./data";
+const BestSelling = () => {
   const [moveRight, setMoveRight] = useState(0 + "px");
-  const items = props.items;
 
   let macrosList = [];
   for (let i = 5; i < 9; i++) {
-    macrosList.push(items[i]);
+    macrosList.push(data[i]);
   }
 
   return (
