@@ -1,7 +1,7 @@
 //BsArrowRight
 import { BsArrowRight } from "react-icons/bs";
 import MarcosCollection from "./marcosCollection";
-import MacrosCollection from "./marcosCollection";
+import BestSelling from "./bestSelling";
 const HomePageBody = (props) => {
   const items = props.items;
   const imgUrl1 =
@@ -54,6 +54,7 @@ const HomePageBody = (props) => {
         </section>
       </div>
       <MarcosCollection items={items} />
+      <BestSelling />
     </>
   );
 };
