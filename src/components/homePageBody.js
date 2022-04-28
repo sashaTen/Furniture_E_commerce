@@ -54,7 +54,7 @@ const HomePageBody = (props) => {
         </section>
       </div>
       <MarcosCollection items={items} />
-      <BestSelling />
+      <BestSelling items={items} />
     </>
   );
 };
