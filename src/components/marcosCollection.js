@@ -1,5 +1,10 @@
+import { BsCircle } from "react-icons/bs";
+import { useState, useEffect } from "react";
 const MarcosCollection = (props) => {
+  const [moveRight, setMoveRight] = useState(0 + "px");
   const items = props.items;
+  console.log(moveRight);
+
   let macrosList = [];
   for (let i = 0; i < items.length; i++) {
     if (items[i].company === "marcos") {
@@ -20,7 +25,7 @@ const MarcosCollection = (props) => {
           Visit our shop to see amazing creations from our designers.
         </p>
       </section>
-      <div className="marcosProductsContainer">
+      <div className="marcosProductsContainer" style={{ right: moveRight }}>
         {macrosList.map((item) => {
           return (
             <div className="singleMacrosItem" key={item.id}>
@@ -30,6 +35,33 @@ const MarcosCollection = (props) => {
           );
         })}
       </div>
+
+      <section className="macrosBtncontainer">
+        <BsCircle
+          onClick={() => {
+            setMoveRight(0) + "px";
+          }}
+          className="marcosBtn"
+        />
+        <BsCircle
+          onClick={() => {
+            setMoveRight(350) + "px";
+          }}
+          className="marcosBtn"
+        />
+        <BsCircle
+          onClick={() => {
+            setMoveRight(700) + "px";
+          }}
+          className="marcosBtn"
+        />
+        <BsCircle
+          onClick={() => {
+            setMoveRight(1050) + "px";
+          }}
+          className="marcosBtn"
+        />
+      </section>
     </div>
   );
 };
