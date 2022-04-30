@@ -406,6 +406,9 @@ BEST SELLING  COLLECTION.
   /*    home   page  components*/
   .homePagebodyContainer {
     grid-template-columns: 1fr;
+    width: 70%;
+    position: relative;
+    left: 12%;
   }
   .homePageImg {
     width: 250px;
@@ -446,6 +449,7 @@ BEST SELLING  COLLECTION.
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    right: 0px;
   }
   /*.
   
