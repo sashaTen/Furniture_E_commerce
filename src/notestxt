@@ -55,5 +55,55 @@ finish   later  the countdown to  the  speciific date
 
 
 
+///////////////////////////////////////////TUTOROALS : 
+***********children : 
+              why   ? 
+              for example  you need to  put htmmml 
+               or eveen  the whole  project
+               in the child component from  outside 
+               like  something specific:
+*************SPREAD OPERATOR 
+you can pass props in  a more  efficient way   :  
+   <Parent {...object/array  wahtever}/>
 
 
+
+*******************events  check the doc   
+sometimes  you can  do inline  function declaration
+and  somtimes you shold declare and  call it in jsx
+******************* conditional  rendering 
+
+u need it  when you  want to displau something like 
+loading page before  fetching  finish
+
+
+
+***************ternary  operatir   : 
+||   =   the true one is gonna be rendered
+&&    =   if true the second  arg is gonna be rendered
+
+
+
+/*********************** FORMS AND  INPUTS
+
+onclick event  and  function e.preventDefault
+you approach object of  the event
+
+and the submit where  object is passed automatically
+in order  to change of state   pass the onChange
+
+
+
+
+
+---------------useref
+
+mostly it is used for  targeting the dom element
+
+
+************usereduser
+
+is used to structure the state  if its complex
+----------  context  api  use it avoid prop drilling
+
+***********router  
