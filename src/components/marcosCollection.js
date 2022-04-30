@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 const MarcosCollection = (props) => {
   const [moveRight, setMoveRight] = useState(0 + "px");
   const items = props.items;
-  console.log(moveRight);
 
   let macrosList = [];
   for (let i = 0; i < items.length; i++) {

@@ -1,4 +1,5 @@
 import SlideGallery from "./slideAndGreeting/slideGallery";
+import DisplayComponent from "./productsComponents/displayComponent";
 import HomePagebody from "./components/homePageBody";
 import Brands from "./brands";
 import Greet from "./slideAndGreeting/greeting";
@@ -21,6 +22,19 @@ export default function App() {
         setItems(products.data);
       });
   }, []);
+
+  /*
+      <Header />
+      <Title />
+
+      <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
+      <BsSearch className="searchIcon" />
+      <SlideGallery />
+      <Greet />
+      <Brands />
+      <HomePageBody items={items} />
+  
+  */
 
   return (
     <div className={moveApp}>
