@@ -1,9 +1,12 @@
 import data from "../components/data";
-
+import SingleItem from "./displaySingleComponent";
 const DisplayComponent = () => {
-  console.log(data);
-
-  return <>hello</>;
+  return (
+    <>
+      <p>multiple compnnent </p>
+      <SingleItem />
+    </>
+  );
 };
 
 export default DisplayComponent;
