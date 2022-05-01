@@ -38,6 +38,16 @@ export default function App() {
 
   return (
     <div className={moveApp}>
+      <Header />
+      <Title />
+
+      <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
+      <BsSearch className="searchIcon" />
+      <SlideGallery />
+      <Greet />
+      <Brands />
+      <HomePageBody items={items} />
+
       <DisplayComponent />
     </div>
   );

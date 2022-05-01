@@ -8,7 +8,13 @@ const SingleItem = (props) => {
     category,
     shipping
   } = props;
-  return <>{name}</>;
+  return (
+    <div className="singleItemContainer">
+      <p>{name}</p>
+      <img src={image} />
+      <p>{price / 10}$</p>
+    </div>
+  );
 };
 
 export default SingleItem;

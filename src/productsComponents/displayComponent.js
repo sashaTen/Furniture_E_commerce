@@ -3,7 +3,8 @@ import SingleItem from "./displaySingleComponent";
 const DisplayComponent = () => {
   return (
     <>
-      <p></p>
+      <img src="https://apollotran.com/prestashop/leo_conosin/images/logo.png" />
+
       {data.map((item) => {
         return <SingleItem {...item} key={item.id} />;
       })}
