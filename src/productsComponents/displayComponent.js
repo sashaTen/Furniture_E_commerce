@@ -3,8 +3,10 @@ import SingleItem from "./displaySingleComponent";
 const DisplayComponent = () => {
   return (
     <>
-      <p>multiple compnnent </p>
-      <SingleItem />
+      <p></p>
+      {data.map((item) => {
+        return <SingleItem {...item} key={item.id} />;
+      })}
     </>
   );
 };
