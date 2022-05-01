@@ -290,6 +290,33 @@ BEST SELLING  COLLECTION.
   text-decoration: underline;
 }
 
+/*
+DISPLAY  COMPONENT 
+*/
+
+.productsContainer {
+  display: grid;
+  position: relative;
+  width: 60%;
+  left: 40%;
+  grid-template-columns: repeat(3, 1fr);
+}
+.itemImg {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.productsPage {
+  position: relative;
+}
+.filtersContainer {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
 /* HOVERING  AND OTHER   EFFECTS*/
 .marcosBtn:hover {
   color: red;

@@ -1,13 +1,18 @@
 import data from "../components/data";
 import SingleItem from "./displaySingleComponent";
 const DisplayComponent = () => {
+  let items = data;
+
   return (
     <>
-      <img src="https://apollotran.com/prestashop/leo_conosin/images/logo.png" />
-
-      {data.map((item) => {
-        return <SingleItem {...item} key={item.id} />;
-      })}
+      <section className="productsPage">
+        <div className="filtersContainer"></div>
+        <div className="productsContainer">
+          {items.map((item) => {
+            return <SingleItem {...item} key={item.id} />;
+          })}
+        </div>
+      </section>
     </>
   );
 };

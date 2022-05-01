@@ -11,8 +11,8 @@ const SingleItem = (props) => {
   return (
     <div className="singleItemContainer">
       <p>{name}</p>
-      <img src={image} />
-      <p>{price / 10}$</p>
+      <img className="itemImg" src={image} />
+      <p>{price / 100}$</p>
     </div>
   );
 };
