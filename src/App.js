@@ -1,3 +1,4 @@
+import Loading from "./components/loading";
 import SlideGallery from "./slideAndGreeting/slideGallery";
 import DisplayComponent from "./productsComponents/displayComponent";
 import HomePagebody from "./components/homePageBody";
@@ -38,7 +39,7 @@ export default function App() {
 
   return (
     <div className={moveApp}>
-      <DisplayComponent />
+      <Loading />
     </div>
   );
 }
