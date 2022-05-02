@@ -339,10 +339,10 @@ LOADING COMPONENT
   padding: 50px;
 }
 .loadingMovingSquare {
-  width: 170px;
+  width: 150px;
   height: 170px;
   background-color: transparent;
-  border: 15px solid rgb(220, 220, 220);
+  border: 95px solid rgb(220, 220, 220);
   position: absolute;
   animation-name: loadingMovingSquare;
   animation-duration: 2s;
