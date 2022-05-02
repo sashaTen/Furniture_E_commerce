@@ -5,7 +5,12 @@ import HomePagebody from "./components/homePageBody";
 import Brands from "./brands";
 import Greet from "./slideAndGreeting/greeting";
 import Title from "./title";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Routes
+} from "react-router-dom";
 import Menu from "./menu/menu";
 import "./styles.css";
 import Header from "./header";
@@ -39,7 +44,7 @@ export default function App() {
 
   return (
     <div className={moveApp}>
-      <Loading />
+      <DisplayComponent />
     </div>
   );
 }
