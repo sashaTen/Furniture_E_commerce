@@ -308,6 +308,7 @@ DISPLAY  COMPONENT
 }
 .productsPage {
   position: relative;
+  top: 80px;
 }
 .filtersContainer {
   width: 30%;
