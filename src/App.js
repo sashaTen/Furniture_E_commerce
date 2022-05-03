@@ -53,7 +53,13 @@ export default function App() {
       <BsSearch className="searchIcon" />
       <Router>
         <Routes>
-          <Route path="/" element={<HomePageBody items={items} />}></Route>
+          <Route path="/items" element={<DisplayComponent />} />
+          <Route path="/loading" element={<Loading />} />
+          <Route
+            exact
+            path="/"
+            element={<HomePageBody items={items} />}
+          ></Route>
         </Routes>
       </Router>
     </div>
