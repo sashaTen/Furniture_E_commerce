@@ -1,4 +1,6 @@
-//BsArrowRight
+import SlideGallery from "../slideAndGreeting/slideGallery"; //BsArrowRight
+import Greet from "../slideAndGreeting/greeting";
+import Brands from "../brands";
 import { BsArrowRight } from "react-icons/bs";
 import MarcosCollection from "./marcosCollection";
 import BestSelling from "./bestSelling";
@@ -13,6 +15,9 @@ const HomePageBody = (props) => {
 
   return (
     <>
+      <SlideGallery />
+      <Greet />
+      <Brands />
       <div className="homePagebodyContainer">
         <section className="collectionAnnouncement">
           <p className="orangeColor">Massey Collection 2021</p>

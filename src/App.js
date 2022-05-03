@@ -39,12 +39,23 @@ export default function App() {
       <Greet />
       <Brands />
       <HomePageBody items={items} />
+            <DisplayComponent />
+            <Loading/>
   
   */
 
   return (
     <div className={moveApp}>
-      <DisplayComponent />
+      <Header />
+      <Title />
+
+      <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
+      <BsSearch className="searchIcon" />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePageBody items={items} />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
