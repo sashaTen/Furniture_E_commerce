@@ -1,9 +1,5 @@
 import Loading from "./components/loading";
-import SlideGallery from "./slideAndGreeting/slideGallery";
 import DisplayComponent from "./productsComponents/displayComponent";
-import HomePagebody from "./components/homePageBody";
-import Brands from "./brands";
-import Greet from "./slideAndGreeting/greeting";
 import Title from "./title";
 import {
   BrowserRouter as Router,
@@ -21,6 +17,7 @@ import HomePageBody from "./components/homePageBody";
 export default function App() {
   const [items, setItems] = useState([]);
   const [moveApp, setMoveApp] = useState("App");
+  const [showLoading, setShowLoading] = useState(true);
   useEffect(() => {
     axios
       .get("https://course-api.com/react-store-products/")
@@ -29,6 +26,15 @@ export default function App() {
       });
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoading(false);
+    }, 1300);
+    return () => clearTimeout(timer);
+  }, []);
+  if (showLoading) {
+    return <Loading />;
+  }
   /*
       <Header />
       <Title />
