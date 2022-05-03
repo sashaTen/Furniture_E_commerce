@@ -473,6 +473,9 @@ LOADING COMPONENT
     position: relative;
     right: 90px;
   }
+  .GreetBtn:hover {
+    color: orange;
+  }
   /*billboard*/
   .imgContainer {
     display: none;

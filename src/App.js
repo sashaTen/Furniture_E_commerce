@@ -46,12 +46,12 @@ export default function App() {
 
   return (
     <div className={moveApp}>
-      <Header />
-      <Title />
-
-      <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
-      <BsSearch className="searchIcon" />
       <Router>
+        <Header />
+        <Title />
+
+        <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
+        <BsSearch className="searchIcon" />
         <Routes>
           <Route path="/items" element={<DisplayComponent />} />
           <Route path="/loading" element={<Loading />} />

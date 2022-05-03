@@ -1,4 +1,5 @@
 import { BsFillCaretDownFill, BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import Category from "./category";
 import Company from "./company";
@@ -26,9 +27,12 @@ const Menu = (props) => {
           {" "}
           X{" "}
         </div>
-        <div className="btn">
-          Home <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </div>
+        <Link to="/">
+          {" "}
+          <div className="btn">
+            Home <BsFillCaretDownFill className="BsFillDown" />{" "}
+          </div>
+        </Link>
 
         <div className="btn">
           Company

@@ -1,4 +1,4 @@
-//BsFillStarFill
+import { Link } from "react-router-dom"; //BsFillStarFill
 import { BsFillStarFill } from "react-icons/bs";
 
 const Greet = () => {
@@ -10,8 +10,9 @@ const Greet = () => {
         className="newSeason"
         src="https://k4j3j2s7.rocketcdn.me/furnob/wp-content/uploads/2022/01/season-text.png"
       />
-
-      <button className="GreetBtn">Shop Colletion</button>
+      <Link to="/items">
+        <button className="GreetBtn">Shop Colletion</button>
+      </Link>
     </div>
   );
 };
