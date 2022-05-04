@@ -307,8 +307,7 @@ DISPLAY  COMPONENT
   object-fit: cover;
 }
 .productsPage {
-  position: relative;
-  top: 80px;
+   margin-top: 80px;
 }
 .filtersContainer {
   width: 30%;
