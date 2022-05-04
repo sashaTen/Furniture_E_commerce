@@ -25,7 +25,10 @@
   height: 50px;
   margin-left: 5%;
   border-bottom: black 1px solid;
-  position: relative;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  top: 0%;
 }
 .newsDiscount {
   color: grey;
@@ -307,7 +310,7 @@ DISPLAY  COMPONENT
   object-fit: cover;
 }
 .productsPage {
-   margin-top: 80px;
+  margin-top: 80px;
 }
 .filtersContainer {
   width: 30%;
