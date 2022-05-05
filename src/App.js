@@ -8,6 +8,7 @@ import {
   Routes
 } from "react-router-dom";
 import Menu from "./menu/menu";
+import About from "./components/about";
 import "./styles.css";
 import Header from "./components/header";
 import { BsSearch } from "react-icons/bs";
@@ -67,6 +68,7 @@ export default function App() {
             element={<HomePageBody items={items} />}
           ></Route>
         </Routes>
+        <About />
       </Router>
     </div>
   );
