@@ -29,7 +29,12 @@ const Menu = (props) => {
         </div>
         <Link to="/">
           {" "}
-          <div className="btn">
+          <div
+            className="btn"
+            onClick={() => {
+              props.changeClass("App");
+            }}
+          >
             Home <BsFillCaretDownFill className="BsFillDown" />{" "}
           </div>
         </Link>
