@@ -114,13 +114,16 @@ GREETINGS  COMPONENT STYLING
   width: 200px;
 }
 .GreetBtn {
-  font-size: 1rem;
+  font-size: 1.3rem;
   background-color: white;
   position: relative;
   top: 30px;
   right: 150px;
 
   border: 1px solid black;
+}
+.GreetBtn:hover {
+  color: orange;
 }
 .pTagUnderGreet {
   width: 400px;
