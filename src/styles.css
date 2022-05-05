@@ -316,8 +316,9 @@ DISPLAY  COMPONENT
   width: 30%;
   height: 100vh;
   position: absolute;
-  top: 0%;
-  left: 0%;
+  background-color: green;
+  top: 30%;
+  left: 10%;
 }
 /*
 SINGLE  PRODUCT  
