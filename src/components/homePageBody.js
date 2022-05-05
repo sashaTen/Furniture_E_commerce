@@ -1,6 +1,6 @@
 import SlideGallery from "../slideAndGreeting/slideGallery"; //BsArrowRight
 import Greet from "../slideAndGreeting/greeting";
-import Brands from "../brands";
+import Brands from "./brands";
 import { BsArrowRight } from "react-icons/bs";
 import MarcosCollection from "./marcosCollection";
 import BestSelling from "./bestSelling";
