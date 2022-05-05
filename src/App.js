@@ -40,7 +40,7 @@ export default function App() {
       <Title />
 
       <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
-      <BsSearch className="searchIcon" />
+    
       <SlideGallery />
       <Greet />
       <Brands />
@@ -57,7 +57,7 @@ export default function App() {
         <Title />
 
         <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
-        <BsSearch className="searchIcon" />
+
         <Routes>
           <Route path="/items" element={<DisplayComponent />} />
           <Route path="/loading" element={<Loading />} />

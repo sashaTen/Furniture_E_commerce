@@ -94,12 +94,6 @@ li {
   font-size: 1.5rem;
 }
 
-.searchIcon {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 15%;
-  top: 20%;
-}
 /*  
 GREETINGS  COMPONENT STYLING
 */
@@ -456,10 +450,7 @@ LOADING COMPONENT
     display: block;
     position: absolute;
   }
-  .searchIcon {
-    top: 23%;
-    right: 2%;
-  }
+
   /*
   GREETINGS
   */
