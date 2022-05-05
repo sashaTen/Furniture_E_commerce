@@ -35,7 +35,7 @@ const Menu = (props) => {
               props.changeClass("App");
             }}
           >
-            Home <BsFillCaretDownFill className="BsFillDown" />{" "}
+            Home{" "}
           </div>
         </Link>
 
@@ -59,12 +59,8 @@ const Menu = (props) => {
           />{" "}
           {showCategory && <Category items={items} />}
         </div>
-        <div className="btn">
-          About Us <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </div>
-        <div className="btn">
-          Blog <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </div>
+        <div className="btn">About Us </div>
+        <div className="btn">Blog</div>
         <div className="btn">
           Contact <BsFillCaretDownFill className="BsFillDown" />{" "}
         </div>
