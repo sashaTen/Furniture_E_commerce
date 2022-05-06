@@ -2,6 +2,7 @@ import Loading from "./components/loading";
 import DisplayComponent from "./productsComponents/displayComponent";
 import Title from "./title";
 import Contacts from "./components/contacts";
+import ItemDesc from "./productsComponents/singleItemDescription";
 import {
   BrowserRouter as Router,
   Route,
@@ -65,6 +66,7 @@ export default function App() {
           <Route path="/items" element={<DisplayComponent />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/loading" element={<Loading />} />
+          <Route path="/itemDesc" element={<ItemDesc />} />
           <Route
             exact
             path="/"

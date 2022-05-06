@@ -1,4 +1,5 @@
 import { BsFillHeartFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 const SingleItem = (props) => {
   const {
     name,
@@ -18,7 +19,11 @@ const SingleItem = (props) => {
       <img className="itemImg" src={image} />
       <div className="whiteBottomImg"></div>
       <article className="btnContainer">
-        <button className="itemDetailBtn">details</button>
+        <Link to="/itemDesc">
+          {" "}
+          <button className="itemDetailBtn">details</button>
+        </Link>
+
         <button className="addToCartBtn">add to cart</button>
       </article>
     </div>
