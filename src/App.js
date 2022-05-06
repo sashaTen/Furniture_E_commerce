@@ -31,7 +31,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
-    }, 1300);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
   if (showLoading) {
