@@ -61,9 +61,7 @@ const Menu = (props) => {
 
         <div className="btn">About Us </div>
         <div className="btn">Blog</div>
-        <div className="btn">
-          Contact <BsFillCaretDownFill className="BsFillDown" />{" "}
-        </div>
+        <div className="btn">Contact</div>
       </section>
     </>
   );
