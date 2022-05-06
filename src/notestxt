@@ -70,7 +70,7 @@ what   i gotta do   ?   :
           1 single Product component
           2  all  items  component   make  it fetch data for  filetring from
           the url link 
-          3  add loading  cart  component to all components
+         
           4  pass  the filetring data into links of categries 
           5  close category  or close company  after  click of list item
           6 contact 

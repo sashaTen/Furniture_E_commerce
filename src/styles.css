@@ -451,6 +451,38 @@ ABOUT
   font-size: 0.8rem;
   color: rgb(109, 106, 106);
 }
+/*
+CONTACT 
+CONTACT  
+CONTACT
+*/
+.contactContainer{
+  margin-top:40px;
+  width:80%;
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+  position: relative;
+  left: 22%;
+}
+.contactIconContainer{
+  border-bottom: grey 1px solid;
+  width:  250px;
+  height: auto;
+  margin-top:10px;
+  position: relative;
+
+}
+.contactIconContainer>img{
+  width:250px;
+  height: 250px;
+  object-fit: cover;
+}
+.contactIconContainer>p:hover{
+  color: orange;
+  text-decoration: underline;
+  height: auto;
+}
+
 /* HOVERING  AND OTHER   EFFECTS*/
 .marcosBtn:hover {
   color: red;
@@ -703,6 +735,20 @@ SINGLE  PRODUCT
     width: 90%;
     top: 55%;
     left: 2%;
+  }
+  /*
+  CONTACT
+  CONTACT
+
+  */
+  .contactContainer{
+    grid-template-columns: 1fr;
+    width:70%;
+    left:15%;
+  }
+  .contactIconContainer{
+    margin-top:10px;
+    padding-top:10px;
   }
 }
 
