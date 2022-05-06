@@ -399,6 +399,58 @@ LOADING COMPONENT
   animation-iteration-count: infinite;
 }
 
+/*
+
+ABOUT 
+ABOUT
+ABOUT
+*/
+.aboutContainer {
+  margin-top: 40px;
+  height: 100vh;
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+}
+.aboutOrangaContainer {
+  position: absolute;
+  background-color: orange;
+  width: 20%;
+  height: 60vh;
+  top: 16%;
+  left: 46%;
+}
+.aboutImg {
+  width: 40%;
+  height: 60%;
+  object-fit: cover;
+  position: absolute;
+}
+.aboutImg2 {
+  width: 20%;
+  height: 25%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 25%;
+  left: 44%;
+}
+.aboutSection {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 30%;
+  height: 40%;
+  border: 5px #e4d5b7 solid;
+  background-color: #faf0e6;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  padding: 5px;
+}
+.aboutDescription {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: rgb(109, 106, 106);
+}
 /* HOVERING  AND OTHER   EFFECTS*/
 .marcosBtn:hover {
   color: red;
@@ -408,6 +460,18 @@ LOADING COMPONENT
   color: red;
 }
 
+/*
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+MEDIA  QUERIES 
+*/
 @media only screen and (max-width: 500px) {
   .settingsBtn {
     display: none;
@@ -563,33 +627,6 @@ LOADING COMPONENT
     justify-content: center;
     right: 31px;
   }
-  /*.
-  
-.marcosContainer {
-  margin-top: 80px;
-  border-top: 1px solid grey;
-  padding-top: 50px;
-}
-.marcosGreeting {
-  display: flex;
-  justify-content: space-around;
-}
-.marcosProductsContainer {
-  display: grid;
-  width:100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 80px;
-  position: relative;
-  right: 10%;
-}
-.collectionImg{
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  
-}
-  
-  */
 
   .productsContainer {
     width: 60%;
@@ -643,6 +680,29 @@ SINGLE  PRODUCT
   .itemHeart {
     top: 26%;
     right: 1%;
+  }
+
+  /*
+  ABOUT 
+  ABOUT
+  ABOUT
+  */
+  .aboutImg {
+    width: 100%;
+    height: 60vh;
+    top: 15%;
+    left: 0%;
+  }
+  .aboutImg2 {
+    display: none;
+  }
+  .aboutOrangaContainer {
+    display: none;
+  }
+  .aboutSection {
+    width: 90%;
+    top: 55%;
+    left: 5%;
   }
 }
 
