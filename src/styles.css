@@ -749,7 +749,7 @@ SINGLE  PRODUCT
   .contactContainer {
     grid-template-columns: 1fr;
     width: 70%;
-    left: 15%;
+    left: 19%;
   }
   .contactIconContainer {
     margin-top: 10px;
