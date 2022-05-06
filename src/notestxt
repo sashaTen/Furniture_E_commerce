@@ -77,6 +77,12 @@ what   i gotta do   ?   :
           7  blog  component
 
 
+           onClick={()=>{
+            window.scrollTo({top: 0, behavior: 'smooth'});
+          }} 
+          add this  function  all  over  the place 
+
+
 
 
 
