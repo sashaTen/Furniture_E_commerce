@@ -1,6 +1,17 @@
 import create from "zustand";
-
+import Loading from "../components/loading";
+import { useState, useEffect } from "react";
 const About = () => {
+  const [showLoading, setShowLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoading(false);
+    }, 1300);
+    return () => clearTimeout(timer);
+  }, []);
+  if (showLoading) {
+    return <Loading />;
+  }
   const imgUrls = [
     "https://react-course-comfy-sloth-store.netlify.app/static/media/hero-bcg.a876f19f.jpeg",
     "https://react-course-comfy-sloth-store.netlify.app/static/media/hero-bcg-2.78991864.jpeg"

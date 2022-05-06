@@ -60,6 +60,7 @@ export default function App() {
         <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
 
         <Routes>
+          <Route path="/about" element={<About />} />
           <Route path="/items" element={<DisplayComponent />} />
           <Route path="/loading" element={<Loading />} />
           <Route
@@ -68,7 +69,6 @@ export default function App() {
             element={<HomePageBody items={items} />}
           ></Route>
         </Routes>
-        <About />
       </Router>
     </div>
   );

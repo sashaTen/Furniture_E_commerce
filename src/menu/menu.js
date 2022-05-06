@@ -58,8 +58,17 @@ const Menu = (props) => {
           />{" "}
           {showCompany && <Company items={items} />}
         </div>
+        <Link to="/about">
+          <div
+            onClick={() => {
+              props.changeClass("App");
+            }}
+            className="btn"
+          >
+            About Us{" "}
+          </div>
+        </Link>
 
-        <div className="btn">About Us </div>
         <div className="btn">Blog</div>
         <div className="btn">Contact</div>
       </section>
