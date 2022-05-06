@@ -1,5 +1,7 @@
-import SlideGallery from "../slideAndGreeting/slideGallery"; //BsArrowRight
+import SlideGallery from "../slideAndGreeting/slideGallery";
+import { useState, useEffect } from "react"; //BsArrowRight
 import Greet from "../slideAndGreeting/greeting";
+import Loading from "./loading";
 import Brands from "./brands";
 import { BsArrowRight } from "react-icons/bs";
 import MarcosCollection from "./marcosCollection";
@@ -12,6 +14,17 @@ const HomePageBody = (props) => {
     "https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1651055573&userId=usrQMwWEPx18KgLcP&cs=27d5098576ec5938";
   const imgUrl3 =
     "https://dl.airtable.com/.attachmentThumbnails/e3fa7aa6dc112c4998da18bb401bd70f/61e2fb5e?ts=1651055573&userId=usrQMwWEPx18KgLcP&cs=8b1787f55cd7d1db";
+
+  const [showLoading, setShowLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoading(false);
+    }, 1300);
+    return () => clearTimeout(timer);
+  }, []);
+  if (showLoading) {
+    return <Loading />;
+  }
 
   return (
     <>

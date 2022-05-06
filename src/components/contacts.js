@@ -11,6 +11,7 @@ const Contacts = () => {
   if (showLoading) {
     return <Loading />;
   }
+
   return <>contacts</>;
 };
 
