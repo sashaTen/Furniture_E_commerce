@@ -69,8 +69,16 @@ const Menu = (props) => {
           </div>
         </Link>
 
-        <div className="btn">Blog</div>
-        <div className="btn">Contact</div>
+        <Link to="/contacts">
+          <div
+            onClick={() => {
+              props.changeClass("App");
+            }}
+            className="btn"
+          >
+            Contacts
+          </div>
+        </Link>
       </section>
     </>
   );

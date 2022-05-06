@@ -1,6 +1,7 @@
 import Loading from "./components/loading";
 import DisplayComponent from "./productsComponents/displayComponent";
 import Title from "./title";
+import Contacts from "./components/contacts";
 import {
   BrowserRouter as Router,
   Route,
@@ -62,6 +63,7 @@ export default function App() {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/items" element={<DisplayComponent />} />
+          <Route path="/contacts" element={<Contacts />} />
           <Route path="/loading" element={<Loading />} />
           <Route
             exact
