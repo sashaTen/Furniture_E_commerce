@@ -1,3 +1,5 @@
+import create from "zustand";
+
 const About = () => {
   const imgUrls = [
     "https://react-course-comfy-sloth-store.netlify.app/static/media/hero-bcg.a876f19f.jpeg",

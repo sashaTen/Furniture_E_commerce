@@ -38,17 +38,6 @@ const Menu = (props) => {
             Home{" "}
           </div>
         </Link>
-
-        <div className="btn">
-          Company
-          <BsFillCaretDownFill
-            className="BsFillDown"
-            onClick={() => {
-              setShowCompany(!showCompany);
-            }}
-          />{" "}
-          {showCompany && <Company items={items} />}
-        </div>
         <div className="btn">
           Category
           <BsFillCaretDownFill
@@ -59,6 +48,17 @@ const Menu = (props) => {
           />{" "}
           {showCategory && <Category items={items} />}
         </div>
+        <div className="btn">
+          Company
+          <BsFillCaretDownFill
+            className="BsFillDown"
+            onClick={() => {
+              setShowCompany(!showCompany);
+            }}
+          />{" "}
+          {showCompany && <Company items={items} />}
+        </div>
+
         <div className="btn">About Us </div>
         <div className="btn">Blog</div>
         <div className="btn">

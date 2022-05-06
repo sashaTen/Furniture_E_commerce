@@ -39,71 +39,45 @@ useEffect(() => {
 
 ///////////////https://scrimba.com/learn/react    here   is  the roadmap for  react
 
-
-
-/////  what   i  learned  today  router
-                                    and  decomposition
-//// how to steal  imgs  from  other  sites 
-
-
-
-////////////////////////////
-/
-
-finish   later  the countdown to  the  speciific date
+////////////
+STUDY PLAN  FOR   TODAY :   
+////////////
 
 
 
-
-///////////////////////////////////////////TUTOROALS : 
-***********children : 
-              why   ? 
-              for example  you need to  put htmmml 
-               or eveen  the whole  project
-               in the child component from  outside 
-               like  something specific:
-*************SPREAD OPERATOR 
-you can pass props in  a more  efficient way   :  
-   <Parent {...object/array  wahtever}/>
+1   Local state
+Global state
+Server state
+URL state
 
 
+ React Queryv   -  server  state
 
-*******************events  check the doc   
-sometimes  you can  do inline  function declaration
-and  somtimes you shold declare and  call it in jsx
-******************* conditional  rendering 
+ URL state – Data that exists on our URLs, including the pathname and query parameters.
+ Context API
 
-u need it  when you  want to displau something like 
-loading page before  fetching  finish
+
+ Zustand   vs   usecontext  
+ try  them  both   and then choose  which  one is  better 
+
+
+ next  :   1 find   where  you ll  need the  global state 
+           2  how to pass data  with  link   
 
 
 
-***************ternary  operatir   : 
-||   =   the true one is gonna be rendered
-&&    =   if true the second  arg is gonna be rendered
-
-
-
-/*********************** FORMS AND  INPUTS
-
-onclick event  and  function e.preventDefault
-you approach object of  the event
-
-and the submit where  object is passed automatically
-in order  to change of state   pass the onChange
+what   i gotta do   ?   :
+          1 single Product component
+          2  all  items  component   make  it fetch data for  filetring from
+          the url link 
+          3  add loading  cart  component to all components
+          4  pass  the filetring data into links of categries 
+          5  close category  or close company  after  click of list item
 
 
 
 
 
----------------useref
-
-mostly it is used for  targeting the dom element
 
 
-************usereduser
 
-is used to structure the state  if its complex
-----------  context  api  use it avoid prop drilling
-
-***********router  
