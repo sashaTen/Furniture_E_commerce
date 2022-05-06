@@ -1,10 +1,10 @@
 import {
   BsFillCaretDownFill,
   BsFillCartFill,
-  BsFillPersonFill,
-  BsSearch
+  BsFillPersonFill
 } from "react-icons/bs";
-import { AiOutlineMenu, AiFillSetting } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { AiFillHome, AiFillSetting } from "react-icons/ai";
 const Header = () => {
   return (
     <>
@@ -34,6 +34,9 @@ const Header = () => {
           </ul>
           <BsFillCartFill className="cart_icon" />
         </div>
+        <Link to="/">
+          <AiFillHome className="AiFillHome" />
+        </Link>
       </header>
     </>
   );

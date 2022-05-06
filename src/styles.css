@@ -39,6 +39,12 @@
   position: absolute;
   right: 10%;
 }
+.AiFillHome {
+  position: absolute;
+  top: 40%;
+  right: 45%;
+  font-size: 1rem;
+}
 .cart_icon {
   border: 2px solid black;
   padding: 5px;
@@ -456,28 +462,27 @@ CONTACT
 CONTACT  
 CONTACT
 */
-.contactContainer{
-  margin-top:40px;
-  width:80%;
+.contactContainer {
+  margin-top: 40px;
+  width: 80%;
   display: grid;
-  grid-template-columns:1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   position: relative;
   left: 22%;
 }
-.contactIconContainer{
+.contactIconContainer {
   border-bottom: grey 1px solid;
-  width:  250px;
+  width: 250px;
   height: auto;
-  margin-top:10px;
+  margin-top: 10px;
   position: relative;
-
 }
-.contactIconContainer>img{
-  width:250px;
+.contactIconContainer > img {
+  width: 250px;
   height: 250px;
   object-fit: cover;
 }
-.contactIconContainer>p:hover{
+.contactIconContainer > p:hover {
   color: orange;
   text-decoration: underline;
   height: auto;
@@ -741,14 +746,14 @@ SINGLE  PRODUCT
   CONTACT
 
   */
-  .contactContainer{
+  .contactContainer {
     grid-template-columns: 1fr;
-    width:70%;
-    left:15%;
+    width: 70%;
+    left: 15%;
   }
-  .contactIconContainer{
-    margin-top:10px;
-    padding-top:10px;
+  .contactIconContainer {
+    margin-top: 10px;
+    padding-top: 10px;
   }
 }
 
