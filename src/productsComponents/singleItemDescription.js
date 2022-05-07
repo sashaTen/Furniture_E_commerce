@@ -31,9 +31,9 @@ const ItemDesc = () => {
     <div>
       <Link to="/items">back</Link>
       <section className="specificItemContainer">
-        <img className="specificItemImg" src={data[0].image} />
+        <img className="specificItemImg" src={itemObject.image} />
         <div className="specificItemInfo">
-          <h3>{data[0].name}</h3>
+          <h3>{itemObject.name}</h3>
           <div className="starIcon">
             <BsFillStarFill />
             <BsFillStarFill />
@@ -41,8 +41,8 @@ const ItemDesc = () => {
             <BsFillStarFill />
             <BsFillStarFill />
           </div>
-          <p style={{ color: "red" }}>{data[0].price / 100}$</p>
-          <p className="specificItemDesc">{data[0].description}</p>
+          <p style={{ color: "red" }}>{itemObject.price / 100}$</p>
+          <p className="specificItemDesc">{itemObject.description}</p>
           <h4 className="specificItemCartBtn">add to cart</h4>
         </div>
       </section>
