@@ -123,6 +123,7 @@ GREETINGS  COMPONENT STYLING
   border: 1px solid black;
 }
 .GreetBtn:hover {
+  background-color: black;
   color: orange;
 }
 .pTagUnderGreet {
