@@ -2,6 +2,7 @@ import { BsFillHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const SingleItem = (props) => {
   const {
+    id,
     name,
     description,
     image,
@@ -10,6 +11,7 @@ const SingleItem = (props) => {
     category,
     shipping
   } = props;
+  const itemId = id;
   return (
     <div className="singleItemContainer">
       <p className="itemTitle">{name}</p>
@@ -19,7 +21,7 @@ const SingleItem = (props) => {
       <img className="itemImg" src={image} />
       <div className="whiteBottomImg"></div>
       <article className="btnContainer">
-        <Link to="/itemDesc">
+        <Link to="/itemDesc" state={itemId}>
           {" "}
           <button className="itemDetailBtn">details</button>
         </Link>
