@@ -489,6 +489,44 @@ CONTACT
   height: auto;
 }
 
+/*
+specificItem
+specificItem
+specificItem
+*/
+
+.specificItemContainer {
+  margin-top: 80px;
+  display: flex;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  justify-content: space-between;
+  text-align: center;
+}
+.specificItemImg {
+  width: 50%;
+  margin-right: 100px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.specificItemInfo {
+  text-align: center;
+}
+.specificItemDesc {
+  font-size: 0.9rem;
+  color: grey;
+}
+.starIcon {
+  color: #d9b650;
+}
+.specificItemCartBtn {
+  color: orange;
+  text-decoration: underline;
+}
+.specificItemCartBtn:hover {
+  color: black;
+  text-decoration: none;
+}
 /* HOVERING  AND OTHER   EFFECTS*/
 .marcosBtn:hover {
   color: red;
@@ -755,6 +793,12 @@ SINGLE  PRODUCT
   .contactIconContainer {
     margin-top: 10px;
     padding-top: 10px;
+  }
+  .specificItemContainer {
+    flex-direction: column;
+  }
+  .specificItemImg {
+    width: 100%;
   }
 }
 

@@ -1,4 +1,4 @@
-import { BsFillCaretDownFill, BsSearch } from "react-icons/bs";
+import { BsFillCaretDownFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import Category from "./category";
