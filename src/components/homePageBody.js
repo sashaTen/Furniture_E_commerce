@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SlideGallery from "../slideAndGreeting/slideGallery";
 import { useState, useEffect } from "react"; //BsArrowRight
 import Greet from "../slideAndGreeting/greeting";
@@ -49,26 +50,32 @@ const HomePageBody = (props) => {
         <section className="img1Container">
           <img className="homePageImg" src={imgUrl1} />
           <h3>Deluxe Venezie Collection</h3>
-          <p className="shopBtn">
-            {" "}
-            shop collection <BsArrowRight />{" "}
-          </p>
+          <Link to="/items">
+            <p className="shopBtn">
+              {" "}
+              shop collection <BsArrowRight />{" "}
+            </p>
+          </Link>
         </section>
         <section className="img2Container">
           <img src={imgUrl2} className="homePageImg" />
           <h3>Great Design For Home and Decoration.</h3>
-          <p className="shopBtn">
-            {" "}
-            shop collection <BsArrowRight />{" "}
-          </p>
+          <Link to="/items">
+            <p className="shopBtn">
+              {" "}
+              shop collection <BsArrowRight />{" "}
+            </p>
+          </Link>
         </section>
         <section className="img3Container">
           <img src={imgUrl3} className="homePageImg" />
           <h3>Le’Bologna Collection</h3>
-          <p className="shopBtn">
-            {" "}
-            shop collection <BsArrowRight />{" "}
-          </p>
+          <Link to="/items">
+            <p className="shopBtn">
+              {" "}
+              shop collection <BsArrowRight />{" "}
+            </p>
+          </Link>
         </section>
       </div>
       <MarcosCollection items={items} />
