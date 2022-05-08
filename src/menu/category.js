@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Category = (props) => {
   const items = props.items;
   let categories = [];
@@ -10,8 +11,15 @@ const Category = (props) => {
 
   return (
     <div className="categoryContainer">
-      {uniqueCategories.map((item, index) => {
-        return <p key={item}>{item}</p>;
+      {uniqueCategories.map((item) => {
+        return (
+          <p key={item}>
+            <Link to="/items" state={item}>
+              {" "}
+              {item}
+            </Link>
+          </p>
+        );
       })}
     </div>
   );

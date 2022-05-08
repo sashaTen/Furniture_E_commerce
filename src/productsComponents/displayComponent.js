@@ -5,18 +5,22 @@ import Loading from "../components/loading";
 import { useLocation } from "react-router-dom";
 
 const DisplayComponent = () => {
-  const [items, setItems] = useState([]);
   const location = useLocation();
   const state = location.state;
-  useEffect(() => {
-    if (state) {
-      console.log(state);
-    } else if (!state) {
-      setItems(data);
-    }
-  }, []);
+  let list = [];
 
-  console.log(state);
+  if (state) {
+    console.log(state);
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].category === state) {
+        list.push(data[i]);
+      }
+    }
+  } else if (!state) {
+    for (let i = 0; i < data.length; i++) {
+      list = data;
+    }
+  }
 
   const [showLoading, setShowLoading] = useState(true);
   useEffect(() => {
@@ -33,7 +37,7 @@ const DisplayComponent = () => {
       <section className="productsPage">
         <div className="filtersContainer"></div>
         <div className="productsContainer">
-          {items.map((item) => {
+          {list.map((item) => {
             return <SingleItem {...item} key={item.id} />;
           })}
         </div>
