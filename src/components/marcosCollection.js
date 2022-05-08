@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BsCircle } from "react-icons/bs";
 import { useState, useEffect } from "react";
 const MarcosCollection = (props) => {
@@ -16,9 +17,11 @@ const MarcosCollection = (props) => {
       <section className="marcosGreeting">
         <h3>
           {" "}
-          new design from <span className="marcosFont">
-            marcos
-          </span> collection{" "}
+          new design from
+          <Link to="/items">
+            <span className="marcosFont">marcos</span>
+          </Link>
+          collection{" "}
         </h3>
         <p className="greyColor">
           Visit our shop to see amazing creations from our designers.

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BsCircle } from "react-icons/bs";
 import { useState } from "react";
 import data from "./data";
@@ -14,9 +15,10 @@ const BestSelling = () => {
       <section className="marcosGreeting">
         <h3>
           {" "}
-          best items in our <span className="BestSellFont">
-            best selling
-          </span>{" "}
+          best items in our
+          <Link to="/items">
+            <span className="BestSellFont">best selling</span>{" "}
+          </Link>
           collection{" "}
         </h3>
       </section>
@@ -24,8 +26,10 @@ const BestSelling = () => {
         {macrosList.map((item) => {
           return (
             <div className="singleMacrosItem" key={item.id}>
-              <p>{item.name}</p>
-              <img className="collectionImg" src={item.image} />
+              <Link to="/items">
+                <p>{item.name}</p>
+                <img className="collectionImg" src={item.image} />
+              </Link>
             </div>
           );
         })}
