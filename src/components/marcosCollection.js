@@ -31,8 +31,10 @@ const MarcosCollection = (props) => {
         {macrosList.map((item) => {
           return (
             <div className="singleMacrosItem" key={item.id}>
-              <p>{item.name}</p>
-              <img className="collectionImg" src={item.image} />
+              <Link to="itemDesc" state={item.id}>
+                <p>{item.name}</p>
+                <img className="collectionImg" src={item.image} />
+              </Link>
             </div>
           );
         })}
