@@ -10,15 +10,20 @@ const DisplayComponent = () => {
   let list = [];
 
   if (state) {
-    console.log(state);
     for (let i = 0; i < data.length; i++) {
       if (data[i].category === state) {
         list.push(data[i]);
+      } else if (list.length === 0) {
+        for (let i = 0; i < data.length; i++) {
+          if (data[i].company === state) {
+            list.push(data[i]);
+          }
+        }
       }
     }
   } else if (!state) {
     for (let i = 0; i < data.length; i++) {
-      list = data;
+      list.push(data[i]);
     }
   }
 

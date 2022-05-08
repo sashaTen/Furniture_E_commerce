@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Company = (props) => {
   const items = props.items;
   let companies = [];
@@ -11,7 +12,13 @@ const Company = (props) => {
   return (
     <div>
       {uniqueCompanies.map((item, index) => {
-        return <div key={index}>{item}</div>;
+        return (
+          <div key={index}>
+            <Link to="/items" state={item}>
+              {item}
+            </Link>
+          </div>
+        );
       })}
     </div>
   );
