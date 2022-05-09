@@ -1,15 +1,9 @@
 import Loading from "./components/loading";
-import { cartContext } from "./CartContext";
 import DisplayComponent from "./productsComponents/displayComponent";
 import Title from "./title";
 import Contacts from "./components/contacts";
 import ItemDesc from "./productsComponents/singleItemDescription";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Menu from "./menu/menu";
 import About from "./components/about";
 import "./styles.css";
