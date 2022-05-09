@@ -1,4 +1,5 @@
 import Loading from "./components/loading";
+import { cartContext } from "./CartContext";
 import DisplayComponent from "./productsComponents/displayComponent";
 import Title from "./title";
 import Contacts from "./components/contacts";

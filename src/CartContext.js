@@ -1,2 +1,2 @@
 import { createContext } from "react";
-export const carContext = createContext(null);
+export const cartContext = createContext(null);
