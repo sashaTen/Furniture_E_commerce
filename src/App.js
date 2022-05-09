@@ -54,7 +54,7 @@ export default function App() {
       <Router>
         <Header />
         <Title />
-        <moveAppContext.Provider>
+        <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
           <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
         </moveAppContext.Provider>
 
