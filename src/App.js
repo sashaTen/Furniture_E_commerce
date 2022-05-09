@@ -12,6 +12,7 @@ import { BsSearch } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import HomePageBody from "./components/homePageBody";
+import { moveAppContext } from "./context";
 export default function App() {
   const [items, setItems] = useState([]);
   const [moveApp, setMoveApp] = useState("App");
@@ -53,8 +54,9 @@ export default function App() {
       <Router>
         <Header />
         <Title />
-
-        <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
+        <moveAppContext.Provider>
+          <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
+        </moveAppContext.Provider>
 
         <Routes>
           <Route path="/about" element={<About />} />

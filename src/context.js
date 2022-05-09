@@ -1,2 +1,2 @@
 import { createContext } from "react";
-export const moveappContext = createContext(null);
+export const moveAppContext = createContext(null);
