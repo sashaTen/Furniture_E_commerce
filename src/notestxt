@@ -136,5 +136,46 @@ export default Component5;
 
 
 
+///////////////////// context.js
+
+
+import { createContext } from "react";
+export const moveAppContext = createContext(null);
+
+
+///////////////////      App  : 
+
+import { moveAppContext } from "./context";
+
+ const [moveApp, setMoveApp] = useState("App");
+
+
+    <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
+          <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
+     </moveAppContext.Provider>
+
+
+///////////////           category
+
+
+import { useContext } from "react";
+import { moveAppContext } from "../context";
+const { moveApp, setMoveApp } = useContext(moveAppContext);
+
+return   :   
+
+ <p
+            onClick={() => {
+              setMoveApp("App");
+            }}
+            key={item}
+          >
+            <Link to="/items" state={item}>
+              {" "}
+              {item}
+            </Link>
+          </p>
+
+
 
 
