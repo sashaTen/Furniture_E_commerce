@@ -245,6 +245,7 @@ MARCOS  COLLECTION
   margin-top: 80px;
   border-top: 1px solid grey;
   padding-top: 50px;
+  margin-bottom: 50px;
 }
 .marcosGreeting {
   display: flex;
@@ -528,6 +529,74 @@ specificItem
   color: black;
   text-decoration: none;
 }
+/*   
+CART
+CART
+CART
+*/
+.cartComponent {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  justify-items: center;
+}
+.cartContainer {
+  margin-top: 5px;
+  display: grid;
+  width: 70%;
+  gap: 10px;
+}
+.cartItemContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 1px grey solid;
+  padding-bottom: 10px;
+}
+.cartImg {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+.cartPlusMinus {
+  display: flex;
+  flex-direction: column;
+}
+.cartBtn,
+.cartBtnPlus,
+.cartBtnMinus {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: white;
+  font-weight: bold;
+}
+.cartBtnPlus {
+  top: 10px;
+}
+.cartBtnMinus {
+  bottom: 10px;
+}
+.cartBtn:hover {
+  background: orange;
+}
+.cartBuyBtn {
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  color: lightblue;
+  border: lightblue 1px solid;
+  font-size: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.cartBuyBtn:hover {
+  border: black 2px solid;
+  background-color: orange;
+  color: black;
+}
 /* HOVERING  AND OTHER   EFFECTS*/
 .marcosBtn:hover {
   color: red;
@@ -800,6 +869,15 @@ SINGLE  PRODUCT
   }
   .specificItemImg {
     width: 100%;
+  }
+  /*
+CART 
+CART
+CART
+  */
+  .cartImg {
+    width: 100px;
+    height: 80px;
   }
 }
 
