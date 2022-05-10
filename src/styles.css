@@ -578,7 +578,9 @@ CART
 .cartBtnMinus {
   bottom: 10px;
 }
-.cartBtn:hover {
+.cartBtn:hover,
+.cartBtnMinus:hover,
+.cartBtnPlus:hover {
   background: orange;
 }
 .cartBuyBtn {
