@@ -32,7 +32,9 @@ const Header = () => {
               <BsFillCaretDownFill />
             </li>
           </ul>
-          <BsFillCartFill className="cart_icon" />
+          <Link to="/cart">
+            <BsFillCartFill className="cart_icon" />
+          </Link>
         </div>
         <Link to="/">
           <AiFillHome className="AiFillHome" />
