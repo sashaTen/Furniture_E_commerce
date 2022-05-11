@@ -2,9 +2,11 @@ import { BsFillStarFill } from "react-icons/bs";
 import Loading from "../components/loading";
 import { useLocation } from "react-router-dom";
 import data from "../components/data";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { cartContext } from "../context";
 import { Link } from "react-router-dom";
 const ItemDesc = () => {
+  const { itemsOfCart, setItemsOfCart } = useContext(cartContext);
   const [showLoading, setShowLoading] = useState(true);
   const location = useLocation();
   const state = location.state;
@@ -43,7 +45,15 @@ const ItemDesc = () => {
           </div>
           <p style={{ color: "red" }}>{itemObject.price / 100}$</p>
           <p className="specificItemDesc">{itemObject.description}</p>
-          <h4 className="specificItemCartBtn">add to cart</h4>
+
+          <h4
+            onClick={() => {
+              setItemsOfCart([...itemsOfCart, itemObject.id]);
+            }}
+            className="specificItemCartBtn"
+          >
+            add to cart
+          </h4>
         </div>
       </section>
     </div>
