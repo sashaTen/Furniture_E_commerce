@@ -10,7 +10,6 @@ const Category = (props) => {
   }
   //let uniqueChars = [...new Set(chars)];
   let uniqueCategories = [...new Set(categories)];
-  console.log(uniqueCategories);
 
   return (
     <div className="categoryContainer">

@@ -10,8 +10,6 @@ const Company = (props) => {
   }
   let uniqueCompanies = [...new Set(companies)];
 
-  console.log(uniqueCompanies);
-
   return (
     <div>
       {uniqueCompanies.map((item, index) => {
