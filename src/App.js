@@ -14,10 +14,12 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import HomePageBody from "./components/homePageBody";
 import { moveAppContext } from "./context";
+import { cartContext } from "./context";
 export default function App() {
   const [items, setItems] = useState([]);
   const [moveApp, setMoveApp] = useState("App");
   const [showLoading, setShowLoading] = useState(true);
+  const [itemsOfCart, setItemsOfCart] = useState([]);
   useEffect(() => {
     axios
       .get("https://course-api.com/react-store-products/")
@@ -25,7 +27,6 @@ export default function App() {
         setItems(products.data);
       });
   }, []);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
@@ -58,20 +59,21 @@ export default function App() {
         <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
           <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
         </moveAppContext.Provider>
-
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/items" element={<DisplayComponent />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/loading" element={<Loading />} />
-          <Route path="/itemDesc" element={<ItemDesc />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route
-            exact
-            path="/"
-            element={<HomePageBody items={items} />}
-          ></Route>
-        </Routes>
+        <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/items" element={<DisplayComponent />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/loading" element={<Loading />} />
+            <Route path="/itemDesc" element={<ItemDesc />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route
+              exact
+              path="/"
+              element={<HomePageBody items={items} />}
+            ></Route>
+          </Routes>
+        </cartContext.Provider>
       </Router>
     </div>
   );
