@@ -178,4 +178,24 @@ return   :
 
 
 
+///////////////////////////////////
 
+  let   listIds =    []
+  for(let i =0 ;  i <data.length ;  i ++){
+    listIds.push(data[i].id)
+  }
+ 
+   let productsItems =[]
+
+  for(let i  = 0 ;  i  < listIds.length; i ++){
+    pushInProductsList(listIds[i])
+
+  }
+
+   function   pushInProductsList(id){
+    for(let i  =0  ;  i<data.length ; i  ++){
+      if(data[i].id===id){
+        productsItems.push(data[i])
+      }
+    }
+   }
