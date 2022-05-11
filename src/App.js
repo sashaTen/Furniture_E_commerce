@@ -54,12 +54,15 @@ export default function App() {
   return (
     <div className={moveApp}>
       <Router>
-        <Header />
-        <Title />
-        <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
-          <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
-        </moveAppContext.Provider>
         <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
+          <Header />
+          <Title />
+          <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
+            <Menu
+              items={items}
+              changeClass={(moveApp) => setMoveApp(moveApp)}
+            />
+          </moveAppContext.Provider>
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/items" element={<DisplayComponent />} />
