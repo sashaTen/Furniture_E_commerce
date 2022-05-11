@@ -5,10 +5,15 @@ import {
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { AiFillHome, AiFillSetting } from "react-icons/ai";
+import { useContext } from "react";
+import { cartContext } from "../context";
 const Header = () => {
+  const { itemsOfCart } = useContext(cartContext);
+
   return (
     <>
       <header className="header">
+        <p className="itemsAmount">{itemsOfCart.length}</p>
         <p className="latestNews">
           latest news :{" "}
           <span className="newsDiscount"> get new year discount 20%</span>
