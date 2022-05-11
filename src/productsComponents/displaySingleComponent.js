@@ -1,6 +1,9 @@
 import { BsFillHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { cartContext } from "../context";
+import { useContext } from "react";
 const SingleItem = (props) => {
+  const { itemsOfCart, setItemsOfCart } = useContext(cartContext);
   const {
     id,
     name,
@@ -26,7 +29,14 @@ const SingleItem = (props) => {
           <button className="itemDetailBtn">details</button>
         </Link>
 
-        <button className="addToCartBtn">add to cart</button>
+        <button
+          onClick={() => {
+            setItemsOfCart([...itemsOfCart, itemId]);
+          }}
+          className="addToCartBtn"
+        >
+          add to cart
+        </button>
       </article>
     </div>
   );
