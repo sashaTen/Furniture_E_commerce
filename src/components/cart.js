@@ -1,12 +1,25 @@
 import Loading from "./loading";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { cartContext } from "../context";
 import data from "./data";
 const Cart = () => {
+  const { itemsOfCart, setItemsOfCart } = useContext(cartContext);
   const [showLoading, setShowLoading] = useState(true);
-  let cartItems = [];
-  for (let i = 0; i < 4; i++) {
-    cartItems.push(data[i]);
+
+  let productsItems = [];
+
+  function pushInProductsList(id) {
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].id === id) {
+        productsItems.push(data[i]);
+      }
+    }
   }
+
+  for (let i = 0; i < itemsOfCart.length; i++) {
+    pushInProductsList(itemsOfCart[i]);
+  }
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
@@ -20,7 +33,7 @@ const Cart = () => {
     <div className="cartComponent">
       your cart
       <div className="cartContainer">
-        {cartItems.map((item) => {
+        {productsItems.map((item) => {
           return (
             <div key={item.id} className="cartItemContainer">
               <img className="cartImg" src={item.image} />
