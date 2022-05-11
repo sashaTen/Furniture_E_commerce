@@ -547,6 +547,14 @@ CART
   display: grid;
   justify-items: center;
 }
+.cartClear {
+  border: 1px solid black;
+  padding: 5px;
+}
+.cartClear:hover {
+  background-color: black;
+  color: orange;
+}
 .cartContainer {
   margin-top: 5px;
   display: grid;

@@ -32,6 +32,14 @@ const Cart = () => {
   return (
     <div className="cartComponent">
       your cart
+      <h4
+        onClick={() => {
+          setItemsOfCart([]); //  clear  cart  btn
+        }}
+        className="cartClear"
+      >
+        clear cart
+      </h4>
       <div className="cartContainer">
         {productsItems.map((item) => {
           return (
