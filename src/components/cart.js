@@ -7,9 +7,9 @@ import { BsTrash } from "react-icons/bs";
 const Cart = () => {
   const { itemsOfCart, setItemsOfCart } = useContext(cartContext);
   const [showLoading, setShowLoading] = useState(true);
-
+  let total = 0;
   let productsItems = [];
-
+  const [check, setCheck] = useState(0);
   function pushInProductsList(id) {
     for (let i = 0; i < data.length; i++) {
       if (data[i].id === id) {
@@ -28,11 +28,14 @@ const Cart = () => {
       if (itemsOfCart[i] !== id) {
         newList.push(itemsOfCart[i]);
       }
-      console.log(newList.length);
+
       setItemsOfCart(newList);
     }
   };
 
+  for (let i = 0; i < productsItems.length; i++) {
+    total += parseInt(productsItems[i].price / 1000);
+  }
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
@@ -60,7 +63,7 @@ const Cart = () => {
               <img className="cartImg" src={item.image} />
               <div>
                 <p className="cartItemName"> {item.name}</p>
-                <p className="cartItemPrice">{item.price / 100}$</p>
+                <p className="cartItemPrice">{item.price / 1000}$</p>
               </div>
               <section className="cartPlusMinus">
                 <button className="cartBtnPlus">+</button>
@@ -79,7 +82,8 @@ const Cart = () => {
       </div>
       <section className="cartBottom">
         <button className="cartBuyBtn"> buy </button>
-        <h3>total</h3>
+
+        <h3>check with discount : {total}$</h3>
       </section>
       <Link to="/items">start shopping</Link>
     </div>
