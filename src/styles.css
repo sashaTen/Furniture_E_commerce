@@ -128,7 +128,7 @@ GREETINGS  COMPONENT STYLING
   right: 150px;
   animation-name: greetBtn;
   animation-iteration-count: infinite;
-  animation-duration: 5s;
+  animation-duration: 1.2s;
   border: 1px solid black;
   font-family: serif;
   text-transform: uppercase;
@@ -958,5 +958,6 @@ CART
   }
   50% {
     color: orange;
+    background-color: black;
   }
 }
