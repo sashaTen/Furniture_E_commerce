@@ -363,6 +363,7 @@ SINGLE  PRODUCT
   padding: 5px;
   color: lightblue;
 }
+
 .itemDetailBtn,
 .addToCartBtn {
   font-family: sans-serif;
@@ -567,6 +568,7 @@ CART
   justify-content: space-around;
   border-bottom: 1px grey solid;
   padding-bottom: 10px;
+  position: relative;
 }
 .cartImg {
   width: 150px;
@@ -613,6 +615,17 @@ CART
   border: black 2px solid;
   background-color: orange;
   color: black;
+}
+.deleteCartItem {
+  position: absolute;
+  top: 40%;
+  right: -15%;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+.deleteCartItem:hover {
+  color: orange;
+  background-color: black;
 }
 /* HOVERING  AND OTHER   EFFECTS*/
 .marcosBtn:hover {
