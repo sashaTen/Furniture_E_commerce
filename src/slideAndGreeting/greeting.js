@@ -12,7 +12,7 @@ const Greet = () => {
       />
       <Link to="/items">
         <button className="GreetBtn">
-          Shop Colletion <AiOutlineArrowRight />
+          start shopping <AiOutlineArrowRight />
         </button>
       </Link>
     </div>
