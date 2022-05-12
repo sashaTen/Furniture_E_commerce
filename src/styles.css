@@ -126,8 +126,13 @@ GREETINGS  COMPONENT STYLING
   position: relative;
   top: 30px;
   right: 150px;
-
+  animation-name: greetBtn;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
   border: 1px solid black;
+  font-family: serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .GreetBtn:hover {
   background-color: black;
@@ -938,5 +943,20 @@ CART
   }
   100% {
     transform: rotate(270deg);
+  }
+}
+
+@keyframes greetBtn {
+  5% {
+    transform: rotate(5deg);
+  }
+  10% {
+    transform: rotate(-5deg);
+  }
+  11% {
+    transform: rotate(0deg);
+  }
+  50% {
+    color: orange;
   }
 }
