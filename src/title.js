@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Title = () => {
   return (
     <>
       <h1 className="title">
-        <span className="letterC">C</span>onosin
+        <Link to="/">Conosin</Link>
       </h1>
-      <div className="crossLine"></div>
     </>
   );
 };
