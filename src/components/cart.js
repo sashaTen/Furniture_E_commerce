@@ -39,6 +39,7 @@ const Cart = () => {
   for (let i = 0; i < productsItems.length; i++) {
     total += parseInt(productsItems[i].price / 1000);
   }
+
   useEffect(() => {
     setDisplayItems([...new Set(productsItems)]);
   }, []);
