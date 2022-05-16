@@ -9,7 +9,7 @@ const Cart = () => {
   const [showLoading, setShowLoading] = useState(true);
   let total = 0;
   let productsItems = [];
-
+  const [displayItems, setDisplayItems] = useState([]);
   function pushInProductsList(id) {
     for (let i = 0; i < data.length; i++) {
       if (data[i].id === id) {
@@ -40,6 +40,9 @@ const Cart = () => {
     total += parseInt(productsItems[i].price / 1000);
   }
   useEffect(() => {
+    setDisplayItems([...new Set(productsItems)]);
+  }, []);
+  useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
     }, 1000);
@@ -60,7 +63,7 @@ const Cart = () => {
         clear cart
       </h4>
       <div className="cartContainer">
-        {productsItems.map((item) => {
+        {displayItems.map((item) => {
           return (
             <div key={item.id} className="cartItemContainer">
               <img className="cartImg" src={item.image} />
