@@ -21,6 +21,9 @@ const Cart = () => {
   for (let i = 0; i < itemsOfCart.length; i++) {
     pushInProductsList(itemsOfCart[i]);
   }
+  const plusItem = (id) => {
+    setItemsOfCart([...itemsOfCart, id]);
+  };
 
   const removeItem = (id) => {
     let newList = [];
@@ -66,7 +69,14 @@ const Cart = () => {
                 <p className="cartItemPrice">{item.price / 1000}$</p>
               </div>
               <section className="cartPlusMinus">
-                <button className="cartBtnPlus">+</button>
+                <button
+                  onClick={() => {
+                    plusItem(item.id);
+                  }}
+                  className="cartBtnPlus"
+                >
+                  +
+                </button>
                 <h4>1</h4>
                 <button className="cartBtnMinus">-</button>
               </section>
