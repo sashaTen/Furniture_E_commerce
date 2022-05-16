@@ -9,7 +9,7 @@ const Cart = () => {
   const [showLoading, setShowLoading] = useState(true);
   let total = 0;
   let productsItems = [];
-  const [check, setCheck] = useState(0);
+
   function pushInProductsList(id) {
     for (let i = 0; i < data.length; i++) {
       if (data[i].id === id) {
