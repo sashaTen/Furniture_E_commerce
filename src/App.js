@@ -1,7 +1,6 @@
 import Cart from "./components/cart";
 import Loading from "./components/loading";
 import DisplayComponent from "./productsComponents/displayComponent";
-import Title from "./title";
 import Contacts from "./components/contacts";
 import ItemDesc from "./productsComponents/singleItemDescription";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -56,7 +55,7 @@ export default function App() {
       <Router>
         <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
           <Header />
-          <Title />
+
           <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
             <Menu
               items={items}

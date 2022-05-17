@@ -339,7 +339,7 @@ SINGLE  PRODUCT
 .singleItemContainer {
   position: relative;
 }
-.itemTitle {
+.title {
 }
 .itemPrice {
   text-decoration: underline;
