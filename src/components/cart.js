@@ -25,6 +25,15 @@ const Cart = () => {
     setItemsOfCart([...itemsOfCart, id]);
   };
 
+  const itemsAmount = (id) => {
+    let number = 0;
+    for (let i = 0; i < itemsOfCart.length; i++) {
+      if (itemsOfCart[i] === id) {
+        number++;
+      }
+    }
+    return number;
+  };
   const removeItem = (id) => {
     let newCartList = [];
     let newDisplayList = [];
@@ -89,7 +98,7 @@ const Cart = () => {
                 >
                   +
                 </button>
-                <h4>1</h4>
+                <h4>{itemsAmount(item.id)}</h4>
                 <button className="cartBtnMinus">-</button>
               </section>
               <BsTrash
