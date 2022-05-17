@@ -26,13 +26,21 @@ const Cart = () => {
   };
 
   const removeItem = (id) => {
-    let newList = [];
+    let newCartList = [];
+    let newDisplayList = [];
+
+    for (let i = 0; i < displayItems.length; i++) {
+      if (displayItems[i].id !== id) {
+        newDisplayList.push(displayItems[i]);
+      }
+    }
+    setDisplayItems(newDisplayList);
     for (let i = 0; i < itemsOfCart.length; i++) {
       if (itemsOfCart[i] !== id) {
-        newList.push(itemsOfCart[i]);
+        newCartList.push(itemsOfCart[i]);
       }
 
-      setItemsOfCart(newList);
+      setItemsOfCart(newCartList);
     }
   };
 
