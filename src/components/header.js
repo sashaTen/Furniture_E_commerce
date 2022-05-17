@@ -20,14 +20,7 @@ const Header = () => {
         </p>
 
         <div className="header_menu">
-          <ul>
-            <li>
-              <span className="settingsBtn"> Settings</span> <AiFillSetting />{" "}
-            </li>
-            <li>
-              <BsFillCaretDownFill />
-            </li>
-          </ul>
+          <ul></ul>
           <ul>
             <li>
               {" "}

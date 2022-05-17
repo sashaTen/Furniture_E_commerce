@@ -99,8 +99,11 @@ li {
 .menuIcon {
   display: none;
   font-size: 1.5rem;
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+  z-index: 2;
 }
-
 /*  
 GREETINGS  COMPONENT STYLING
 */
@@ -648,9 +651,6 @@ MEDIA  QUERIES
 MEDIA  QUERIES 
 */
 @media only screen and (max-width: 500px) {
-  .settingsBtn {
-    display: none;
-  }
   .accountBtn {
     display: none;
   }
