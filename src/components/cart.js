@@ -25,6 +25,22 @@ const Cart = () => {
     setItemsOfCart([...itemsOfCart, id]);
   };
 
+  function shiftItem(i) {
+    let temp = itemsOfCart[0];
+    itemsOfCart[0] = itemsOfCart[i];
+    itemsOfCart[i] = temp;
+
+    itemsOfCart.shift();
+    setItemsOfCart([...itemsOfCart]);
+  }
+  const minusItem = (id) => {
+    for (let i = 0; i < itemsOfCart.length; i++) {
+      if (itemsOfCart[i] === id) {
+        //
+        return shiftItem(i);
+      }
+    }
+  };
   const itemsAmount = (id) => {
     let number = 0;
     for (let i = 0; i < itemsOfCart.length; i++) {
@@ -34,6 +50,7 @@ const Cart = () => {
     }
     return number;
   };
+
   const removeItem = (id) => {
     let newCartList = [];
     let newDisplayList = [];
@@ -99,7 +116,14 @@ const Cart = () => {
                   +
                 </button>
                 <h4>{itemsAmount(item.id)}</h4>
-                <button className="cartBtnMinus">-</button>
+                <button
+                  onClick={() => {
+                    minusItem(item.id);
+                  }}
+                  className="cartBtnMinus"
+                >
+                  -
+                </button>
               </section>
               <BsTrash
                 onClick={() => {
