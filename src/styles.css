@@ -72,9 +72,7 @@ li {
   left: 45%;
   bottom: 40px;
 }
-.invisible {
-  opacity: 0;
-}
+
 .menuContainer {
   display: flex;
   width: 55%;
@@ -101,9 +99,10 @@ li {
   font-size: 1.5rem;
   position: absolute;
   top: 2.5%;
-  left: 5%;
+  left: 3%;
   z-index: 2;
 }
+
 /*  
 GREETINGS  COMPONENT STYLING
 */
@@ -342,7 +341,7 @@ SINGLE  PRODUCT
 .singleItemContainer {
   position: relative;
 }
-.title {
+.itemTitle {
 }
 .itemPrice {
   text-decoration: underline;
@@ -651,6 +650,9 @@ MEDIA  QUERIES
 MEDIA  QUERIES 
 */
 @media only screen and (max-width: 500px) {
+  .settingsBtn {
+    display: none;
+  }
   .accountBtn {
     display: none;
   }
