@@ -72,7 +72,9 @@ li {
   left: 45%;
   bottom: 40px;
 }
-
+.invisible {
+  opacity: 0;
+}
 .menuContainer {
   display: flex;
   width: 55%;

@@ -9,12 +9,14 @@ const Menu = (props) => {
   const items = props.items;
   const [showCategory, setShowCategory] = useState(false);
   const [showCompany, setShowCompany] = useState(false);
+  const [menuIcon, setMenuIcon] = useState("menuIcon");
   return (
     <>
       <AiOutlineMenu
-        className="menuIcon"
+        className={menuIcon}
         onClick={() => {
           props.changeClass("moveApp");
+          setMenuIcon("invisible");
         }}
       />
       <section className="menuContainer">
@@ -22,6 +24,7 @@ const Menu = (props) => {
           className="btnXmobileMenu"
           onClick={() => {
             props.changeClass("App");
+            setMenuIcon("menuIcon");
           }}
         >
           {" "}
