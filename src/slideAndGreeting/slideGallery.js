@@ -1,11 +1,22 @@
 import { useState, useEffect } from "react";
 
-const imgUrl1 = `https://cgaxisimages.fra1.cdn.digitaloceanspaces.com/2018/07/cgaxis_models_106_14a.jpg`;
-const imgUrl2 = `https://htdeco.fr/2034-thickbox_default/baroque-white-and-silver-sofa.jpg`;
-const imgUrl3 = `https://secure.img1-fg.wfcdn.com/im/83591330/compr-r85/1182/118254953/sonny-91-sofa-with-reversible-cushions.jpg`;
-
+const imgUrl1 = "https://wallpaperaccess.com/full/2076086.jpg";
+const imgUrl2 = "https://wallpaperaccess.com/full/2076099.jpg";
+const imgUrl3 =
+  "https://img5.goodfon.com/wallpaper/nbig/0/89/stil-interer-mebel-divan-gostinaia-style-interior-furniture.jpg";
+const imgUrl4 = "https://wallpaperaccess.com/full/2076109.jpg";
 const SlideGallery = () => {
-  return <></>;
+  return (
+    <>
+      <div className="slideGallery">
+        <img className="slideGalleryImg" src={imgUrl1} />
+        <img className="slideGalleryImg" src={imgUrl2} />
+        <img className="slideGalleryImg" src={imgUrl3} />
+        <img className="slideGalleryImg" src={imgUrl4} />
+      </div>
+      <section className="blackCoverForSlides"></section>
+    </>
+  );
 };
 
 export default SlideGallery;
