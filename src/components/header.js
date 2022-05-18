@@ -24,10 +24,7 @@ const Header = () => {
           <ul>
             <li>
               {" "}
-              <span className="accountBtn">Account</span> <BsFillPersonFill />
-            </li>
-            <li>
-              <BsFillCaretDownFill />
+              <BsFillPersonFill className="acountIcon" />
             </li>
           </ul>
           <Link to="/cart">
