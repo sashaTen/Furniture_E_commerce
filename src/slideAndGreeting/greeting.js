@@ -4,7 +4,9 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Greet = () => {
   return (
     <div className="greetContainer">
-      <Link to="/items">shop here</Link>
+      <Link className="greetLinkToItems" to="/items">
+        start shopping
+      </Link>
     </div>
   );
 };
