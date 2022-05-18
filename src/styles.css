@@ -118,53 +118,15 @@ GREETINGS  COMPONENT STYLING
   left: 5%;
   z-index: 1;
 }
-.newSeason {
-  width: 200px;
-}
-.GreetBtn {
-  font-size: 1.3rem;
-  background-color: white;
-  position: relative;
-  top: 30px;
-  right: 150px;
-  animation-name: greetBtn;
-  animation-iteration-count: infinite;
-  animation-duration: 1.2s;
-  border: 1px solid black;
-  font-family: serif;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.GreetBtn:hover {
-  background-color: black;
-  color: orange;
-}
+
 .pTagUnderGreet {
   width: 400px;
 }
 
 /*billboard*/
-.imgContainer {
-  display: flex;
-  position: relative;
-  left: 40%;
-  transition: 1s;
-}
+
 .mobile {
   display: none;
-}
-.imgContainerMobile {
-  display: none;
-  position: relative;
-}
-.billBoard {
-  padding-right: 45%;
-  object-fit: cover;
-  position: relative;
-  height: 70vh;
-}
-.billBoardMobile {
-  width: 300px;
 }
 
 /*
@@ -716,13 +678,6 @@ MEDIA  QUERIES
     top: 80%;
     left: 11%;
   }
-  .newSeason {
-    width: 100px;
-  }
-  .trustStyle {
-    font-size: 1rem;
-    width: 200px;
-  }
 
   .GreetBtn {
     font-size: 0.8rem;
@@ -733,25 +688,7 @@ MEDIA  QUERIES
     color: orange;
   }
   /*billboard*/
-  .imgContainer {
-    display: none;
-  }
-  .billBoardMobile {
-    object-fit: cover;
-    width: 280px;
-    padding-right: 100px;
-    height: 300px;
-  }
 
-  .imgContainerMobile {
-    top: 50px;
-    display: flex;
-    position: relative;
-    left: -380px;
-    animation-name: imgContainerMobile;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
   /*BRANDS */
   .brandContainer {
     display: grid;
@@ -929,18 +866,6 @@ CART
   }
 }
 
-@keyframes imgContainerMobile {
-  0% {
-    left: 50px;
-  }
-  50% {
-    left: -380px;
-  }
-  100% {
-    left: -750px;
-  }
-}
-
 @keyframes loadingMovingSquare {
   0% {
     transform: rotate(0deg);
@@ -953,21 +878,5 @@ CART
   }
   100% {
     transform: rotate(270deg);
-  }
-}
-
-@keyframes greetBtn {
-  5% {
-    transform: rotate(5deg);
-  }
-  10% {
-    transform: rotate(-5deg);
-  }
-  11% {
-    transform: rotate(0deg);
-  }
-  50% {
-    color: orange;
-    background-color: black;
   }
 }
