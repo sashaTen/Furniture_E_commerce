@@ -36,6 +36,7 @@ const Menu = (props) => {
             className="btn"
             onClick={() => {
               props.changeClass("App");
+              setMenuIcon("menuIcon");
             }}
           >
             Home{" "}
@@ -75,6 +76,7 @@ const Menu = (props) => {
           <div
             onClick={() => {
               props.changeClass("App");
+              setMenuIcon("menuIcon");
             }}
             className="btn"
           >
@@ -86,6 +88,7 @@ const Menu = (props) => {
           <div
             onClick={() => {
               props.changeClass("App");
+              setMenuIcon("menuIcon");
             }}
             className="btn"
           >
