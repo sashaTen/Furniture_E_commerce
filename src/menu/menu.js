@@ -49,7 +49,12 @@ const Menu = (props) => {
               setShowCategory(!showCategory);
             }}
           />{" "}
-          {showCategory && <Category items={items} />}
+          {showCategory && (
+            <Category
+              showMenu={(menuIcon) => setMenuIcon(menuIcon)}
+              items={items}
+            />
+          )}
         </div>
         <div className="btn">
           Company
@@ -59,7 +64,12 @@ const Menu = (props) => {
               setShowCompany(!showCompany);
             }}
           />{" "}
-          {showCompany && <Company items={items} />}
+          {showCompany && (
+            <Company
+              showMenu={(menuIcon) => setMenuIcon(menuIcon)}
+              items={items}
+            />
+          )}
         </div>
         <Link to="/about">
           <div
