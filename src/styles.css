@@ -17,7 +17,7 @@
   font-family: sans-serif;
   text-align: center;
   position: relative;
-  left: 200px;
+  left: 100%;
 }
 .header {
   display: flex;
@@ -43,7 +43,7 @@
   position: absolute;
   top: 40%;
   right: 45%;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 .cart_icon,
 .itemsAmoun {
@@ -692,8 +692,8 @@ MEDIA  QUERIES
     position: absolute;
     top: 0%;
     height: 100vh;
-    left: -200px;
-    width: 200px;
+    left: -100%;
+    width: 100%;
     margin-top: 50px;
     z-index: 1;
     background-color: white;
