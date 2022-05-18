@@ -75,10 +75,13 @@ li {
 
 .menuContainer {
   display: flex;
-  width: 55%;
+  justify-content: space-around;
   position: relative;
-  left: 21%;
-  justify-content: space-between;
+  top: 0%;
+  width: 80%;
+  left: 10%;
+  margin-top: 80px;
+  z-index: 1;
 }
 .btnXmobileMenu {
   /*  btn for  hiding the menu  in the mobile view*/
