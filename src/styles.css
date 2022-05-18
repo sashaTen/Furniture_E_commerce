@@ -41,7 +41,7 @@
 }
 .AiFillHome {
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 45%;
   font-size: 1.4rem;
 }
@@ -361,6 +361,10 @@ SINGLE  PRODUCT
   padding: 5px;
   color: lightblue;
 }
+.itemHeart:hover {
+  color: orange;
+  border: 1px solid orange;
+}
 .itemDiscount {
   position: absolute;
   left: 15%;
@@ -664,6 +668,7 @@ MEDIA  QUERIES
     position: relative;
     left: 90px;
     font-size: 1.5rem;
+    bottom: 2px;
   }
   .latestNews {
     display: none;
