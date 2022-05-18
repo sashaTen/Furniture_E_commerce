@@ -31,8 +31,8 @@ const ItemDesc = () => {
 
   return (
     <div>
-      <Link to="/items">back</Link>
       <section className="specificItemContainer">
+        <Link to="/items">back</Link>
         <img className="specificItemImg" src={itemObject.image} />
         <div className="specificItemInfo">
           <h3>{itemObject.name}</h3>
