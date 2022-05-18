@@ -117,13 +117,22 @@ GREETINGS  COMPONENT STYLING
   width: 40%;
   left: 30%;
   top: 80%;
-  border: 2px solid lightblue;
-  padding: 5px;
-
   color: white;
+  text-align: center;
+  display: grid;
 }
 .greetLinkToItems {
+  padding: 5px;
+  border: 2px solid lightblue;
   color: white;
+}
+.greetMessage {
+  position: absolute;
+  width: 30%;
+  display: grid;
+  justify-content: center;
+  left: 35%;
+  bottom: 120%;
 }
 .slideGallery {
   margin-top: 20px;
