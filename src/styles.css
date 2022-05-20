@@ -698,10 +698,10 @@ MEDIA  QUERIES
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: 0%;
+    top: -10px;
     height: 100vh;
-    left: -100%;
-    width: 100%;
+    left: -110%;
+    width: 110%;
     margin-top: 50px;
     z-index: 1;
     background-color: white;
@@ -812,14 +812,12 @@ MEDIA  QUERIES
     width: 100%;
     left: 0%;
     grid-template-columns: 1fr;
-    left: 15px;
   }
   .itemImg {
     width: 100%;
     height: 180px;
   }
   .singleItemContainer {
-    margin-right: 10px;
   }
   .productsPage {
     position: relative;
