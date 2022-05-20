@@ -20,7 +20,6 @@ const Header = () => {
         </p>
 
         <div className="header_menu">
-          <ul></ul>
           <ul>
             <li>
               {" "}
