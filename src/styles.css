@@ -508,6 +508,7 @@ CONTACT
   grid-template-columns: 1fr 1fr;
   position: relative;
   left: 22%;
+  margin-bottom: 100px;
 }
 .contactIconContainer {
   border-bottom: grey 1px solid;
