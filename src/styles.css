@@ -656,6 +656,17 @@ CART
   color: orange;
   background-color: black;
 }
+
+/*
+LLOGIN 
+LOGIN 
+LOGIN
+*/
+
+.loginContainer {
+  display: grid;
+  margin-top: 80px;
+}
 /* HOVERING  AND OTHER   EFFECTS*/
 .marcosBtn:hover {
   color: red;
