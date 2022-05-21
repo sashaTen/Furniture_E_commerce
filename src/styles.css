@@ -281,6 +281,8 @@ MARCOS  COLLECTION
   border-top: 1px solid grey;
   padding-top: 50px;
   margin-bottom: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid grey;
 }
 .marcosGreeting {
   display: flex;
@@ -335,7 +337,7 @@ BEST SELLING  COLLECTION.
 
 .bestSellersContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*
@@ -789,6 +791,8 @@ MEDIA  QUERIES
     width: 70%;
     position: relative;
     left: 15%;
+    margin-bottom: 80px;
+    border-bottom: 1px solid grey;
   }
   .homePageImg {
     width: 250px;
@@ -823,6 +827,7 @@ MEDIA  QUERIES
     display: grid;
   }
   .marcosContainer {
+    display: none;
   }
 
   .macrosBtncontainer {
