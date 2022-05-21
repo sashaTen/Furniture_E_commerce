@@ -2,10 +2,12 @@ import Loading from "./loading";
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { cartContext } from "../context";
+import { isLogged } from "../context";
 import data from "./data";
 import { BsTrash } from "react-icons/bs";
 const Cart = () => {
   const { itemsOfCart, setItemsOfCart } = useContext(cartContext);
+  const { logged, setLogged } = useContext(isLogged);
   const [showLoading, setShowLoading] = useState(true);
   let total = 0;
   let productsItems = [];
@@ -139,6 +141,7 @@ const Cart = () => {
         <button
           onClick={() => {
             alert("you are not  logged  in");
+            console.log(logged);
           }}
           className="cartBuyBtn"
         >
