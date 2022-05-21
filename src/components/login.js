@@ -8,7 +8,6 @@ const Login = () => {
     return (
       <>
         <div className="loginContainer">
-          logged in
           <button
             className="cartBuyBtn"
             onClick={() => {
