@@ -346,9 +346,7 @@ DISPLAY  COMPONENT
 .productsContainer {
   display: grid;
   position: relative;
-  width: 60%;
-  left: 40%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .itemImg {
   width: 250px;
@@ -357,7 +355,7 @@ DISPLAY  COMPONENT
 }
 .productsPage {
   margin-top: 80px;
-  display: flex;
+  display: grid;
 }
 
 /*
