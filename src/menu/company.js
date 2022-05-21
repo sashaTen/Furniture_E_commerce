@@ -18,6 +18,7 @@ const Company = (props) => {
             onClick={() => {
               setMoveApp("App");
               props.showMenu("menuIcon");
+              props.closeCategory(false);
             }}
             key={index}
           >

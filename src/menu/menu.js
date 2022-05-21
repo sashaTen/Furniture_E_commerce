@@ -70,6 +70,7 @@ const Menu = (props) => {
             <Company
               showMenu={(menuIcon) => setMenuIcon(menuIcon)}
               items={items}
+              closeCategory={() => setShowCompany(false)}
             />
           )}
         </div>
