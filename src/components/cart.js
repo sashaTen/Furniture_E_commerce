@@ -139,11 +139,14 @@ const Cart = () => {
       </div>
       <section className="cartBottom">
         <button
-          onClick={() => {
-            alert("you are not  logged  in");
-            console.log(logged);
-          }}
           className="cartBuyBtn"
+          onClick={() => {
+            if (logged) {
+              alert("thanks for  shopping with us");
+            } else if (!logged) {
+              alert("create an  acoount and  log in");
+            }
+          }}
         >
           {" "}
           buy{" "}
