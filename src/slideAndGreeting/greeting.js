@@ -2,14 +2,24 @@ import { Link } from "react-router-dom"; //BsFillStarFill
 import { BsFillStarFill } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
 const Greet = () => {
+  /*
+  greetExpirience
+  greetFast
+  .greetReliable
+  .greetAnd
+  .greetShopping
+  className =  ""
+  */
   return (
     <>
       <div className="greetContainer">
         <section className="greetMessage">
-          exprience
-          <h3 style={{ color: "lightblue" }}>fast</h3>
-          and <h3 style={{ color: "red" }}>reliable</h3>
-          <p>shopping</p>
+          <span className="greetExpirience">exprience</span>
+          <h3 className="  greetFast">fast</h3>
+          <span className="greetAnd">and</span>
+
+          <h3 className="greetReliable">reliable</h3>
+          <p className="greetShopping">shopping</p>
         </section>
 
         <Link className="greetLinkToItems" to="/items">
