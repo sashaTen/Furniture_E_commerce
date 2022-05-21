@@ -111,34 +111,17 @@ li {
 /*  
 GREETINGS  COMPONENT STYLING
 */
-.greetExpirience {
-  animation-name: greetAnimation;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-}
+
 .greetFast {
   color: lightblue;
-  animation-name: greetAnimation;
-  animation-duration: 1s;
-  animation-timing-function: linear;
 }
 .greetReliable {
   color: red;
-  animation-name: greetAnimation;
-  animation-duration: 1s;
-  animation-timing-function: linear;
 }
-.greetAnd {
-  animation-name: greetAnimation;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-}
+
 .greetShopping {
   position: relative;
   bottom: 14px;
-  animation-name: greetAnimation;
-  animation-duration: 1s;
-  animation-timing-function: linear;
 }
 .greetContainer {
   position: absolute;
@@ -148,6 +131,9 @@ GREETINGS  COMPONENT STYLING
   color: white;
   text-align: center;
   display: grid;
+  animation-name: greetAnimation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
 .greetLinkToItems {
   padding: 5px;
@@ -1000,8 +986,13 @@ CART
 @keyframes greetAnimation {
   from {
     opacity: 0;
+    left: 0%;
+  }
+  70% {
+    opacity: 0;
   }
   to {
+    left: 30%;
     opacity: 1;
   }
 }
