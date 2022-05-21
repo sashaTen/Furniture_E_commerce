@@ -76,6 +76,7 @@ export default function App() {
             ></Route>
           </Routes>
         </cartContext.Provider>
+        <Contacts />
       </Router>
     </div>
   );
