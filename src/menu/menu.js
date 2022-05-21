@@ -54,6 +54,7 @@ const Menu = (props) => {
             <Category
               showMenu={(menuIcon) => setMenuIcon(menuIcon)}
               items={items}
+              closeCategory={() => setShowCategory(false)}
             />
           )}
         </div>

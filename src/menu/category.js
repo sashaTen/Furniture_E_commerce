@@ -19,6 +19,7 @@ const Category = (props) => {
             onClick={() => {
               setMoveApp("App");
               props.showMenu("menuIcon");
+              props.closeCategory(false);
             }}
             key={item}
           >
