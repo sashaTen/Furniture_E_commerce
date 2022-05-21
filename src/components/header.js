@@ -18,14 +18,8 @@ const Header = () => {
           latest news :{" "}
           <span className="newsDiscount"> get new year discount 20%</span>
         </p>
-
+        <BsFillPersonFill className="acountIcon" />
         <div className="header_menu">
-          <ul>
-            <li>
-              {" "}
-              <BsFillPersonFill className="acountIcon" />
-            </li>
-          </ul>
           <Link to="/cart">
             <BsFillCartFill className="cart_icon" />
           </Link>

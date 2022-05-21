@@ -30,6 +30,13 @@
   background-color: white;
   top: 0%;
 }
+
+.acountIcon {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  font-size: 1.4rem;
+}
 .newsDiscount {
   color: grey;
   text-decoration: underline;
@@ -57,7 +64,7 @@
   right: 100px;
   display: block;
   position: absolute;
-  right: 12%;
+  right: 8.5%;
 }
 li {
   list-style: none;
