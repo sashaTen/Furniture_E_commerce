@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import SingleItem from "./displaySingleComponent";
 import Loading from "../components/loading";
 import { useLocation } from "react-router-dom";
-
+import Filters from "./filters";
 const DisplayComponent = () => {
   const location = useLocation();
   const state = location.state;
@@ -40,7 +40,9 @@ const DisplayComponent = () => {
   return (
     <>
       <section className="productsPage">
-        <div className="filtersContainer"></div>
+        <div className="filtersContainer">
+          <Filters />
+        </div>
         <div className="productsContainer">
           {list.map((item) => {
             return <SingleItem {...item} key={item.id} />;
