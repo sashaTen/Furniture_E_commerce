@@ -160,7 +160,6 @@ GREETINGS  COMPONENT STYLING
   display: flex;
   animation-name: slideGallery;
   animation-iteration-count: infinite;
-  animation-delay: 3s;
   animation-duration: 12s;
   position: relative;
 }
