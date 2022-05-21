@@ -7,7 +7,17 @@ const Login = () => {
   if (logged.logged) {
     return (
       <>
-        <div className="loginContainer">logged in</div>
+        <div className="loginContainer">
+          logged in
+          <button
+            className="cartBuyBtn"
+            onClick={() => {
+              logged.setLogged(false);
+            }}
+          >
+            log out
+          </button>
+        </div>
       </>
     );
   }
