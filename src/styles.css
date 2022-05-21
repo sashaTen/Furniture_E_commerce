@@ -666,7 +666,10 @@ LOGIN
 
 .loginContainer {
   display: grid;
+  position: relative;
   margin-top: 80px;
+  width: 40%;
+  left: 30%;
 }
 /* HOVERING  AND OTHER   EFFECTS*/
 .marcosBtn:hover {
