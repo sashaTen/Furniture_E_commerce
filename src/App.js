@@ -1,4 +1,5 @@
 import Cart from "./components/cart";
+import Login from "./components/login";
 import Loading from "./components/loading";
 import DisplayComponent from "./productsComponents/displayComponent";
 import Contacts from "./components/contacts";
@@ -64,6 +65,7 @@ export default function App() {
           </moveAppContext.Provider>
           <Routes>
             <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/items" element={<DisplayComponent />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/loading" element={<Loading />} />
