@@ -333,6 +333,11 @@ BEST SELLING  COLLECTION.
   text-decoration: underline;
 }
 
+.bestSellersContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /*
 DISPLAY  COMPONENT 
 */
@@ -849,6 +854,9 @@ MEDIA  QUERIES
     top: 0%;
     left: 0%;
     display: none;
+  }
+  .bestSellersContainer {
+    grid-template-columns: 1fr;
   }
   /*
 SINGLE  PRODUCT  
