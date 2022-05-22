@@ -1,8 +1,7 @@
 import { useContext } from "react";
-import { accountInfo, isLogged } from "../context";
+import { isLogged } from "../context";
 import { Link } from "react-router-dom";
 const Login = () => {
-  const personalInfo = useContext(accountInfo);
   const logged = useContext(isLogged);
 
   if (logged.logged) {

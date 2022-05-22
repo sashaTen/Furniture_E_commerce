@@ -17,14 +17,14 @@ import HomePageBody from "./components/homePageBody";
 import { moveAppContext } from "./context";
 import { cartContext } from "./context";
 import { isLogged } from "./context";
-import { accountInfo } from "./context";
+
 export default function App() {
   const [logged, setLogged] = useState(false);
   const [items, setItems] = useState([]);
   const [moveApp, setMoveApp] = useState("App");
   const [showLoading, setShowLoading] = useState(true);
   const [itemsOfCart, setItemsOfCart] = useState([]);
-  const [personalInfo, setPersonalInfo] = useState([1, 2, 3]);
+
   useEffect(() => {
     axios
       .get("https://course-api.com/react-store-products/")
@@ -59,35 +59,33 @@ export default function App() {
   return (
     <div className={moveApp}>
       <Router>
-        <accountInfo.Provider value={{ personalInfo, setPersonalInfo }}>
-          <isLogged.Provider value={{ logged, setLogged }}>
-            <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
-              <Header />
+        <isLogged.Provider value={{ logged, setLogged }}>
+          <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
+            <Header />
 
-              <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
-                <Menu
-                  items={items}
-                  changeClass={(moveApp) => setMoveApp(moveApp)}
-                />
-              </moveAppContext.Provider>
-              <Routes>
-                <Route path="/about" element={<About />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/items" element={<DisplayComponent />} />
-                <Route path="/contacts" element={<Contacts />} />
-                <Route path="/loading" element={<Loading />} />
-                <Route path="/itemDesc" element={<ItemDesc />} />
-                <Route path="/cart" element={<Cart />} />
-                <Route path="/finish" element={<AfterPurchase />} />
-                <Route
-                  exact
-                  path="/"
-                  element={<HomePageBody items={items} />}
-                ></Route>
-              </Routes>
-            </cartContext.Provider>
-          </isLogged.Provider>
-        </accountInfo.Provider>
+            <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
+              <Menu
+                items={items}
+                changeClass={(moveApp) => setMoveApp(moveApp)}
+              />
+            </moveAppContext.Provider>
+            <Routes>
+              <Route path="/about" element={<About />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/items" element={<DisplayComponent />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/loading" element={<Loading />} />
+              <Route path="/itemDesc" element={<ItemDesc />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/finish" element={<AfterPurchase />} />
+              <Route
+                exact
+                path="/"
+                element={<HomePageBody items={items} />}
+              ></Route>
+            </Routes>
+          </cartContext.Provider>
+        </isLogged.Provider>
 
         <Contacts />
       </Router>
