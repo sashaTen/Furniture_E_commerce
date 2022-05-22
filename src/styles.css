@@ -577,6 +577,7 @@ CART
   padding-bottom: 50px;
   display: grid;
   justify-items: center;
+  padding-bottom: 50%;
 }
 .cartClear {
   border: 1px solid black;
