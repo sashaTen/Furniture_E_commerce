@@ -671,7 +671,19 @@ LOGIN
   width: 40%;
   left: 30%;
 }
+
+/*
+FINISH  PURCHASE 
+FINISH  PURCHASE
+FINISH  PURCHASE
+FINISH  PURCHASE
+FINISH  PURCHASE
+*/
+
 /* HOVERING  AND OTHER   EFFECTS*/
+.finishPage {
+  margin-top: 80px;
+}
 .marcosBtn:hover {
   color: red;
 }

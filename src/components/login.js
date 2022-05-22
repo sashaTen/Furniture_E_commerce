@@ -26,7 +26,7 @@ const Login = () => {
         <h3>Register</h3>
         <p>Please fill in this form to create an account.</p>
         <div className="loginContainer">
-          <label for="email">
+          <label htmlFor="email">
             <b>Email</b>
           </label>
           <input
@@ -37,7 +37,7 @@ const Login = () => {
             required
           />
 
-          <label for="psw">
+          <label htmlFor="psw">
             <b>Password</b>
           </label>
           <input
@@ -48,7 +48,7 @@ const Login = () => {
             required
           />
 
-          <label for="adress">
+          <label htmlFor="adress">
             <b>ADRESS</b>
           </label>
           <input type="password" placeholder="adress" name="adress" required />
@@ -56,7 +56,7 @@ const Login = () => {
             onClick={() => {
               logged.setLogged(true);
             }}
-            class="cartBuyBtn"
+            className="cartBuyBtn"
           >
             Register
           </button>
