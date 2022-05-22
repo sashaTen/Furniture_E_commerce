@@ -138,19 +138,9 @@ const Cart = () => {
         })}
       </div>
       <section className="cartBottom">
-        <button
-          className="cartBuyBtn"
-          onClick={() => {
-            if (logged) {
-              alert("thanks for  shopping with us");
-            } else if (!logged) {
-              alert("create an  acoount and  log in");
-            }
-          }}
-        >
-          {" "}
-          buy{" "}
-        </button>
+        <Link to="/finish">
+          <button className="cartBuyBtn"> buy </button>
+        </Link>
 
         <h3>check with discount : {total}$</h3>
       </section>

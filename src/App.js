@@ -1,4 +1,5 @@
 import Cart from "./components/cart";
+import AfterPurchase from "./components/afterPurchasePage";
 import Login from "./components/login";
 import Loading from "./components/loading";
 import DisplayComponent from "./productsComponents/displayComponent";
@@ -77,6 +78,7 @@ export default function App() {
                 <Route path="/loading" element={<Loading />} />
                 <Route path="/itemDesc" element={<ItemDesc />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/finish" element={<AfterPurchase />} />
                 <Route
                   exact
                   path="/"
