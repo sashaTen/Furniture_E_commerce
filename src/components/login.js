@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { accountInfo, isLogged } from "../context";
+import { Link } from "react-router-dom";
 const Login = () => {
   const personalInfo = useContext(accountInfo);
   const logged = useContext(isLogged);
@@ -8,6 +9,10 @@ const Login = () => {
     return (
       <>
         <div className="loginContainer">
+          now you can buy items in
+          <Link to="/cart">
+            <p>cart</p>
+          </Link>
           <button
             className="cartBuyBtn"
             onClick={() => {

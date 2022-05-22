@@ -665,9 +665,10 @@ LOGIN
 */
 
 .loginContainer {
-  display: grid;
+  display: block;
   position: relative;
   margin-top: 80px;
+  height: 80vh;
   width: 40%;
   left: 30%;
 }
@@ -683,6 +684,14 @@ FINISH  PURCHASE
 /* HOVERING  AND OTHER   EFFECTS*/
 .finishPage {
   margin-top: 80px;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: black;
+  padding-top: 20%;
+}
+.finishPage > a {
+  color: lightblue;
 }
 .marcosBtn:hover {
   color: red;
