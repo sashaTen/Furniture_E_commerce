@@ -1,6 +1,6 @@
-import Cart from "./components/cart";   //added  comments 
+import Cart from "./components/cart"; //added  comments
 import AfterPurchase from "./components/afterPurchasePage";
-import Login from "./components/login";
+import Login from "./components/login"; // just a comment
 import Loading from "./components/loading";
 import DisplayComponent from "./productsComponents/displayComponent";
 import Contacts from "./components/contacts";
