@@ -1,4 +1,4 @@
-import Cart from "./components/cart";
+import Cart from "./components/cart";   //added  comments 
 import AfterPurchase from "./components/afterPurchasePage";
 import Login from "./components/login";
 import Loading from "./components/loading";
