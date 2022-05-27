@@ -30,187 +30,30 @@ useEffect(() => {
 
 
 
-
-
-
-
-  ////////////https://www.freecodecamp.org/news/react-router-in-5-minutes/
-  switch switches  between  routes  and   link  forms  the route
-
-///////////////https://scrimba.com/learn/react    here   is  the roadmap for  react
-
-////////////
-STUDY PLAN  FOR   TODAY :   
-////////////
-
-
-
-1   Local state
-Global state
-Server state
-URL state
-
-
- React Queryv   -  server  state
-
- URL state – Data that exists on our URLs, including the pathname and query parameters.
- Context API
-
-
- Zustand   vs   usecontext  
- try  them  both   and then choose  which  one is  better 
-
-
- next  :   1 find   where  you ll  need the  global state 
-           2  how to pass data  with  link   
-
-
-
-what   i gotta do   ?   :
-          1 single Product component
-          2  all  items  component   make  it fetch data for  filetring from
-          the url link 
-         
-          4  pass  the filetring data into links of categries 
-          5  close category  or close company  after  click of list item
-          6 contact 
-          7  blog  component
-
-
-           onClick={()=>{
-            window.scrollTo({top: 0, behavior: 'smooth'});
-          }} 
-          add this  function  all  over  the place 
-
-index//////////////////
-import { useState, createContext, useContext } from "react";
-import ReactDOM from "react-dom/client";
-import Component5 from "./state";
-const UserContext = createContext();
-
-function Component1() {
-  const [user, setUser] = useState("Jesse Hall");
-
-  return (
-    <UserContext.Provider value={user}>
-      <h1>{`Hello ${user}!`}</h1>
-      <Component2 user={user} />
-    </UserContext.Provider>
-  );
-}
-
-function Component2() {
-  return (
-    <>
-      <Component5 />
-    </>
-  );
-}
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Component1 />);
-export default UserContext;
-
-
-
-
-///////////////////////state
-
-
-
-
-import { useState, createContext, useContext } from "react";
-import UserContext from "./index";
-function Component5() {
-  const user = useContext(UserContext);
-
-  return (
-    <>
-      <h1>Component 5</h1>
-      <h2>{`Hello ${user} again!`}</h2>
-    </>
-  );
-}
-
-export default Component5;
-
-
-
-
-///////////////////// context.js
-
-
-import { createContext } from "react";
-export const moveAppContext = createContext(null);
-
-
-///////////////////      App  : 
-
-import { moveAppContext } from "./context";
-
- const [moveApp, setMoveApp] = useState("App");
-
-
-    <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
-          <Menu items={items} changeClass={(moveApp) => setMoveApp(moveApp)} />
-     </moveAppContext.Provider>
-
-
-///////////////           category
-
-
-import { useContext } from "react";
-import { moveAppContext } from "../context";
-const { moveApp, setMoveApp } = useContext(moveAppContext);
-
-return   :   
-
- <p
-            onClick={() => {
-              setMoveApp("App");
-            }}
-            key={item}
-          >
-            <Link to="/items" state={item}>
-              {" "}
-              {item}
-            </Link>
-          </p>
-
-
-
-///////////////////////////////////
-
-  let   listIds =    []
-  for(let i =0 ;  i <data.length ;  i ++){
-    listIds.push(data[i].id)
-  }
- 
-   let productsItems =[]
-
-  for(let i  = 0 ;  i  < listIds.length; i ++){
-    pushInProductsList(listIds[i])
-
-  }
-
-   function   pushInProductsList(id){
-    for(let i  =0  ;  i<data.length ; i  ++){
-      if(data[i].id===id){
-        productsItems.push(data[i])
-      }
-    }
-   What to do next in project 
-
-1 change  absolute values to relative 
-2 get rid off sofas spininng 
-3  make menu btn invisibile by clikcing 
-4 +    and  - make it work 
-5  fix dekstop view for menu btns like categories 
-6 keep improving website . 
-7 implement bew things in it
+///////////////////////
 ///////////////
-////////////probably  for the  github  practice i  will have  to  start   a new  project 
-so  it  will not affect that project 
+//////////////////
+////////////////////
+/////////////////////
+/////////////////////////////
+/////////////////////
+/////////////////////////////
+MY   PLANS :  
+            1 how to write better css    :
+                      https://www.creativebloq.com/advice/a-guide-to-writing-better-css
+            2  how to write  better react 
+                       https://www.freecodecamp.org/news/best-practices-for-react/
 
+            3 github  and  git  tutorial 
+                        https://www.freecodecamp.org/news/git-and-github-for-beginners/
+                        https://www.youtube.com/watch?v=RGOj5yH7evk
 
-keep  working on that  project  on  sandbox  while work with   github and github
-with  just  smaller  project to  get  familiar 
+            4  freecodecamp (redux bootstrap sass)
+                           https://www.freecodecamp.org/learn/front-end-development-libraries/
+                           john  smilga 
+                           https://www.freecodecamp.org/news/redux-for-beginners/ 
+
+           5   interview  questions  : 
+                           https://www.techgeekbuzz.com/best-front-end-interview-questions/
+            6  open sourse  project to read: 
+            https://github.com/oldboyxx/jira_clone 
