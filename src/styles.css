@@ -7,6 +7,7 @@
   font-family: serif;
   font-weight: bold;
   text-transform: uppercase;
+  overflow-x: hidden;
 }
 
 .none {
@@ -17,7 +18,7 @@
   font-family: sans-serif;
   text-align: center;
   position: relative;
-  left: 100%;
+  left: 110%;
 }
 .header {
   display: flex;
@@ -758,6 +759,7 @@ MEDIA  QUERIES
     margin-top: 50px;
     z-index: 1;
     background-color: white;
+    overflow-x: hidden;
   }
   .btnXmobileMenu {
     display: block;

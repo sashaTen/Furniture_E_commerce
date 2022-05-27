@@ -4,8 +4,10 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Category from "./category";
 import Company from "./company";
 import { useState } from "react";
-
+import { useContext } from "react";
+import { moveAppContext } from "../context";
 const Menu = (props) => {
+  const { appDisplay, setAppDisplay } = useContext(moveAppContext);
   const items = props.items;
   const [showCategory, setShowCategory] = useState(false);
   const [showCompany, setShowCompany] = useState(false);
@@ -16,6 +18,7 @@ const Menu = (props) => {
         className={menuIcon}
         onClick={() => {
           props.changeClass("moveApp");
+          setAppDisplay(true);
           setMenuIcon("invisible");
         }}
       />
@@ -25,6 +28,7 @@ const Menu = (props) => {
           onClick={() => {
             props.changeClass("App");
             setMenuIcon("menuIcon");
+            setAppDisplay(false);
           }}
         >
           {" "}

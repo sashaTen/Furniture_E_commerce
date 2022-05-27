@@ -19,6 +19,7 @@ import { cartContext } from "./context";
 import { isLogged } from "./context";
 
 export default function App() {
+  const [appDisplay, setAppDisplay] = useState(false);
   const [logged, setLogged] = useState(false);
   const [items, setItems] = useState([]);
   const [moveApp, setMoveApp] = useState("App");
@@ -56,6 +57,28 @@ export default function App() {
   
   */
 
+  if (appDisplay) {
+    return (
+      <div className={moveApp}>
+        <Router>
+          <isLogged.Provider value={{ logged, setLogged }}>
+            <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
+              <Header />
+
+              <moveAppContext.Provider
+                value={{ moveApp, setMoveApp, appDisplay, setAppDisplay }}
+              >
+                <Menu
+                  items={items}
+                  changeClass={(moveApp) => setMoveApp(moveApp)}
+                />
+              </moveAppContext.Provider>
+            </cartContext.Provider>
+          </isLogged.Provider>
+        </Router>
+      </div>
+    );
+  }
   return (
     <div className={moveApp}>
       <Router>
@@ -63,7 +86,9 @@ export default function App() {
           <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
             <Header />
 
-            <moveAppContext.Provider value={{ moveApp, setMoveApp }}>
+            <moveAppContext.Provider
+              value={{ moveApp, setMoveApp, appDisplay, setAppDisplay }}
+            >
               <Menu
                 items={items}
                 changeClass={(moveApp) => setMoveApp(moveApp)}
