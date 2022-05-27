@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { moveAppContext } from "../context";
 const Menu = (props) => {
-  const { appDisplay, setAppDisplay } = useContext(moveAppContext);
+  const { setAppDisplay } = useContext(moveAppContext);
   const items = props.items;
   const [showCategory, setShowCategory] = useState(false);
   const [showCompany, setShowCompany] = useState(false);
@@ -39,6 +39,7 @@ const Menu = (props) => {
           <div
             className="btn"
             onClick={() => {
+              setAppDisplay(false);
               props.changeClass("App");
               setMenuIcon("menuIcon");
             }}
@@ -81,6 +82,7 @@ const Menu = (props) => {
         <Link to="/about">
           <div
             onClick={() => {
+              setAppDisplay(false);
               props.changeClass("App");
               setMenuIcon("menuIcon");
             }}
@@ -93,6 +95,7 @@ const Menu = (props) => {
         <Link to="/contacts">
           <div
             onClick={() => {
+              setAppDisplay(false);
               props.changeClass("App");
               setMenuIcon("menuIcon");
             }}

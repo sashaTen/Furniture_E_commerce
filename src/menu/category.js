@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { moveAppContext } from "../context";
 const Category = (props) => {
-  const { moveApp, setMoveApp } = useContext(moveAppContext);
+  const { moveApp, setMoveApp, setAppDisplay } = useContext(moveAppContext);
   const items = props.items;
   let categories = [];
   for (let i = 0; i < items.length; i++) {
@@ -18,6 +18,7 @@ const Category = (props) => {
           <p
             onClick={() => {
               setMoveApp("App");
+              setAppDisplay(false);
               props.showMenu("menuIcon");
               props.closeCategory(false);
             }}
