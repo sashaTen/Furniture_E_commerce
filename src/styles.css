@@ -908,6 +908,7 @@ SINGLE  PRODUCT
   }
   .btnContainer {
     display: flex;
+    justify-content: space-between;
   }
   .itemDiscount {
     top: 21%;
