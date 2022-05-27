@@ -55,7 +55,10 @@ const Contacts = () => {
       <section className="contactIconContainer">
         <RiMailUnreadFill />
         <p>send us email and get quick response</p>
-        <p> conosinChairSofa@gmail.com</p>
+        <p style={{ "text-transform": "lowercase" }}>
+          {" "}
+          conosinChairSofa@gmail.com
+        </p>
       </section>
     </div>
   );

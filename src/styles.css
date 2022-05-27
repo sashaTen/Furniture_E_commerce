@@ -9,7 +9,10 @@
   text-transform: uppercase;
   overflow-x: hidden;
 }
-
+a {
+  color: brown;
+  text-decoration: none;
+}
 .none {
   /*  It  is   just for  testting purpose  */
   display: none;
