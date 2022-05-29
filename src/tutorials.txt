@@ -1,0 +1,27 @@
+////////////////////
+///////
+
+REACT  BEST  PRACTICES 
+    ///////////Re -rendring   :
+Update in State
+
+Update in prop
+
+event 
+
+the data of the component (state & props)
+updates in response to user events like clicking
+
+you  also   can set  re-render  to  false 
+for  example  if  you  want to render only after the change in the state 
+
+maybe in class components  you  hvcae better  control  over the component  
+lifecycle
+     ////////////////////
+      component lifecycle :
+      https://www.freecodecamp.org/news/how-to-understand-a-components-lifecycle-methods-in-reactjs-e1a609840630/
+
+
+
+
+       ///////// NEXT TO READ IS THE VIRTUAL DOM    //////////
