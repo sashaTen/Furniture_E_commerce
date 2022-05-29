@@ -1,4 +1,5 @@
 import Cart from "./components/cart"; //added  comments
+import ScrollToTop from "./components/scrolltoTop"; //   auto  scroll to the top
 import AfterPurchase from "./components/afterPurchasePage";
 import Login from "./components/login"; // just a comment
 import Loading from "./components/loading";
@@ -61,6 +62,30 @@ export default function App() {
     return (
       <div className={moveApp}>
         <Router>
+          <ScrollToTop>
+            <isLogged.Provider value={{ logged, setLogged }}>
+              <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
+                <Header />
+
+                <moveAppContext.Provider
+                  value={{ moveApp, setMoveApp, appDisplay, setAppDisplay }}
+                >
+                  <Menu
+                    items={items}
+                    changeClass={(moveApp) => setMoveApp(moveApp)}
+                  />
+                </moveAppContext.Provider>
+              </cartContext.Provider>
+            </isLogged.Provider>
+          </ScrollToTop>
+        </Router>
+      </div>
+    );
+  }
+  return (
+    <div className={moveApp}>
+      <Router>
+        <ScrollToTop>
           <isLogged.Provider value={{ logged, setLogged }}>
             <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
               <Header />
@@ -73,46 +98,26 @@ export default function App() {
                   changeClass={(moveApp) => setMoveApp(moveApp)}
                 />
               </moveAppContext.Provider>
+              <Routes>
+                <Route path="/about" element={<About />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/items" element={<DisplayComponent />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/loading" element={<Loading />} />
+                <Route path="/itemDesc" element={<ItemDesc />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/finish" element={<AfterPurchase />} />
+                <Route
+                  exact
+                  path="/"
+                  element={<HomePageBody items={items} />}
+                ></Route>
+              </Routes>
             </cartContext.Provider>
           </isLogged.Provider>
-        </Router>
-      </div>
-    );
-  }
-  return (
-    <div className={moveApp}>
-      <Router>
-        <isLogged.Provider value={{ logged, setLogged }}>
-          <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
-            <Header />
 
-            <moveAppContext.Provider
-              value={{ moveApp, setMoveApp, appDisplay, setAppDisplay }}
-            >
-              <Menu
-                items={items}
-                changeClass={(moveApp) => setMoveApp(moveApp)}
-              />
-            </moveAppContext.Provider>
-            <Routes>
-              <Route path="/about" element={<About />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/items" element={<DisplayComponent />} />
-              <Route path="/contacts" element={<Contacts />} />
-              <Route path="/loading" element={<Loading />} />
-              <Route path="/itemDesc" element={<ItemDesc />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/finish" element={<AfterPurchase />} />
-              <Route
-                exact
-                path="/"
-                element={<HomePageBody items={items} />}
-              ></Route>
-            </Routes>
-          </cartContext.Provider>
-        </isLogged.Provider>
-
-        <Contacts />
+          <Contacts />
+        </ScrollToTop>
       </Router>
     </div>
   );
