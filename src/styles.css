@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+:root {
+  --hover-color: orange;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -253,7 +257,7 @@ HOME  PAGE  COMPONENTS
   object-fit: cover;
 }
 .orangeColor {
-  color: orange;
+  color: var(--hover-color);
 }
 .collectionAnnouncement {
   display: flex;
@@ -273,7 +277,7 @@ HOME  PAGE  COMPONENTS
   color: grey;
 }
 .shopBtn:hover {
-  color: orange;
+  color: var(--hover-color);
 }
 
 /*
@@ -384,8 +388,8 @@ SINGLE  PRODUCT
   color: lightblue;
 }
 .itemHeart:hover {
-  color: orange;
-  border: 1px solid orange;
+  color: var(--hover-color);
+  border: 1px solid var(--hover-color);
 }
 .itemDiscount {
   position: absolute;
