@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { moveAppContext } from "../context";
 const Menu = (props) => {
-  const { setAppDisplay } = useContext(moveAppContext);
+  const { setMoveApp, setAppDisplay } = useContext(moveAppContext);
   const items = props.items;
   const [showCategory, setShowCategory] = useState(false);
   const [showCompany, setShowCompany] = useState(false);
@@ -17,7 +17,8 @@ const Menu = (props) => {
       <AiOutlineMenu
         className={menuIcon}
         onClick={() => {
-          props.changeClass("moveApp");
+          // props.changeClass("moveApp");
+          setMoveApp("moveApp");
           setAppDisplay(true);
           setMenuIcon("invisible");
         }}
