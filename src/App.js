@@ -11,7 +11,6 @@ import Menu from "./menu/menu";
 import About from "./components/about";
 import "./styles.css";
 import Header from "./components/header";
-import { BsSearch } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import HomePageBody from "./components/homePageBody";
