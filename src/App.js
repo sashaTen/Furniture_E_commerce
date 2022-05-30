@@ -25,7 +25,7 @@ export default function App() {
   const [moveApp, setMoveApp] = useState("App");
   const [showLoading, setShowLoading] = useState(true);
   const [itemsOfCart, setItemsOfCart] = useState([]);
-
+  const word = "hello   context";
   useEffect(() => {
     axios
       .get("https://course-api.com/react-store-products/")
@@ -62,7 +62,7 @@ export default function App() {
       <div className={moveApp}>
         <Router>
           <ScrollToTop>
-            <isLogged.Provider value={{ logged, setLogged }}>
+            <isLogged.Provider value={{ logged, setLogged, word }}>
               <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
                 <Header />
 

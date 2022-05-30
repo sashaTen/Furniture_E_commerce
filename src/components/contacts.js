@@ -1,4 +1,5 @@
 import Loading from "../components/loading";
+
 import {
   RiKakaoTalkFill,
   RiMapPinFill,
@@ -14,6 +15,7 @@ import {
 import { useState, useEffect } from "react";
 const Contacts = () => {
   const [showLoading, setShowLoading] = useState(true);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
