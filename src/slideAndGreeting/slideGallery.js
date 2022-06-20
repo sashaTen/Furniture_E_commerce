@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 const imgUrl1 = "https://wallpaperaccess.com/full/2076086.jpg";
 const imgUrl2 = "https://wallpaperaccess.com/full/2076099.jpg";
 const imgUrl3 =
