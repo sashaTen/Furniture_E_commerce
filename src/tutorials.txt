@@ -1,0 +1,4 @@
+1  practice  the  best  practices 
+2  learn   the  redux on  the  way 
+3   first  do  the   styling  components   kind 
+of the  practices 
