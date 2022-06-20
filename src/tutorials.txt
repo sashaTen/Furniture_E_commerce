@@ -12,5 +12,59 @@ the   portfolio for  example
 maybe you have   to  build  portfolio  
 with   new  technoligies 
 
+5   reading   your own  code  is  good
+exerices 
+?   how to read   code 
+
+
+read   others  code 
+rewrite  it 
+by  building your  project 
+? 
+
+have   i  set  good   goals 
+
+
+you  need  to   have  clear   goals 
+1   i  want  to  learn how to  write  good
+code
+2   learn  new tech 
+    should  learn best  practices 
+    on the small   project
+//////////
+    build the  project of  portfolio
+    piece  by  piece 
+    make  it  simple 
+
+
+
+
+
+
+    comfy  store  is too big 
+
+    it is  hard  to learn new things 
+    on  big project 
+    you learn on  small one 
+    learn   best  practices 
+    cool  effects  and the  
+    https://developer.mozilla.org/en-US/docs/Web/Guide/API
+    functionalities  
+    
+
+    learn   new  things  and   build  prefessionally 
+    the portfolio
+    //////////////////
+    //////////////////
+
+
+
+
+
+
+
+
+
+
 
 
