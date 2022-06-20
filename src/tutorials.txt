@@ -2,3 +2,15 @@
 2  learn   the  redux on  the  way 
 3   first  do  the   styling  components   kind 
 of the  practices 
+
+
+4   learn   redux   separately  and  implement   it into 
+the   portfolio for  example 
+
+
+
+maybe you have   to  build  portfolio  
+with   new  technoligies 
+
+
+
