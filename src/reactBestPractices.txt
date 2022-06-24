@@ -1,1 +1,16 @@
-BEST  PRACTICES 
+BEST  PRACTICES : 
+
+
+1  good  folder  structure         //          for  exmaple  you  are building the app
+                                               and then u realize that app  grows in  complexity  
+                                               thats when  you need  to build new component  in the same file
+                                               and then move it to  another file and export 
+                                               2.  the  component  must go  standalone  when you  can  reuse it 
+                                               3 .  how to  ordanize  folders  :
+                                               the group  of files that have  similar  abstraction by their 
+                                               functionalities 
+                                               
+  
+  2  component  design           // 
+                                              1   usually  you  add  a lot  of  complexity 
+                                                   as  a  provider  or the con
