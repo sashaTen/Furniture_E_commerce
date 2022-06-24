@@ -1,4 +1,11 @@
-BEST  PRACTICES : 
+BEST  PRACTICES :
+
+in the github write  step  by step what you  are  doing
+
+
+///////////////////////
+react  best 
+//////////////////////
 
 
 1  good  folder  structure         //          for  exmaple  you  are building the app
@@ -22,3 +29,32 @@ BEST  PRACTICES :
                                             
    3 COMPONENT  PATTERNS               //     
                                                
+                                                  when   you realixe  that the  logic  can be  used several  times 
+                                                  you   should   put it into the custom hooks 
+                                                  
+                                                  use   les  usestate  as  possible 
+                                                  instead  use  useReducer or maybe redux 
+                                                  pascalCase name  stying   for the components
+                                                  and the camelCase  styling for the  variables 
+                                                  
+    //////////////////////////////////////////////////////////////////////
+    CSS  BEST  PRACTICES 
+    ////////////////////////////////////////////////////////////////////
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                                                  
