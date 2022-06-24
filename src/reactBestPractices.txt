@@ -13,4 +13,12 @@ BEST  PRACTICES :
   
   2  component  design           // 
                                               1   usually  you  add  a lot  of  complexity 
-                                                   as  a  provider  or the con
+                                                   as  a  provider  or the context   or   routes 
+                                                   to the App  component :  try  to  delegate  the  complexity so the app is  cleaner 
+                                                   
+                                              2   imports   : first  import  the third  party  apis and  lib
+                                                     and then  create  little space and then  import the component
+                                                     (external  imports  go  first )
+                                            
+   3 COMPONENT  PATTERNS               //     
+                                               
