@@ -1,6 +1,7 @@
 BEST  PRACTICES :
 
-in the github write  step  by step what you  are  doing
+*in the github write  step  by step what you  are  doing
+*comment your  code 
 
 
 ///////////////////////
@@ -41,7 +42,28 @@ react  best
     CSS  BEST  PRACTICES 
     ////////////////////////////////////////////////////////////////////
     
-    
+    how to write  css 
+    *name  variables of  css the  way  you can find them later  
+    *use the  framework  for the layout  instead of buiding it yourself
+    *use reset or learn  how to use it 
+    *top-down  structure of the  styling 
+    *combine elements 
+    *create  react  and html  first and then build  styling 
+    *when  you  have property   that  comes up use several  classes 
+    *learn  how to use the shorthand  like just margin
+    instead of the margin-top  and margin-bottom
+    *cotton-candy {
+    color: #fff;
+    float: left;
+    font-weight:
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}  use   alphabetic order 
+* Use margin: 0 auto to Center Layouts
+* Add Margins and Padding to All Elements
+*
     
     
     
