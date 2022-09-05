@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { moveAppContext } from "../context";
 import { Link } from "react-router-dom";
+import { moveAppContext } from "../context";
 const Company = (props) => {
   const { setAppDisplay, setMoveApp } = useContext(moveAppContext);
   const items = props.items;
