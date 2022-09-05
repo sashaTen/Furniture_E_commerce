@@ -14,10 +14,7 @@ const Header = () => {
     <>
       <header className="header">
         <p className="itemsAmount">{itemsOfCart.length}</p>
-        <p className="latestNews">
-          latest news :{" "}
-          <span className="newsDiscount"> get new year discount 20%</span>
-        </p>
+       
         <Link to="/login">
           <BsFillPersonFill className="acountIcon" />
         </Link>
