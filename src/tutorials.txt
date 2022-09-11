@@ -1,44 +1,5 @@
 
 
-    comfy  store  is too big 
-
-    it is  hard  to learn new things 
-    on  big project 
-    you learn on  small one 
-    learn   best  practices 
-    cool  effects  and the  
-    https://developer.mozilla.org/en-US/docs/Web/Guide/API
-    functionalities  
-    
-
-    learn   new  things  and   build  prefessionally 
-    the portfolio
-    //////////////////
-    //////////////////
-
-https://www.freecodecamp.org/news/best-practices-for-react/
-------------1 )   make the  check_List 
-make   simpler   version 
-like the  checklist 
-and the by  writing  app 
-use   best  practices  from the checklist 
-when   you  need
-------------2) after   you  have the checkList 
-               start   building   portfolio
-               with  new technologies 
------------ 2)  randomly  check   the:
-                      
-                   https://developer.mozilla.org/en-US/docs/Web/Guide/API
-                      
-------------3) implement the effects  and   other functionalities
-
-
-
-
-https://blog.logrocket.com/react-component-design-patterns-2022/
-
-
-
 
 
 
