@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { isLogged } from "../context";
 import { Link } from "react-router-dom";
+import { isLogged } from "../context";
 const Login = () => {
   const logged = useContext(isLogged);
 

@@ -1,10 +1,10 @@
+import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import SlideGallery from "../slideAndGreeting/slideGallery";
 import { useState, useEffect } from "react"; //BsArrowRight
 import Greet from "../slideAndGreeting/greeting";
 import Loading from "./loading";
 import Brands from "./brands";
-import { BsArrowRight } from "react-icons/bs";
 import MarcosCollection from "./marcosCollection";
 import BestSelling from "./bestSelling";
 const HomePageBody = (props) => {

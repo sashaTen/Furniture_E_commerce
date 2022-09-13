@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import data from "./data";
 import SingleItem from "../productsComponents/displaySingleComponent";
 const BestSelling = () => {

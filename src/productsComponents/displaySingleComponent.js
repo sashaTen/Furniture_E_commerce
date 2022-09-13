@@ -1,7 +1,7 @@
+import { useContext } from "react";
 import { BsFillHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { cartContext } from "../context";
-import { useContext } from "react";
 const SingleItem = (props) => {
   const { itemsOfCart, setItemsOfCart } = useContext(cartContext);
   const {

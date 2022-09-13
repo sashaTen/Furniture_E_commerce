@@ -1,4 +1,3 @@
-import create from "zustand";
 import Loading from "../components/loading";
 import { useState, useEffect } from "react";
 const About = () => {

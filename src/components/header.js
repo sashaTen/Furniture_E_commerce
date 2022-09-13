@@ -1,11 +1,12 @@
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AiFillHome, AiFillSetting } from "react-icons/ai";
 import {
   BsFillCaretDownFill,
   BsFillCartFill,
   BsFillPersonFill
 } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import { AiFillHome, AiFillSetting } from "react-icons/ai";
-import { useContext } from "react";
+//
 import { cartContext } from "../context";
 const Header = () => {
   const { itemsOfCart } = useContext(cartContext);

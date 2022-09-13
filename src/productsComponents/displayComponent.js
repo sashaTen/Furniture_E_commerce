@@ -1,8 +1,8 @@
-import data from "../components/data";
+import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import SingleItem from "./displaySingleComponent";
+import data from "../components/data";
 import Loading from "../components/loading";
-import { useLocation } from "react-router-dom";
 
 const DisplayComponent = () => {
   const location = useLocation();

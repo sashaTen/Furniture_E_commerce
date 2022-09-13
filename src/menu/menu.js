@@ -1,10 +1,10 @@
+import { useContext } from "react";
 import { BsFillCaretDownFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Category from "./category";
 import Company from "./company";
-import { useState } from "react";
-import { useContext } from "react";
 import { moveAppContext } from "../context";
 const Menu = (props) => {
   const { setMoveApp, setAppDisplay } = useContext(moveAppContext);

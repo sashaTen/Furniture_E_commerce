@@ -1,5 +1,3 @@
-import Loading from "../components/loading";
-
 import {
   RiKakaoTalkFill,
   RiMapPinFill,
@@ -12,6 +10,7 @@ import {
   BsTelephoneFill
 } from "react-icons/bs";
 
+import Loading from "../components/loading";
 import { useState, useEffect } from "react";
 const Contacts = () => {
   const [showLoading, setShowLoading] = useState(true);

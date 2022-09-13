@@ -1,3 +1,7 @@
+import "./styles.css";
+import axios from "axios";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Cart from "./components/cart"; //added  comments
 import ScrollToTop from "./components/scrolltoTop"; //   auto  scroll to the top
 import AfterPurchase from "./components/afterPurchasePage";
@@ -6,14 +10,9 @@ import Loading from "./components/loading";
 import DisplayComponent from "./productsComponents/displayComponent";
 import Contacts from "./components/contacts";
 import ItemDesc from "./productsComponents/singleItemDescription";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Menu from "./menu/menu";
 import About from "./components/about";
-import "./styles.css";
-//import "./sassStyles.css"
 import Header from "./components/header";
-import { useState, useEffect } from "react";
-import axios from "axios";
 import HomePageBody from "./components/homePageBody";
 import { moveAppContext } from "./context";
 import { cartContext } from "./context";
