@@ -62,7 +62,7 @@ export default function App() {
       <div className={moveApp}>
         <Router>
           <ScrollToTop>
-            <isLogged.Provider value={{ logged, setLogged, word }}>
+          <isLogged.Provider value={{ logged, setLogged, word }}>
               <cartContext.Provider value={{ itemsOfCart, setItemsOfCart }}>
                 <Header />
 
@@ -76,6 +76,8 @@ export default function App() {
                 </moveAppContext.Provider>
               </cartContext.Provider>
             </isLogged.Provider>
+          
+            
           </ScrollToTop>
         </Router>
       </div>

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"; //BsFillStarFill
-import { BsFillStarFill } from "react-icons/bs";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { useSelector } from 'react-redux';
 const Greet = () => {
+  const loginState= useSelector((state) => state.loginREDUCER);
+  console.log(loginState);
   /*
   greetExpirience
   greetFast
@@ -14,7 +15,8 @@ const Greet = () => {
     <>
       <div className="greetContainer">
         <section className="greetMessage">
-          <span className="greetExpirience">exprience</span>
+          <span className="greetExpirience">exprience {loginState.value}  </span>
+        <h1>{loginState.value}</h1>
           <h3 className="  greetFast">fast</h3>
           <span className="greetAnd">and</span>
 
