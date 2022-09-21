@@ -2,7 +2,7 @@
 
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = { value: "fuck"}
+const initialState = { value:  false }
 
 const loginSlice = createSlice({
   name: 'login',

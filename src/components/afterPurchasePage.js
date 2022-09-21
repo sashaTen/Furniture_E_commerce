@@ -1,10 +1,9 @@
-import { useContext } from "react";
 import { isLogged } from "../context";
 import { Link } from "react-router-dom";
-
+import     {useSelector    }   from     "react-redux"  
 const AfterPurchase = () => {
-  const loginCheck = useContext(isLogged);
-  if (loginCheck.logged) {
+    const loginState= useSelector((state) => state.loginREDUCER);
+  if (loginState.value) {
     return (
       <div className="finishPage">
         THANKS FOR SHOPPING WITH US

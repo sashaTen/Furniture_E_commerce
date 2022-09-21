@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"; //BsFillStarFill
 import { useSelector } from 'react-redux';
 const Greet = () => {
   const loginState= useSelector((state) => state.loginREDUCER);
-  console.log(loginState);
+
   /*
   greetExpirience
   greetFast
