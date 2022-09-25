@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { isLogged } from "../context";
+import     {useDispatch }   from     "react-redux"  
+import { consoleLOG  ,  logIN ,  logOUT} from "../slice";
 const Login = () => {
   const logged = useContext(isLogged);
-
+  const   dispatch   =   useDispatch()
   if (logged.logged) {
     return (
       <>
@@ -58,7 +60,8 @@ const Login = () => {
           <input type="password" placeholder="adress" name="adress" required />
           <button
             onClick={() => {
-              logged.setLogged(true);
+              //logged.setLogged(true);
+              dispatch(logIN())
             }}
             className="cartBuyBtn"
           >

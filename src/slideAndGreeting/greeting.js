@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"; //BsFillStarFill
-import { useSelector } from 'react-redux';
 const Greet = () => {
-  const loginState= useSelector((state) => state.loginREDUCER);
+  
 
   /*
   greetExpirience
@@ -15,8 +14,8 @@ const Greet = () => {
     <>
       <div className="greetContainer">
         <section className="greetMessage">
-          <span className="greetExpirience">exprience {loginState.value}  </span>
-        <h1>{loginState.value}</h1>
+          <span className="greetExpirience">exprience  </span>
+        <h1></h1>
           <h3 className="  greetFast">fast</h3>
           <span className="greetAnd">and</span>
 

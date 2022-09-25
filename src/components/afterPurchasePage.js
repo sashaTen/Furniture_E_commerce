@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import     {useSelector    }   from     "react-redux"  
 const AfterPurchase = () => {
     const loginState= useSelector((state) => state.loginREDUCER);
-  if (loginState.value) {
+  if (loginState.value!=="logout") {
     return (
       <div className="finishPage">
-        THANKS FOR SHOPPING WITH US
+       
+        THANKS FOR SHOPPING WITH US 
         <Link to="/items">
           {" "}
-          <p>wanna keep shopping</p>{" "}
+          <p>wanna keep shopping  </p>{" "}
         </Link>
       </div>
     );
