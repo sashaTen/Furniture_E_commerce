@@ -2,11 +2,14 @@
 
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = { value: "logout"}
+
+
+
+//const initialState = { value: "logout"}
 
 const loginSlice = createSlice({
   name: 'login',
-  initialState,
+  initialState :{ value: "logout"},
   reducers: {
    consoleLOG(){
     console.log("you   dispatch");
@@ -22,3 +25,4 @@ const loginSlice = createSlice({
 
 export const {logIN ,  logOUT  ,    consoleLOG} = loginSlice.actions
 export default loginSlice.reducer
+
