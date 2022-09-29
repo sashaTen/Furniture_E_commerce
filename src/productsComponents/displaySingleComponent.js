@@ -1,4 +1,6 @@
 import { useContext } from "react";
+import { useDispatch } from "react-redux";
+import { push } from "../sliceFORcart";
 import { BsFillHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { cartContext } from "../context";
@@ -14,7 +16,9 @@ const SingleItem = (props) => {
     category,
     shipping
   } = props;
-  const itemId = id;
+  const itemId = [id ,  name ,   description ,  image , price ,  company];
+  const dispatch = useDispatch();
+
   return (
     <div className="singleItemContainer">
       <p className="itemTitle">{name}</p>
@@ -32,6 +36,8 @@ const SingleItem = (props) => {
         <button
           onClick={() => {
             setItemsOfCart([...itemsOfCart, itemId]);
+            dispatch(push(itemId));
+            
           }}
           className="addToCartBtn"
         >

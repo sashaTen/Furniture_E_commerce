@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import     {useSelector    }   from     "react-redux"  
 const AfterPurchase = () => {
     const loginState= useSelector((state) => state.loginREDUCER);
+    const  cartItems   = useSelector((state)=>  state.cartREDUCER)
+    console.log(cartItems);
   if (loginState.value!=="logout") {
     return (
       <div className="finishPage">
