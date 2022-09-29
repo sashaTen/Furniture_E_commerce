@@ -16,7 +16,7 @@ const SingleItem = (props) => {
     category,
     shipping
   } = props;
-  const itemId = [id ,  name ,   description ,  image , price ,  company];
+  const itemId = id
   const dispatch = useDispatch();
 
   return (
@@ -36,7 +36,7 @@ const SingleItem = (props) => {
         <button
           onClick={() => {
             setItemsOfCart([...itemsOfCart, itemId]);
-            dispatch(push(itemId));
+          //  dispatch(push(itemId));
             
           }}
           className="addToCartBtn"
