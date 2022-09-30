@@ -3,6 +3,7 @@ import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Cart from "./components/cart"; //added  comments
+import ShoppingCart from "./components/shoppingCART.js";
 import ScrollToTop from "./components/scrolltoTop"; //   auto  scroll to the top
 import AfterPurchase from "./components/afterPurchasePage";
 import Login from "./components/login"; // just a comment
@@ -100,6 +101,7 @@ export default function App() {
                 />
               </moveAppContext.Provider>
               <Routes>
+                <Route path   ="/shoppingCART"   element =   {<ShoppingCart/>}/>
                 <Route path="/about" element={<About />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/items" element={<DisplayComponent />} />
