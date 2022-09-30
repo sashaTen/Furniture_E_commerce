@@ -9,7 +9,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const loginSlice = createSlice({
   name: 'login',
-  initialState :{ value: "logout"},
+  initialState :{ value: "logogut"},
   reducers: {
    consoleLOG(){
     console.log("you   dispatch");

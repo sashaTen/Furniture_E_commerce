@@ -23,7 +23,7 @@ const Greet = () => {
           <p className="greetShopping">shopping</p>
         </section>
 
-        <Link className="greetLinkToItems" to="/items">
+        <Link className="greetLinkToItems" to="/items">    
           start shopping
         </Link>
       </div>
