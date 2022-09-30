@@ -20,7 +20,7 @@ const Header = () => {
           <BsFillPersonFill className="acountIcon" />
         </Link>
         <div className="header_menu">
-          <Link to="/cart">
+          <Link to="/shoppingCART">
             <BsFillCartFill className="cart_icon" />
           </Link>
         </div>
