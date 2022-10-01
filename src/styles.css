@@ -710,6 +710,15 @@ FINISH  PURCHASE
   color: red;
 }
 
+.shoppingCART{
+padding-top: 100px;
+position: position;
+width:    50%;
+height: 800px;
+margin-left :   25%;
+background-color: #d9b650;
+}
+
 /*
 MEDIA  QUERIES 
 MEDIA  QUERIES 
@@ -973,6 +982,10 @@ CART
   .cartImg {
     width: 100px;
     height: 80px;
+  }
+  .shoppingCART{
+  width: 100%;  
+  margin-left  :   0%;
   }
 }
 
