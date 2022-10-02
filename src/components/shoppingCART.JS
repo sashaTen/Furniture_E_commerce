@@ -1,4 +1,6 @@
-import     {useSelector    }   from     "react-redux" 
+import     {useSelector   ,    useDispatch  }   from     "react-redux" 
+
+import { push } from "../sliceFORcart";
 /*
 here   is the  plan   :
 show  charactersitics   of the arr  cartItems
@@ -7,11 +9,10 @@ but diplay   set
 */ 
 const     ShoppingCart=()=>{
     const  cartItems   = useSelector((state)=>  state.cartREDUCER)
-    console.log(cartItems.value);
-
-    
+    const    dispatch     =   useDispatch()
+   
   const  itemsAMOUNT=(id)=>{
-       let   amount   = 1
+       let   amount   = 0
       for (let i =0 ;   i  <     cartItems.value.length    ;    i ++){
         if (cartItems.value[i].id===id){
           amount++;
@@ -29,7 +30,13 @@ const     ShoppingCart=()=>{
                      <p>{item.price/1000}$</p>
                      <img  src={item.image}/>
                      <div  className="itemsAMOUNTcontrolCONTAINER">
-                        <h2>+</h2>
+                        <h2 
+                         onClick={() => {
+       
+            dispatch(push(item));
+            
+          }}
+                         >+</h2>
                         <h1>{itemsAMOUNT(item.id)}</h1>
                         <h2>-</h2>
                      </div>
