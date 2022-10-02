@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import     {useSelector   ,    useDispatch  }   from     "react-redux" 
 import { Link } from "react-router-dom";
 import { AiFillHome, AiFillSetting } from "react-icons/ai";
 import {
@@ -9,12 +9,12 @@ import {
 //
 import { cartContext } from "../context";
 const Header = () => {
-  const { itemsOfCart } = useContext(cartContext);
+   const  cartItems   = useSelector((state)=>  state.cartREDUCER)
 
   return (
     <>
       <header className="header">
-        <p className="itemsAmount">{itemsOfCart.length}</p>
+        <p className="itemsAmount">{cartItems.value.length}</p>
        
         <Link to="/login">
           <BsFillPersonFill className="acountIcon" />

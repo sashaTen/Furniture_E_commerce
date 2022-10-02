@@ -1,12 +1,5 @@
 import     {useSelector   ,    useDispatch  }   from     "react-redux" 
-
 import { push } from "../sliceFORcart";
-/*
-here   is the  plan   :
-show  charactersitics   of the arr  cartItems
-but diplay   set    
-
-*/ 
 const     ShoppingCart=()=>{
     const  cartItems   = useSelector((state)=>  state.cartREDUCER)
     const    dispatch     =   useDispatch()
@@ -19,7 +12,7 @@ const     ShoppingCart=()=>{
         }
       }
       return amount
-  }
+  } 
   
     return (<>
     <div   className="shoppingCART">
