@@ -16,11 +16,16 @@ const cartSlice = createSlice({
     decrement(state) {
       state.value--;
     },
+  
+    just(){
+      console.log("hello    op   just");
+      
+    },
     incrementByAmount(state, action) {
       state.value += action.payload;
     }
   }
 });
 
-export const { push, decrement, incrementByAmount ,  clear } = cartSlice.actions;
+export const { push, decrement, incrementByAmount ,  clear,   just } = cartSlice.actions;
 export default cartSlice.reducer;
