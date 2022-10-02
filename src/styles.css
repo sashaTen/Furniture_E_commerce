@@ -741,6 +741,26 @@ margin-left :   25%;
   top: 0%;
   right: 0%;
 }
+
+.clearBTN{
+  width: 20%;
+  border-radius: 10px;
+  background-color: lightgrey;
+  border: 1px     black    solid;
+  padding:    10px ;
+  margin-left: 40%;
+  margin-top: 50px;
+  text-decoration: underline;
+  text-transform: uppercase ;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.clearBTN:hover{
+  color: red;
+}
+
+
+
 /*
 MEDIA  QUERIES 
 MEDIA  QUERIES 

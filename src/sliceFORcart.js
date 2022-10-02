@@ -9,6 +9,12 @@ const cartSlice = createSlice({
     push(state, action) {
       state.value.push(action.payload);
     },
+    deleteITEM(state  ,    action){
+          
+    },
+    clear(state){
+      state.value=[]
+    },
     decrement(state) {
       state.value--;
     },
@@ -18,5 +24,5 @@ const cartSlice = createSlice({
   }
 });
 
-export const { push, decrement, incrementByAmount } = cartSlice.actions;
+export const { push, decrement, incrementByAmount ,  clear } = cartSlice.actions;
 export default cartSlice.reducer;
