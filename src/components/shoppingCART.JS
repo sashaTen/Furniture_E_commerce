@@ -1,11 +1,12 @@
 import     {useSelector   ,    useDispatch  }   from     "react-redux" 
-import { push ,clear} from "../sliceFORcart";
+import { push ,clear   } from "../sliceFORcart";
 const     ShoppingCart=()=>{
     const  cartItems   = useSelector((state)=>  state.cartREDUCER)
-    const    pseudoCART  =     cartItems
+     
+     
     const    dispatch     =   useDispatch()
   
-  
+     
   const   randomNUMBER=()=>{
     let value1 = Math.random()
     let value2 = Math.random()
@@ -26,7 +27,7 @@ const     ShoppingCart=()=>{
     return (<>
     <div   className="shoppingCART">
             
-           {pseudoCART.value.map((item)=>{
+           {cartItems.value.map((item)=>{
             return (<div  className="SINGLEcartITEMcontainer"  key  =  {item.id+   randomNUMBER()}>
                      <p className="itemNAME">{item.name}</p>
                      <p>{item.price/1000}$</p>

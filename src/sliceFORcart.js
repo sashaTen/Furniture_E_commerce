@@ -9,9 +9,7 @@ const cartSlice = createSlice({
     push(state, action) {
       state.value.push(action.payload);
     },
-    deleteITEM(state  ,    action){
-          
-    },
+   
     clear(state){
       state.value=[]
     },
