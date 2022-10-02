@@ -10,8 +10,16 @@ const     ShoppingCart=()=>{
     console.log(cartItems.value);
 
     
-  const  number  =  1
-
+  const  itemsAMOUNT=(id)=>{
+       let   amount   = 1
+      for (let i =0 ;   i  <     cartItems.value.length    ;    i ++){
+        if (cartItems.value[i].id===id){
+          amount++;
+        }
+      }
+      return amount
+  }
+  
     return (<>
     <div   className="shoppingCART">
            
@@ -22,7 +30,7 @@ const     ShoppingCart=()=>{
                      <img  src={item.image}/>
                      <div  className="itemsAMOUNTcontrolCONTAINER">
                         <h2>+</h2>
-                        <h1>{number}</h1>
+                        <h1>{itemsAMOUNT(item.id)}</h1>
                         <h2>-</h2>
                      </div>
 
