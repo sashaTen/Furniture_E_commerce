@@ -10,13 +10,23 @@ const     ShoppingCart=()=>{
     console.log(cartItems.value);
 
     
-
+  const  number  =  1
 
     return (<>
     <div   className="shoppingCART">
-           shoppingCART 
+           
            {cartItems.value.map((item)=>{
-            return (<div    key  =  {item.id}>{item.name}</div>)
+            return (<div  className="SINGLEcartITEMcontainer"  key  =  {item.id}>
+                     <p className="itemNAME">{item.name}</p>
+                     <p>{item.price/1000}$</p>
+                     <img  src={item.image}/>
+                     <div  className="itemsAMOUNTcontrolCONTAINER">
+                        <h2>+</h2>
+                        <h1>{number}</h1>
+                        <h2>-</h2>
+                     </div>
+
+            </div>)
            })}
     </div>
     </>)

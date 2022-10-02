@@ -712,13 +712,35 @@ FINISH  PURCHASE
 
 .shoppingCART{
 padding-top: 100px;
+padding-bottom: 100px;
 position: position;
+display: grid;
 width:    50%;
-height: 800px;
+height: auto;
 margin-left :   25%;
-background-color: #d9b650;
-}
 
+}
+.SINGLEcartITEMcontainer{
+  position: relative;
+}
+.SINGLEcartITEMcontainer>img{
+  width: 100px;
+  height:   100px;
+}
+.SINGLEcartITEMcontainer>.itemNAME{
+  border-top: 1px  black solid;
+  padding-top: 20px;
+  
+}
+.itemsAMOUNTcontrolCONTAINER{
+  width: 100px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  top: 0%;
+  right: 0%;
+}
 /*
 MEDIA  QUERIES 
 MEDIA  QUERIES 
