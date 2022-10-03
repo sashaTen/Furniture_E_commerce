@@ -18,6 +18,11 @@ const cartSlice = createSlice({
       }
     }
    },
+   minusITEM(state ,  action){
+   const index = state.value.map(object => object.id).indexOf(action.payload);
+   state.value.splice(index, 1)
+   },
+
     clear(state){
       state.value=[]
     },
@@ -35,5 +40,5 @@ const cartSlice = createSlice({
   }
 });
 
-export const { push, decrement, incrementByAmount ,  clear,   just , deleteITEM } = cartSlice.actions;
+export const { push, decrement, incrementByAmount ,  clear,   just , deleteITEM  ,  minusITEM} = cartSlice.actions;
 export default cartSlice.reducer;

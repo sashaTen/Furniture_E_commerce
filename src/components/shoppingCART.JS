@@ -1,6 +1,6 @@
 import { BsTrash } from "react-icons/bs"
 import     {useSelector   ,    useDispatch  }   from     "react-redux" 
-import { push ,clear  ,  deleteITEM  } from "../sliceFORcart";
+import { push ,clear  ,  deleteITEM  ,  minusITEM } from "../sliceFORcart";
 const     ShoppingCart=()=>{
     const  cartItems   = useSelector((state)=>  state.cartREDUCER)
     const    dispatch     =   useDispatch()
@@ -61,7 +61,11 @@ const     ShoppingCart=()=>{
           }}
                          >+</h2>
                         <h1>{itemsAMOUNT(item.id)}</h1>
-                        <h2>-</h2>
+                        <h2
+                        onClick={()=>{
+                          dispatch(minusITEM(item.id))
+                        }}
+                        >-</h2>
                      </div>
                      <BsTrash 
                         onClick={()=>{

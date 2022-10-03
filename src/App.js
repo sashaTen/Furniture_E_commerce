@@ -26,6 +26,7 @@ export default function App() {
   const [moveApp, setMoveApp] = useState("App");
   const [showLoading, setShowLoading] = useState(true);
   const [itemsOfCart, setItemsOfCart] = useState([]);
+  
   const word = "hello   context";
   useEffect(() => {
     axios
