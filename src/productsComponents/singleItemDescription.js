@@ -5,7 +5,10 @@ import data from "../components/data";
 import { useState, useEffect, useContext } from "react";
 import { cartContext } from "../context";
 import { Link } from "react-router-dom";
+import     {   useDispatch  }   from     "react-redux" 
+import { push    } from "../sliceFORcart";
 const ItemDesc = () => {
+  const   dispatch =     useDispatch()
   const { itemsOfCart, setItemsOfCart } = useContext(cartContext);
   const [showLoading, setShowLoading] = useState(true);
   const location = useLocation();
@@ -48,7 +51,8 @@ const ItemDesc = () => {
 
           <h4
             onClick={() => {
-              setItemsOfCart([...itemsOfCart, itemObject.id]);
+              //setItemsOfCart([...itemsOfCart, itemObject.id]);
+             dispatch(push(itemObject))
             }}
             className="specificItemCartBtn"
           >
