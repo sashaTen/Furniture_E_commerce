@@ -9,7 +9,15 @@ const cartSlice = createSlice({
     push(state, action) {
       state.value.push(action.payload);
     },
-   
+   deleteITEM(state ,  action){
+    let   pseudoList   =    state.value;
+    state.value =  []
+    for(let i=0 ; i <    pseudoList.length ;  i++){
+      if(pseudoList[i].id!==action.payload){
+            state.value.push(pseudoList[i])
+      }
+    }
+   },
     clear(state){
       state.value=[]
     },
@@ -27,5 +35,5 @@ const cartSlice = createSlice({
   }
 });
 
-export const { push, decrement, incrementByAmount ,  clear,   just } = cartSlice.actions;
+export const { push, decrement, incrementByAmount ,  clear,   just , deleteITEM } = cartSlice.actions;
 export default cartSlice.reducer;
