@@ -9,7 +9,7 @@ const cartSlice = createSlice({
     push(state, action) {
       state.value.push(action.payload);
       localStorage.clear()
-      localStorage.setItem("items", JSON.stringify(state.value));
+      localStorage.setItem("items", JSON.stringify(state.value));    
     },
    deleteITEM(state ,  action){
     let   pseudoList   =    state.value;
@@ -18,9 +18,10 @@ const cartSlice = createSlice({
       if(pseudoList[i].id!==action.payload){
             state.value.push(pseudoList[i])
       }
-    }
+    } 
     localStorage.clear()
     localStorage.setItem("items", JSON.stringify(state.value));
+
    },
    minusITEM(state ,  action){
    const index = state.value.map(object => object.id).indexOf(action.payload);
@@ -31,13 +32,18 @@ const cartSlice = createSlice({
 
     clear(state){
       state.value=[]
+    
       localStorage.clear()
       localStorage.setItem("items", JSON.stringify(state.value));
+    
     },
    
 
     getITEMSfromLOCALstorage(state){
          state.value=  JSON.parse(localStorage.getItem("items"));
+         if(!state.value){
+          state.value=[]
+         }
     }
   
    

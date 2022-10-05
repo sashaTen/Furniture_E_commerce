@@ -1,6 +1,6 @@
 import { BsTrash } from "react-icons/bs"
 import     {useSelector   ,    useDispatch  }   from     "react-redux" 
-import { push ,clear  ,  deleteITEM  ,  minusITEM ,  getITEMSfromLOCALstorage } from "../sliceFORcart";
+import { push ,clear  ,  deleteITEM  ,  minusITEM } from "../sliceFORcart";
 
 
 /////////

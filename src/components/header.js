@@ -9,13 +9,13 @@ import {
 } from "react-icons/bs";
 //
 
-import {  getITEMSfromLOCALstorage } from "../sliceFORcart";
+ import {  getITEMSfromLOCALstorage } from "../sliceFORcart";
 const Header = () => {
-  const   dispatch =  useDispatch()
+  const  dispatch    =  useDispatch()
    const  cartItems   = useSelector((state)=>  state.cartREDUCER)
    useEffect(()=>{
-    dispatch(getITEMSfromLOCALstorage())   
-   } , [])
+    dispatch(getITEMSfromLOCALstorage())
+   },[])
   return (
     <>
       <header className="header">
