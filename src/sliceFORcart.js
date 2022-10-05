@@ -26,17 +26,10 @@ const cartSlice = createSlice({
     clear(state){
       state.value=[]
     },
-    decrement(state) {
-      state.value--;
-    },
+    
   
-    just(){
-      console.log("hello    op   just");
-      
-    },
-    incrementByAmount(state, action) {
-      state.value += action.payload;
-    }
+   
+  
   }
 });
 
