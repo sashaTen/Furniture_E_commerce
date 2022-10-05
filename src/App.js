@@ -38,12 +38,14 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
+    //  dispatch(getITEMSfromLOCALstorage())
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
   if (showLoading) {
     return <Loading />;
   }
+  
   /*
       <Header />
       <Title />

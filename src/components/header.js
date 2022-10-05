@@ -1,4 +1,5 @@
 import     {useSelector   ,    useDispatch  }   from     "react-redux" 
+import   {useEffect    }   from    "react"
 import { Link } from "react-router-dom";
 import { AiFillHome, AiFillSetting } from "react-icons/ai";
 import {
@@ -7,10 +8,14 @@ import {
   BsFillPersonFill
 } from "react-icons/bs";
 //
-import { cartContext } from "../context";
-const Header = () => {
-   const  cartItems   = useSelector((state)=>  state.cartREDUCER)
 
+import {  getITEMSfromLOCALstorage } from "../sliceFORcart";
+const Header = () => {
+  const   dispatch =  useDispatch()
+   const  cartItems   = useSelector((state)=>  state.cartREDUCER)
+   useEffect(()=>{
+    dispatch(getITEMSfromLOCALstorage())   
+   } , [])
   return (
     <>
       <header className="header">

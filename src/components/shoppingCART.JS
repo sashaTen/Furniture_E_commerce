@@ -1,6 +1,9 @@
 import { BsTrash } from "react-icons/bs"
 import     {useSelector   ,    useDispatch  }   from     "react-redux" 
-import { push ,clear  ,  deleteITEM  ,  minusITEM } from "../sliceFORcart";
+import { push ,clear  ,  deleteITEM  ,  minusITEM ,  getITEMSfromLOCALstorage } from "../sliceFORcart";
+
+
+/////////
 const     ShoppingCart=()=>{
     const  cartItems   = useSelector((state)=>  state.cartREDUCER)
     const    dispatch     =   useDispatch()
@@ -46,8 +49,7 @@ const     ShoppingCart=()=>{
  
     return (<>
     <div   className="shoppingCART">
-        
-           { arrOfItemsOBJECTS.map((item)=>{
+          { arrOfItemsOBJECTS.map((item)=>{
             return (<div  className="SINGLEcartITEMcontainer"  key  =  {item.id+   randomNUMBER()}>
                      <p className="itemNAME">{item.name}</p>
                      <p>{item.price/1000}$</p>
@@ -78,8 +80,10 @@ const     ShoppingCart=()=>{
            <button   className=  "clearBTN" onClick =  {
               ()=>{
                 dispatch(clear())
+                localStorage.clear()
               }
              }>   clear   list</button> 
+            
     </div>
     </>)
 }
