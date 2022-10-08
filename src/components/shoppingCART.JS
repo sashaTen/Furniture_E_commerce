@@ -19,6 +19,14 @@ const     ShoppingCart=()=>{
     arrOfItemsOBJECTS.push(returnOBJECT(arrOfItemsIdfromSet[i]))
    }
   
+  const    sumOfItems=()=>{
+    let   sum   =  0
+    for(let    i   =  0  ; i  <   cartItems.value.length ;  i++){
+    sum   +=   cartItems.value[i].price
+    }
+    return     sum
+  }
+
   const   randomNUMBER=()=>{
     let value1 = Math.random()
     let value2 = Math.random()
@@ -83,6 +91,7 @@ const     ShoppingCart=()=>{
                 localStorage.clear()
               }
              }>   clear   list</button> 
+             <button  className="clearBTN">  {sumOfItems()/1000}   $</button>
             
     </div>
     </>)
