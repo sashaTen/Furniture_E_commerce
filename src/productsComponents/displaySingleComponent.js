@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { useDispatch } from "react-redux";
 import { push } from "../sliceFORcart";
-import { BsFillHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { cartContext } from "../context";
 const SingleItem = (props) => {
@@ -26,7 +25,6 @@ const SingleItem = (props) => {
       <p className="itemTitle">{name}</p>
       <p className="itemPrice">{price / 1000}$</p>
       <p className="itemDiscount">-8%</p>
-      <BsFillHeartFill className="itemHeart" />
       <img className="itemImg" src={image} />
       <div className="whiteBottomImg"></div>
       <article className="btnContainer">

@@ -1,6 +1,7 @@
 import { BsFillStarFill } from "react-icons/bs";
 import Loading from "../components/loading";
 import { useLocation } from "react-router-dom";
+import SingleItem  from "./displaySingleComponent";
 import data from "../components/data";
 import { useState, useEffect, useContext } from "react";
 import { cartContext } from "../context";
@@ -11,6 +12,7 @@ const ItemDesc = () => {
   const   dispatch =     useDispatch()
   const { itemsOfCart, setItemsOfCart } = useContext(cartContext);
   const [showLoading, setShowLoading] = useState(true);
+  let list   = []
   const location = useLocation();
   const state = location.state;
   //console.log();
@@ -32,6 +34,13 @@ const ItemDesc = () => {
     return <Loading />;
   }
 
+  for(let  i   =  0 ;    i  <    data.length ;  i++){
+    
+    if(data[i].category===itemObject.category){
+   list.push(data[i])
+    }
+  }
+console.log(list);
   return (
     <div>
       <section className="specificItemContainer">
@@ -60,6 +69,25 @@ const ItemDesc = () => {
           </h4>
         </div>
       </section>
+
+
+
+<h1  className="greetFast">
+
+      items  of the  same  category :
+</h1>
+ 
+ 
+ <div  className="itemsRecommendations">
+          {list.map((item) => {
+            return <SingleItem {...item} key={item.id} />;
+          })}
+        </div>
+ 
+      
+     
+
+
     </div>
   );
 };
