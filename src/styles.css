@@ -923,10 +923,13 @@ MEDIA  QUERIES
     right: 31px;
   }
 
-  .productsContainer {
+  .productsContainer ,   .itemsRecommendations {
     width: 100%;
     left: 0%;
     grid-template-columns: 1fr;
+  }
+  .itemsRecommendations{
+    margin-left: 0px;
   }
   .itemImg {
     width: 100%;
