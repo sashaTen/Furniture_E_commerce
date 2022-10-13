@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import InputRange from "react-input-range";
 import { useState, useEffect } from "react";
 import SingleItem from "./displaySingleComponent";
 import data from "../components/data";
@@ -8,6 +9,37 @@ const DisplayComponent = () => {
   const location = useLocation();
   const state = location.state;
   let list = [];
+  const [price ,  setPrice]  =    useState(maxPrice())
+
+const   changeNumber=(e)=>{
+ setPrice(e.target.value)
+}
+
+
+function minPrice(){
+    let  min   = data[0]
+    for(let i   =0   ;    i   <    data.length ;  i++){
+      if(data[i].price<min.price){
+       min   =    data[i]
+      }    
+    }
+    
+    return    min.price
+    }
+
+    function  maxPrice(){
+      let  max   = data[0]
+      for(let i   =0   ;    i   <    data.length ;  i++){
+        if(data[i].price>max.price){
+         max  =    data[i]
+        }    
+      }
+      
+      return    max.price
+      }
+  
+
+
 
   if (state) {
     for (let i = 0; i < data.length; i++) {
@@ -23,7 +55,11 @@ const DisplayComponent = () => {
     }
   } else if (!state) {
     for (let i = 0; i < data.length; i++) {
-      list.push(data[i]);
+      if(data[i].price<price){
+
+        list.push(data[i]);
+      }
+      
     }
   }
 
@@ -40,6 +76,16 @@ const DisplayComponent = () => {
   return (
     <>
       <section className="productsPage">
+
+      
+  
+<form   className="rangeForm">
+<label for="vol">Volume (between {minPrice()} and     { maxPrice() }):</label>
+  <input onChange={changeNumber} type="range" id="vol" name="vol" min={minPrice()} max={maxPrice()}/>
+  <input   value={price}/>
+ 
+</form>
+         <h1>FOUND   :    {list.length}</h1>
         <div className="productsContainer">
           {list.map((item) => {
             return <SingleItem {...item} key={item.id} />;
