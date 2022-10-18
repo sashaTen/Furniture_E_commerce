@@ -8,11 +8,15 @@ import {
   BsFillPersonFill
 } from "react-icons/bs";
 //
-
+ 
  import {  getITEMSfromLOCALstorage } from "../reduxSlices/sliceFORcart";
+ 
+
 const Header = () => {
   const  dispatch    =  useDispatch()
+  const   loginName   =    useSelector((state)=>state.loginREDUCER )
    const  cartItems   = useSelector((state)=>  state.cartREDUCER)
+  
    useEffect(()=>{
     dispatch(getITEMSfromLOCALstorage())
    },[])
@@ -24,6 +28,8 @@ const Header = () => {
         <Link to="/login">
           <BsFillPersonFill className="acountIcon" />
         </Link>
+      
+        <p className="loginName">{localStorage.getItem('name')}</p>
         <div className="header_menu">
           <Link to="/shoppingCART">
             <BsFillCartFill className="cart_icon" />
@@ -32,6 +38,7 @@ const Header = () => {
         <Link to="/">
           <AiFillHome className="AiFillHome" />
         </Link>
+        
       </header>
     </>
   );

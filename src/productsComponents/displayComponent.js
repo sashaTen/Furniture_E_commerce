@@ -80,7 +80,7 @@ function minPrice(){
       
   
 <form   className="rangeForm">
-<label for="vol">Volume (between {minPrice()} and     { maxPrice() }):</label>
+<label htmlFor="vol">Volume (between {minPrice()} and     { maxPrice() }):</label>
   <input onChange={changeNumber} type="range" id="vol" name="vol" min={minPrice()} max={maxPrice()}/>
   <input   value={price}/>
  

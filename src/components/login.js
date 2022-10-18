@@ -1,9 +1,15 @@
 import { useContext } from "react";
+import   {useState}  from   "react"
 import { Link } from "react-router-dom";
 import { isLogged } from "../context";
 import     {useDispatch }   from     "react-redux"  
 import { consoleLOG  ,  logIN ,  logOUT} from "../reduxSlices/slice";
 const Login = () => {
+  const   [name ,   setname]=useState('dddd')
+  function   changeName(e){
+     setname(e.target.value)
+     dispatch(logIN(name))
+  }
   const logged = useContext(isLogged);
   const   dispatch   =   useDispatch()
   if (logged.logged) {
@@ -33,7 +39,7 @@ const Login = () => {
         <p>Please fill in this form to create an account.</p>
         <div className="loginContainer">
           <label htmlFor="email">
-            <b>Email</b>
+       
           </label>
           <input
             type="text"
@@ -44,7 +50,7 @@ const Login = () => {
           />
 
           <label htmlFor="psw">
-            <b>Password</b>
+      
           </label>
           <input
             type="password"
@@ -55,9 +61,9 @@ const Login = () => {
           />
 
           <label htmlFor="adress">
-            <b>ADRESS</b>
+       
           </label>
-          <input type="password" placeholder="adress" name="adress" required />
+          <input placeholder="name" value={name}   onChange={changeName} name="adress" required />
           <button
             onClick={() => {
               //logged.setLogged(true);
@@ -66,6 +72,7 @@ const Login = () => {
             className="cartBuyBtn"
           >
             Register
+       
           </button>
         </div>
       </form>

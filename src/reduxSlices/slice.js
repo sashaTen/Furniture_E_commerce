@@ -9,20 +9,20 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const loginSlice = createSlice({
   name: 'login',
-  initialState :{ value: "logogut"},
+  initialState :{ value: "mr "},
   reducers: {
-   consoleLOG(){
-    console.log("you   dispatch");
-   },
-   logIN(state){
-    state.value+="in"
+  
+   logIN(state,  action){
+    state.value=action.payload
+    localStorage.setItem("name",  state.value);
    },
    logOUT(state){
     state.value ="logout"
    },
+ 
   },
 })
 
-export const {logIN ,  logOUT  ,    consoleLOG} = loginSlice.actions
+export const {logIN ,  logOUT  } = loginSlice.actions
 export default loginSlice.reducer
 

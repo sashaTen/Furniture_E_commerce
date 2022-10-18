@@ -671,7 +671,7 @@ LOGIN
 */
 
 .loginContainer {
-  display: block;
+  display: grid;
   position: relative;
   margin-top: 80px;
   height: 80vh;
@@ -760,7 +760,10 @@ margin-left :   25%;
 }
 
 
-
+.loginName{
+  position: absolute;
+  left: 40%;
+}
 /*
 MEDIA  QUERIES 
 MEDIA  QUERIES 
