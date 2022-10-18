@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { isLogged } from "../context";
 import     {useDispatch }   from     "react-redux"  
-import { consoleLOG  ,  logIN ,  logOUT} from "../slice";
+import { consoleLOG  ,  logIN ,  logOUT} from "../reduxSlices/slice";
 const Login = () => {
   const logged = useContext(isLogged);
   const   dispatch   =   useDispatch()

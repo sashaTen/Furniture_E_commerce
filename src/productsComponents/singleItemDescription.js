@@ -7,7 +7,7 @@ import { useState, useEffect, useContext } from "react";
 import { cartContext } from "../context";
 import { Link } from "react-router-dom";
 import     {   useDispatch  }   from     "react-redux" 
-import { push    } from "../sliceFORcart";
+import { push    } from "../reduxSlices/sliceFORcart";
 const ItemDesc = () => {
   const   dispatch =     useDispatch()
   const { itemsOfCart, setItemsOfCart } = useContext(cartContext);

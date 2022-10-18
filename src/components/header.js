@@ -9,7 +9,7 @@ import {
 } from "react-icons/bs";
 //
 
- import {  getITEMSfromLOCALstorage } from "../sliceFORcart";
+ import {  getITEMSfromLOCALstorage } from "../reduxSlices/sliceFORcart";
 const Header = () => {
   const  dispatch    =  useDispatch()
    const  cartItems   = useSelector((state)=>  state.cartREDUCER)

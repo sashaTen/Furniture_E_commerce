@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useDispatch } from "react-redux";
-import { push } from "../sliceFORcart";
+import { push } from "../reduxSlices/sliceFORcart";
 import { Link } from "react-router-dom";
 import { cartContext } from "../context";
 const SingleItem = (props) => {
