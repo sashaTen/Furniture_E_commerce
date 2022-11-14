@@ -2,6 +2,7 @@ import "./styles.css";
 import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
+import     {useSelector   ,    useDispatch  }   from     "react-redux" 
 import Cart from "./components/cart"; //added  comments
 import ShoppingCart from "./components/shoppingCART.js";
 import ScrollToTop from "./components/scrolltoTop"; //   auto  scroll to the top
@@ -23,10 +24,11 @@ export default function App() {
   const [appDisplay, setAppDisplay] = useState(false);
   const [logged, setLogged] = useState(false);
   const [items, setItems] = useState([]);
-  const [moveApp, setMoveApp] = useState("App");
+  const [moveApp, setMoveApp] = useState("App darkMODE");
   const [showLoading, setShowLoading] = useState(true);
   const [itemsOfCart, setItemsOfCart] = useState([]);
-  
+  const  modeSwitcher   = useSelector((state)=>  state.darkModeREDUCER)
+ console.log(modeSwitcher);
   const word = "hello   context";
   useEffect(() => {
     axios
@@ -63,7 +65,7 @@ export default function App() {
 
   if (appDisplay) {
     return (
-      <div className={moveApp}>
+      <div className={modeSwitcher}>
         <Router>
           <ScrollToTop>
           <isLogged.Provider value={{ logged, setLogged, word }}>
@@ -88,7 +90,7 @@ export default function App() {
     );
   }
   return (
-    <div className={moveApp}>
+    <div className={modeSwitcher.value}>
       <Router>
         <ScrollToTop>
           <isLogged.Provider value={{ logged, setLogged }}>
