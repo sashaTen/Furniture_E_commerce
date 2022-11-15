@@ -769,6 +769,19 @@ margin-left :   25%;
   position: absolute;
   left: 40%;
 }
+.darkModeSwitch ,    .darkOFF   ,      .darkON{
+  color:      white;
+  background-color: black;
+  text-transform: capitalize;
+}
+
+.darkLIGHTswitch{
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  border: black   3px  solid;
+
+}
 /*
 MEDIA  QUERIES 
 MEDIA  QUERIES 

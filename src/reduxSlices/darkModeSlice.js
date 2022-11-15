@@ -9,13 +9,16 @@ so this   is   the   slice  for   it
 5    delete     opcacity    background  from    the  items 
 */
 import { createSlice } from "@reduxjs/toolkit";
-const initialState = { value: "App darkMODE" };
+const initialState = { value: "App" };
 const darkModeSlice = createSlice({
     name: "counter",
     initialState,
     reducers: {
      switchMODE(state){
          state.value="App darkMODE"
+     } ,  
+     switchMODEtoLIGHT(state){
+        state.value ="App"
      }
       
     
@@ -23,5 +26,5 @@ const darkModeSlice = createSlice({
     
     }
   });
-  export   const  {switchMODE} = darkModeSlice.actions
+  export   const  {switchMODE   ,  switchMODEtoLIGHT} = darkModeSlice.actions
   export   default   darkModeSlice.reducer
