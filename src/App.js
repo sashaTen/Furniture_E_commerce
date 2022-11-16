@@ -19,6 +19,7 @@ import HomePageBody from "./components/homePageBody";
 import { moveAppContext } from "./context";
 import { cartContext } from "./context";
 import { isLogged } from "./context";
+import { switchMODE } from "./reduxSlices/darkModeSlice";
 
 export default function App() {
   const [appDisplay, setAppDisplay] = useState(false);
@@ -28,7 +29,7 @@ export default function App() {
   const [showLoading, setShowLoading] = useState(true);
   const [itemsOfCart, setItemsOfCart] = useState([]);
   const  modeSwitcher   = useSelector((state)=>  state.darkModeREDUCER)
- console.log(modeSwitcher);
+  console.log(modeSwitcher);
   const word = "hello   context";
   useEffect(() => {
     axios
@@ -65,7 +66,7 @@ export default function App() {
 
   if (appDisplay) {
     return (
-      <div className={modeSwitcher}>
+      <div className={switchMODE}>
         <Router>
           <ScrollToTop>
           <isLogged.Provider value={{ logged, setLogged, word }}>

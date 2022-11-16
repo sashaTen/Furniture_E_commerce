@@ -11,20 +11,22 @@ import {
  
  import {  getITEMSfromLOCALstorage } from "../reduxSlices/sliceFORcart";
  import   {switchMODE   , switchMODEtoLIGHT}  from     "../reduxSlices/darkModeSlice"
+import { current } from "@reduxjs/toolkit";
  
 
 const Header = () => {
   const  dispatch    =  useDispatch()
   const   loginName   =    useSelector((state)=>state.loginREDUCER )
-   const  cartItems   = useSelector((state)=>  state.cartREDUCER)
-   
+  const  cartItems   = useSelector((state)=>  state.cartREDUCER)
+
   
+   
    useEffect(()=>{
     dispatch(getITEMSfromLOCALstorage())
    },[])
   return (
     <>
-      <header className="header">
+      <header className="header" >
         <div    className="darkLIGHTswitch">
         <button   className="darkOFF"
          onClick={()=>{dispatch(switchMODE())}}

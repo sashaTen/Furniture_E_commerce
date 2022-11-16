@@ -15,7 +15,7 @@ const darkModeSlice = createSlice({
     initialState,
     reducers: {
      switchMODE(state){
-         state.value="App darkMODE"
+         state.value="  App darkMODE"
      } ,  
      switchMODEtoLIGHT(state){
         state.value ="App"
