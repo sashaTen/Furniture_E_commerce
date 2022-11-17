@@ -66,7 +66,7 @@ export default function App() {
 
   if (appDisplay) {
     return (
-      <div className={switchMODE}>
+      <div >
         <Router>
           <ScrollToTop>
           <isLogged.Provider value={{ logged, setLogged, word }}>

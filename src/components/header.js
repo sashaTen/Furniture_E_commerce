@@ -31,12 +31,12 @@ const Header = () => {
         <button   className="darkOFF"
          onClick={()=>{dispatch(switchMODE())}}
         >
-          dark off
+          dark on
         </button>
         <button   className="darkON"
          onClick={()=>{dispatch(switchMODEtoLIGHT())}}
         >
-          dark on
+          dark off
         </button>
         </div>
         <p className="itemsAmount">{cartItems.value.length}</p>
