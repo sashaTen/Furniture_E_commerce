@@ -26,7 +26,7 @@ const SingleItem = (props) => {
       <p className="itemPrice">{price / 1000}$</p>
       <p className="itemDiscount">-8%</p>
       <img className="itemImg" src={image} />
-      <div className="whiteBottomImg"></div>
+      <div ></div>
       <article className="btnContainer">
         <Link to="/itemDesc" state={itemId}>
           {" "}
