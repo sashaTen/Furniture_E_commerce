@@ -16,6 +16,7 @@ const darkModeSlice = createSlice({
     reducers: {
      switchMODE(state){
          state.value="  App darkMODE"
+         localStorage.setItem('mykey', 'somevalue')
      } ,  
      switchMODEtoLIGHT(state){
         state.value ="App"
